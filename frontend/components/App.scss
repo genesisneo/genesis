@@ -1,0 +1,9 @@
+@import './global.scss';
+
+.App {
+  margin: 0 0 56px;
+
+  @media (min-width: 769px) {
+    margin: 0 0 0 64px;
+  }
+}

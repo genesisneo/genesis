@@ -1,0 +1,21 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["airbnb"],
+  "globals": {
+    "document": true,
+    "window": true,
+    "navigator": true,
+    "localStorage": true,
+    "webkit": true
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "comma-dangle": ["error", "only-multiline"],
+    "react/prefer-stateless-function": 0,
+    "react/prop-types": 0,
+    "curly": ["error", "all"]
+  }
+}

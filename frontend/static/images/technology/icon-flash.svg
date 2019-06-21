@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#D12727;}
+	.st1{fill:#462621;}
+	.st2{display:none;opacity:0.302;}
+	.st3{display:inline;}
+	.st4{fill:#E82C2E;}
+</style>
+<g id="Flash_Pro_1_">
+	<g>
+		<g id="Frame_3_">
+			<g>
+				<rect y="0.8" class="st0" width="64" height="62.3"/>
+			</g>
+		</g>
+		<g id="Background_3_">
+			<g>
+				<rect x="4.9" y="5.8" class="st1" width="54.1" height="52.3"/>
+			</g>
+		</g>
+		<g id="Shadow2_3_" class="st2">
+			<g class="st3">
+				<polygon points="44.5,17.3 42.7,23.7 36.6,18.7 24.6,18.7 23,30.6 21.3,45.1 39.1,58.2 59,58.2 59,26.9 				"/>
+			</g>
+		</g>
+		<g id="Shadow_4_" class="st2">
+			<g class="st3">
+				<rect x="4.9" y="5.8" width="54.1" height="1.8"/>
+			</g>
+		</g>
+		<g id="Fl">
+			<g>
+				<path class="st4" d="M21.4,18.7h15.2v4H26.2V30H36v4h-9.7v11.2h-4.8L21.4,18.7L21.4,18.7z"/>
+				<path class="st4" d="M39.6,17.3h4.9v27.8h-4.9V17.3z"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

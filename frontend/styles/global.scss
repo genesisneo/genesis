@@ -1,0 +1,92 @@
+// variables
+:root {
+  --white: #fff;
+  --black: #000;
+  --primary: #607d8b;
+  --primary-light: #cfd8dc;
+  --primary-dark: #455a64;
+  --accent: #ff5252;
+  --primary-text: #212121;
+  --secondary-text: #757575;
+}
+
+// global
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-light);
+  color: var(--primary-text);
+  font-family: 'Oxygen', Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.5;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// typography
+h1 {
+  margin: 0 0 16px;
+  font-size: 6rem;
+  font-weight: 300;
+}
+
+h2 {
+  margin: 0 0 16px;
+  font-size: 3.75rem;
+  font-weight: 300;
+}
+
+h3 {
+  margin: 0 0 16px;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+h4 {
+  margin: 0 0 16px;
+  font-size: 2.125rem;
+  font-weight: 400;
+}
+
+h5 {
+  margin: 0 0 16px;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+h6 {
+  margin: 0 0 16px;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin: 0 0 16px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+// links
+a {
+  color: var(--accent);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@import './react-router-modal.scss';
+@import './react-lazy-load-image-component.scss'

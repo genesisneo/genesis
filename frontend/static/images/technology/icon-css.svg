@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#8FCDF7;}
+	.st1{fill:#15456D;}
+	.st2{display:none;opacity:0.302;}
+	.st3{display:inline;}
+</style>
+<g id="After_Effects_1_">
+	<g>
+		<g id="Frame_8_">
+			<g>
+				<rect x="0" y="0.8" class="st0" width="64" height="62.3"/>
+			</g>
+		</g>
+		<g id="Background_8_">
+			<g>
+				<rect x="4.9" y="5.8" class="st1" width="54.1" height="52.3"/>
+			</g>
+		</g>
+		<g id="Shadow2_8_" class="st2">
+			<g class="st3">
+				<polygon points="48.9,27 38.2,29.1 25.7,18.8 20,19.4 11,45.2 28.2,58.2 59,58.2 59,35.1 				"/>
+			</g>
+		</g>
+		<g id="Shadow_9_" class="st2">
+			<g class="st3">
+				<rect x="4.9" y="5.8" width="54.1" height="1.8"/>
+			</g>
+		</g>
+		<path class="st0" d="M16,13.7l3,33l13,3.6l13-3.6l3-33H16z M41.1,25.1L32,28.6h8.8l-1.1,12.5L32,43.4l-7.7-2.3l-0.5-5.7h4.3
+			l0.4,2.3l3.6,1.1l3.6-1.1l0.4-4.6H23.6l-0.4-4.6l8.9-3.5h-9.2l-0.5-4.6h19.1L41.1,25.1z"/>
+	</g>
+</g>
+</svg>

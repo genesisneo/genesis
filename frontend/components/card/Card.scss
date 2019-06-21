@@ -1,0 +1,47 @@
+.Card {
+  margin: 16px;
+  padding: 0;
+  max-width: 320px;
+  background-color: var(--white);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  color: var(--black);
+  overflow: hidden;
+  transition: box-shadow 0.25s ease-out;
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  will-change: box-shadow;
+
+  &:hover {
+    box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+  }
+
+  &__image-container {
+    overflow: hidden;
+  }
+
+  &__thumbnail {
+    display: block;
+    width: 100%;
+    min-width: 288px;
+    min-height: 144px;
+    max-width: 320px;
+    max-height: 160px;
+    transform: translate3d(0, 0, 0);
+  }
+
+  &__information {
+    padding: 16px;
+  }
+
+  &__title,
+  &__description {
+    margin: 0 0 16px;
+    padding: 0;
+  }
+
+  &__description {
+    color: var(--secondary-text);
+  }
+}
