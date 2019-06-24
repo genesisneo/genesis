@@ -41,7 +41,6 @@ class About extends React.Component {
       <div className="About">
         <Helmet>
           <title>Profile - Genesis Mallorca Obtera</title>
-          <meta name="description" content="A mobile friendly, minimal, modern, and performance focused react page." />
         </Helmet>
 
         <Link className="About__close" to="/" />

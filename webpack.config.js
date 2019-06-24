@@ -2,9 +2,13 @@ const autoprefixer = require('autoprefixer');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+const { NODE_ENV } = process.env;
+const isProd = NODE_ENV === 'production';
 const outputDirectory = `${__dirname}/build`;
 
 module.exports = {
+  mode: NODE_ENV,
+  devtool: isProd ? false : 'inline-source-map',
   entry: ['babel-polyfill', './frontend/'],
   output: {
     path: outputDirectory,
@@ -83,9 +87,11 @@ module.exports = {
       template: './frontend/views/index.html',
       favicon: './frontend/static/images/favicon.png',
       meta: {
-        'theme-color': '#455a64',
+        author: 'Genesis Mallorca Obtera',
+        description: 'Product Designer and Developer',
         'format-detection': 'telephone=no',
         'x-ua-compatible': { 'http-equiv': 'x-ua-compatible', content: 'ie=edge' },
+        keywords: 'genesis, mallorca, obtera, web, product, design, develop, ui, ux, user, interface, experience',
         viewport: 'width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=1, minimal-ui',
       }
     })

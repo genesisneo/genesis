@@ -24,11 +24,12 @@ server.use(express.static('build'));
 
 // routes
 server.use('/resize', imageResizer);
-server.use('/images', express.static(`${__dirname}/frontend/static/images`, { maxAge: 86400000 }));
+server.use('/images', express.static(`${__dirname}/frontend/static/images`, { maxAge: 2592000000 }));
 
 // api data
 server.get('/api/genesis', (req, res) => {
   res.header('Content-Type', 'application/json');
+  res.set('Cache-Control', 'public, max-age=2592000000');
   res.send(data);
 });
 
@@ -38,7 +39,13 @@ server.listen(process.env.PORT || 8080, () => {
 
 if (isProd) {
   server.get('*', (req, res) => {
-    res.redirect(`https://${req.headers.host}${req.url}`);
+    const {
+      headers: {
+        host
+      },
+      url
+    } = req;
+    res.redirect(`https://${host}${url}`);
   });
 
   https.createServer({

@@ -58,7 +58,6 @@ class Project extends React.Component {
       <div className="Project">
         <Helmet>
           <title>{`${title} - Genesis Mallorca Obtera`}</title>
-          <meta name="description" content={description} />
         </Helmet>
 
         <Link className="Project__close" to="/" />

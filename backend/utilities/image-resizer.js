@@ -34,6 +34,7 @@ const imageResizer = (req, res) => {
     .resize(imageWidth, imageHeight)
     .toBuffer()
     .then((imageData) => {
+      res.set('Cache-Control', 'public, max-age=2592000000');
       res.writeHead(200, { 'Content-Type': `image/${imageExtension}` });
       res.end(imageData, 'binary');
     })
