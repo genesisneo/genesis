@@ -1,5 +1,6 @@
 const autoprefixer = require('autoprefixer');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const { NODE_ENV } = process.env;
@@ -16,20 +17,33 @@ module.exports = {
     publicPath: '/'
   },
   optimization: {
-    runtimeChunk: 'single',
+    runtimeChunk: false,
+    minimizer: [
+      new UglifyJsPlugin({
+        sourceMap: true,
+        uglifyOptions: {
+          compress: {
+            ie8: false,
+            pure_getters: true,
+            unsafe: true,
+            unsafe_comps: true,
+            unused: true
+          },
+          exclude: [/\.min\.js$/gi],
+        }
+      })
+    ],
     splitChunks: {
       chunks: 'all',
-      maxInitialRequests: Infinity,
-      minSize: 0,
       cacheGroups: {
+        default: false,
         vendor: {
           test: /[\\/]node_modules[\\/]/,
-          name(module) {
-            const packageName = module.context.match(/[\\/]node_modules[\\/](.*?)([\\/]|$)/)[1];
-            return `npm.${packageName.replace('@', '')}`;
-          },
-        },
-      },
+          name: 'vendors',
+          chunks: 'initial',
+          minChunks: 16
+        }
+      }
     },
   },
   module: {
