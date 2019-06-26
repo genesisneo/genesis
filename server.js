@@ -1,5 +1,5 @@
 const fs = require('fs');
-const https = require('https');
+const spdy = require('spdy');
 const helmet = require('helmet');
 const express = require('express');
 const compression = require('compression');
@@ -33,6 +33,7 @@ server.get('/api/genesis', (req, res) => {
   res.send(data);
 });
 
+// serving http port 80
 server.listen(process.env.PORT || 8080, () => {
   console.log(`Server is running at port ${process.env.PORT || 8080} for HTTP`); // eslint-disable-line no-console
 });
@@ -48,7 +49,8 @@ if (isProd) {
     res.redirect(`https://${host}${url}`);
   });
 
-  https.createServer({
+  // serving hhtps port 443 through http2
+  spdy.createServer({
     key: fs.readFileSync('./backend/ssl/genesis.key'),
     cert: fs.readFileSync('./backend/ssl/genesis.crt'),
     ca: fs.readFileSync('./backend/ssl/genesis.pem'),

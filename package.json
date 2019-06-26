@@ -27,6 +27,7 @@
     "react-router-dom": "^5.0.0",
     "react-router-modal": "^2.0.0-rc3",
     "sharp": "^0.22.1",
+    "spdy": "^4.0.0",
     "uuid": "^3.3.2"
   },
   "devDependencies": {
