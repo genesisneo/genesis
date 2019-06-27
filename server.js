@@ -12,7 +12,10 @@ const { NODE_ENV } = process.env;
 const isDev = NODE_ENV === 'development';
 
 // security config
-server.use(compression({ level: 9 }));
+server.use(compression({
+  level: 9,
+  memLevel: 9
+}));
 server.use(helmet.frameguard());
 server.use(helmet.xssFilter({ setOnOldIE: true }));
 server.use(helmet.hidePoweredBy());
@@ -22,7 +25,10 @@ server.use(helmet.noSniff());
 
 // routes
 server.use('/resize', imageResizer);
-server.use('/images', express.static(`${__dirname}/frontend/static/images`, { maxAge: 2592000000 }));
+server.use('/images', express.static(
+  path.join(__dirname, 'frontend/static/images'),
+  { maxAge: 2592000000 }
+));
 
 // api data
 server.get('/api/genesis', (req, res) => {
@@ -38,6 +44,7 @@ server.listen(process.env.PORT || 8080, () => {
 
 if (!isDev) {
   server.use(express.static(path.join(__dirname, 'build')));
+  server.use(express.static(path.join(__dirname, 'frontend/static')));
   server.get('/*', (req, res) => {
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
   });
