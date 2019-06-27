@@ -4,35 +4,21 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const { NODE_ENV } = process.env;
-const isProd = NODE_ENV === 'production';
+const isDev = NODE_ENV === 'development';
 const outputDirectory = `${__dirname}/build`;
 
 module.exports = {
   mode: NODE_ENV,
-  devtool: isProd ? false : 'inline-source-map',
+  devtool: isDev ? 'inline-source-map' : false,
   entry: ['babel-polyfill', './frontend/'],
   output: {
     path: outputDirectory,
-    filename: 'genesis.js',
+    filename: 'genesis.[name].js',
     publicPath: '/'
   },
   optimization: {
     runtimeChunk: false,
-    minimizer: [
-      new UglifyJsPlugin({
-        sourceMap: true,
-        uglifyOptions: {
-          compress: {
-            ie8: false,
-            pure_getters: true,
-            unsafe: true,
-            unsafe_comps: true,
-            unused: true
-          },
-          exclude: [/\.min\.js$/gi],
-        }
-      })
-    ],
+    minimizer: [new UglifyJsPlugin()],
     splitChunks: {
       chunks: 'all',
       cacheGroups: {

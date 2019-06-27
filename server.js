@@ -1,4 +1,5 @@
 const fs = require('fs');
+const path = require('path');
 const spdy = require('spdy');
 const helmet = require('helmet');
 const express = require('express');
@@ -8,7 +9,7 @@ const data = require('./backend/data/genesis.json');
 
 const server = express();
 const { NODE_ENV } = process.env;
-const isProd = NODE_ENV === 'production';
+const isDev = NODE_ENV === 'development';
 
 // security config
 server.use(compression({ level: 9 }));
@@ -18,9 +19,6 @@ server.use(helmet.hidePoweredBy());
 server.use(helmet.hsts({ force: true }));
 server.use(helmet.ieNoOpen());
 server.use(helmet.noSniff());
-
-// static files
-server.use(express.static('build'));
 
 // routes
 server.use('/resize', imageResizer);
@@ -38,15 +36,10 @@ server.listen(process.env.PORT || 8080, () => {
   console.log(`Server is running at port ${process.env.PORT || 8080} for HTTP`); // eslint-disable-line no-console
 });
 
-if (isProd) {
-  server.get('*', (req, res) => {
-    const {
-      headers: {
-        host
-      },
-      url
-    } = req;
-    res.redirect(`https://${host}${url}`);
+if (!isDev) {
+  server.use(express.static(path.join(__dirname, 'build')));
+  server.get('/*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'build', 'index.html'));
   });
 
   // serving hhtps port 443 through http2
