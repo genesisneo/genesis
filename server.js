@@ -12,6 +12,7 @@ const { NODE_ENV } = process.env;
 const isDev = NODE_ENV === 'development';
 
 // security config
+server.enable('trust proxy');
 server.use(compression({
   level: 9,
   memLevel: 9
@@ -32,17 +33,19 @@ server.use('/images', express.static(
 
 // api data
 server.get('/api/genesis', (req, res) => {
-  res.header('Content-Type', 'application/json');
-  res.set('Cache-Control', 'public, max-age=2592000000');
+  res.setHeader('Content-Type', 'application/json');
+  res.setHeader('Cache-Control', 'public, max-age=2592000000');
   res.send(data);
 });
 
-// serving http port 80
-server.listen(process.env.PORT || 8080, () => {
-  console.log(`Server is running at port ${process.env.PORT || 8080} for HTTP`); // eslint-disable-line no-console
-});
-
 if (!isDev) {
+  // redirect http to https
+  server.use((req, res) => {
+    if (!/https/.test(req.protocol)) {
+      res.redirect(`https://${req.headers.host}${req.url}`, 301);
+    }
+  });
+
   server.use(express.static(path.join(__dirname, 'build')));
   server.use(express.static(path.join(__dirname, 'frontend/static')));
   server.get('/*', (req, res) => {
@@ -59,3 +62,8 @@ if (!isDev) {
       console.log(`Server is running at port ${process.env.PORT || 8181} for HTTPS`); // eslint-disable-line no-console
     });
 }
+
+// serving http port 80
+server.listen(process.env.PORT || 8080, () => {
+  console.log(`Server is running at port ${process.env.PORT || 8080} for HTTP`); // eslint-disable-line no-console
+});
