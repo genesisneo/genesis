@@ -39,10 +39,20 @@ server.get('/api/genesis', (req, res) => {
 });
 
 if (!isDev) {
-  // redirect http to https
-  server.use((req, res) => {
-    if (!/https/.test(req.protocol)) {
-      res.redirect(`https://${req.headers.host}${req.url}`, 301);
+  // redirect http to https for domain
+  server.use((req, res, next) => {
+    const {
+      protocol,
+      url,
+      headers: {
+        host
+      }
+    } = req;
+
+    if (!/https/.test(protocol) && host.includes('genesis.obtera')) {
+      res.redirect(301, `https://${host}${url}`);
+    } else {
+      next();
     }
   });
 
