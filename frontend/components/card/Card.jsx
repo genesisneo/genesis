@@ -49,6 +49,9 @@ class Card extends React.Component {
           <p className="Card__description">
             {`${description.substring(0, 128)}...`}
           </p>
+          <p className="Card__link">
+            Read more
+          </p>
         </div>
       </Link>
     );

@@ -12,6 +12,10 @@ class Project extends React.Component {
     project: {}
   };
 
+  componentWillMount() {
+    document.addEventListener('keydown', this.escapeFunction);
+  }
+
   componentDidMount() {
     const {
       match: {
@@ -27,6 +31,16 @@ class Project extends React.Component {
         const item = data.portfolio.filter(items => items.id === parseInt(id, 10));
         this.setState({ project: item.length !== 0 ? item[0] : { error: 'Page not found' } });
       });
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('keydown', this.escapeFunction);
+  }
+
+  escapeFunction = (event) => {
+    if (event.keyCode === 27) {
+      document.querySelector('.Project__close').click();
+    }
   }
 
   render() {

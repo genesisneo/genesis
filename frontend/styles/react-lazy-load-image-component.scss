@@ -2,7 +2,11 @@
   display: block !important;
 
   &.blur {
-    filter: blur(16px);
+    filter: blur(8px);
+
+    & > img {
+      opacity: 0;
+    }
 
     &.lazy-load-image-loaded {
       filter: blur(0);
@@ -12,10 +16,6 @@
         opacity: 1;
         transition: opacity 0.5s;
       }
-    }
-
-    & > img {
-      opacity: 0;
     }
   }
 }

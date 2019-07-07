@@ -36,12 +36,17 @@
   }
 
   &__title,
-  &__description {
+  &__description,
+  &__link {
     margin: 0 0 16px;
     padding: 0;
   }
 
   &__description {
     color: var(--secondary-text);
+  }
+
+  &__link {
+    color: var(--accent);
   }
 }

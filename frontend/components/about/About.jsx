@@ -10,12 +10,26 @@ class About extends React.Component {
     about: {},
   };
 
+  componentWillMount() {
+    document.addEventListener('keydown', this.escapeFunction);
+  }
+
   componentDidMount() {
     fetch('/api/genesis')
       .then(res => res.json())
       .then((data) => {
         this.setState({ about: data.about ? data.about : { error: 'Page not found' } });
       });
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('keydown', this.escapeFunction);
+  }
+
+  escapeFunction = (event) => {
+    if (event.keyCode === 27) {
+      document.querySelector('.About__close').click();
+    }
   }
 
   render() {
