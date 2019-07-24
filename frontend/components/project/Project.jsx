@@ -132,8 +132,8 @@ class Project extends React.Component {
                   src={image}
                   loading="lazy"
                   effect="blur"
-                  placeholderSrc={`/resize?w=20&h=10&i=${image}`}
-                  delayTime={0}
+                  placeholderSrc={`/resize?w=100&h=50&i=${image}`}
+                  delayTime={100}
                   threshold={100}
                 />
               </div>

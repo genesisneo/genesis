@@ -37,8 +37,8 @@ class Card extends React.Component {
             src={thumbnail}
             loading="lazy"
             effect="blur"
-            placeholderSrc={`/resize?w=20&h=10&i=${thumbnail}`}
-            delayTime={0}
+            placeholderSrc={`/resize?w=100&h=50&i=${thumbnail}`}
+            delayTime={100}
             threshold={100}
           />
         </div>

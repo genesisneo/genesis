@@ -10,11 +10,11 @@
 
     &.lazy-load-image-loaded {
       filter: blur(0);
-      transition: filter 0.5s;
+      transition: filter 1s;
 
       & > img {
         opacity: 1;
-        transition: opacity 0.5s;
+        transition: opacity 1s;
       }
     }
   }

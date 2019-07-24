@@ -68,12 +68,12 @@ if (!isDev) {
     cert: fs.readFileSync('./backend/ssl/genesis.crt'),
     ca: fs.readFileSync('./backend/ssl/genesis.pem'),
   }, server)
-    .listen(process.env.PORT || 8181, () => {
-      console.log(`Server is running at port ${process.env.PORT || 8181} for HTTPS`); // eslint-disable-line no-console
+    .listen(8181, () => {
+      console.log(`Server is running at port ${8181} for HTTPS`); // eslint-disable-line no-console
     });
 }
 
 // serving http port 80
-server.listen(process.env.PORT || 8080, () => {
-  console.log(`Server is running at port ${process.env.PORT || 8080} for HTTP`); // eslint-disable-line no-console
+server.listen(8080, () => {
+  console.log(`Server is running at port ${8080} for HTTP`); // eslint-disable-line no-console
 });

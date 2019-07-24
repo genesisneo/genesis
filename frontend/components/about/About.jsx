@@ -64,6 +64,7 @@ class About extends React.Component {
           </h6>
           <div
             className="About__content"
+            // eslint-disable-next-line react/no-danger
             dangerouslySetInnerHTML={{ __html: content.join('') }}
           />
         </div>
