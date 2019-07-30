@@ -1,17 +1,15 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import uuid from 'uuid/v4';
 import Loading from '../loading/Loading';
 import NotFound from '../notfound/NotFound';
+import { getProject } from '../../redux/actions';
 import './Project.scss';
 
 class Project extends React.Component {
-  state = {
-    project: {}
-  };
-
   componentWillMount() {
     document.addEventListener('keydown', this.escapeFunction);
   }
@@ -25,12 +23,9 @@ class Project extends React.Component {
       }
     } = this.props;
 
-    fetch('/api/genesis')
-      .then(res => res.json())
-      .then((data) => {
-        const item = data.portfolio.filter(items => items.id === parseInt(id, 10));
-        this.setState({ project: item.length !== 0 ? item[0] : { error: 'Page not found' } });
-      });
+    // eslint-disable-next-line no-shadow
+    const { getProject } = this.props;
+    getProject(id);
   }
 
   componentWillUnmount() {
@@ -45,8 +40,19 @@ class Project extends React.Component {
 
   render() {
     const {
-      project
-    } = this.state;
+      genesis: {
+        project,
+        project: {
+          id,
+          title,
+          technology,
+          description,
+          year,
+          images,
+          tags,
+        }
+      }
+    } = this.props;
 
     if (!Object.keys(project).length) {
       return <Loading />;
@@ -55,18 +61,6 @@ class Project extends React.Component {
     if (project.error) {
       return <NotFound />;
     }
-
-    const {
-      project: {
-        id,
-        title,
-        technology,
-        description,
-        year,
-        images,
-        tags,
-      }
-    } = this.state;
 
     return (
       <div className="Project">
@@ -145,4 +139,6 @@ class Project extends React.Component {
   }
 }
 
-export default Project;
+const mapStateToProps = ({ genesis }) => ({ genesis });
+
+export default connect(mapStateToProps, { getProject })(Project);

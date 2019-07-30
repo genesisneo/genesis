@@ -19,6 +19,7 @@
     overflow-x: hidden;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
+    transform: translate3d(0, 0, 0);
   }
 
   &__title,
@@ -89,7 +90,6 @@
     max-height: 413px;
     border: 1px solid rgba(0, 0, 0, 0.08);
     border-radius: 4px;
-    transform: translate3d(0, 0, 0);
 
     @media (min-width: 769px) {
       min-width: 583px;

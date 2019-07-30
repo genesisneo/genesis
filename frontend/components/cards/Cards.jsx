@@ -1,22 +1,54 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import Card from '../card/Card';
+import Loading from '../loading/Loading';
+import NotFound from '../notfound/NotFound';
+import { getPortfolio } from '../../redux/actions';
 import './Cards.scss';
 
 class Cards extends React.Component {
-  state = {
-    portfolio: [],
-  };
-
   componentDidMount() {
-    fetch('/api/genesis')
-      .then(res => res.json())
-      .then(data => this.setState({ portfolio: data.portfolio }));
+    // eslint-disable-next-line no-shadow
+    const { getPortfolio } = this.props;
+    getPortfolio();
+  }
+
+  shouldComponentUpdate(nextState) {
+    const {
+      genesis: {
+        portfolio: currentPortfolio
+      }
+    } = this.props;
+    const {
+      genesis: {
+        portfolio: nextPortfolio
+      }
+    } = nextState;
+    return (nextPortfolio !== currentPortfolio) ? nextPortfolio : false;
   }
 
   render() {
     const {
-      portfolio,
-    } = this.state;
+      genesis: {
+        portfolio
+      }
+    } = this.props;
+
+    if (!portfolio.length) {
+      return (
+        <div className="Cards__container">
+          <Loading />
+        </div>
+      );
+    }
+
+    if (portfolio.error) {
+      return (
+        <div className="Cards__container">
+          <NotFound />
+        </div>
+      );
+    }
 
     const isPortfolioEmpty = portfolio.length === 0;
     const shuffledPortfolio = portfolio.sort(() => Math.random() - 0.5);
@@ -42,4 +74,6 @@ class Cards extends React.Component {
   }
 }
 
-export default Cards;
+const mapStateToProps = ({ genesis }) => ({ genesis });
+
+export default connect(mapStateToProps, { getPortfolio })(Cards);

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import { ModalRoute, ModalContainer } from 'react-router-modal';
@@ -7,6 +8,7 @@ import AppBar from './appbar/AppBar';
 import Cards from './cards/Cards';
 import NotFound from './notfound/NotFound';
 import Project from './project/Project';
+import store from '../redux/store';
 import './App.scss';
 
 class App extends React.Component {
@@ -20,22 +22,24 @@ class App extends React.Component {
       || projectPath.test(pathName);
 
     return (
-      <BrowserRouter>
-        <div className="App">
-          <Helmet>
-            <title>Genesis Mallorca Obtera</title>
-          </Helmet>
+      <Provider store={store}>
+        <BrowserRouter>
+          <div className="App">
+            <Helmet>
+              <title>Genesis Mallorca Obtera</title>
+            </Helmet>
 
-          <AppBar />
-          <Cards />
-          <ModalRoute path={aboutPath} parentPath={homePath} component={About} />
-          <ModalRoute path="/project/:id" parentPath={homePath} component={Project} />
-          {!correctPath
-            && <ModalRoute path={pathName} parentPath={homePath} component={NotFound} />
-          }
-          <ModalContainer />
-        </div>
-      </BrowserRouter>
+            <AppBar />
+            <Cards />
+            <ModalRoute path={aboutPath} parentPath={homePath} component={About} />
+            <ModalRoute path="/project/:id" parentPath={homePath} component={Project} />
+            {!correctPath
+              && <ModalRoute path={pathName} parentPath={homePath} component={NotFound} />
+            }
+            <ModalContainer />
+          </div>
+        </BrowserRouter>
+      </Provider>
     );
   }
 }

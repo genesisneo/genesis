@@ -9,7 +9,6 @@
   overflow: hidden;
   transition: box-shadow 0.25s ease-out;
   text-decoration: none;
-  transform: translate3d(0, 0, 0);
   will-change: box-shadow;
 
   &:hover {
@@ -28,7 +27,6 @@
     min-height: 144px;
     max-width: 320px;
     max-height: 160px;
-    transform: translate3d(0, 0, 0);
   }
 
   &__information {

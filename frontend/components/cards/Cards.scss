@@ -3,4 +3,9 @@
   flex-flow: row wrap;
   justify-content: center;
   align-items: stretch;
+
+  &__container {
+    width: 100vw;
+    height: 100vh;
+  }
 }

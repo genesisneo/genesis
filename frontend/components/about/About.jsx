@@ -1,25 +1,21 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import Loading from '../loading/Loading';
 import NotFound from '../notfound/NotFound';
+import { getProfile } from '../../redux/actions';
 import './About.scss';
 
 class About extends React.Component {
-  state = {
-    about: {},
-  };
-
   componentWillMount() {
     document.addEventListener('keydown', this.escapeFunction);
   }
 
   componentDidMount() {
-    fetch('/api/genesis')
-      .then(res => res.json())
-      .then((data) => {
-        this.setState({ about: data.about ? data.about : { error: 'Page not found' } });
-      });
+    // eslint-disable-next-line no-shadow
+    const { getProfile } = this.props;
+    getProfile();
   }
 
   componentWillUnmount() {
@@ -34,22 +30,21 @@ class About extends React.Component {
 
   render() {
     const {
-      about
-    } = this.state;
+      genesis: {
+        profile,
+        profile: {
+          content
+        }
+      }
+    } = this.props;
 
-    if (!Object.keys(about).length) {
+    if (!Object.keys(profile).length) {
       return <Loading />;
     }
 
-    if (about.error) {
+    if (profile.error) {
       return <NotFound />;
     }
-
-    const {
-      about: {
-        content = [],
-      }
-    } = this.state;
 
     return (
       <div className="About">
@@ -73,4 +68,6 @@ class About extends React.Component {
   }
 }
 
-export default About;
+const mapStateToProps = ({ genesis }) => ({ genesis });
+
+export default connect(mapStateToProps, { getProfile })(About);
