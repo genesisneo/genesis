@@ -6,7 +6,7 @@ import {
 } from './types';
 
 export const getPortfolio = () => async (dispatch) => {
-  const response = await axios.get('/api//genesis');
+  const response = await axios.get('/api/genesis');
   const { data } = response;
   dispatch({
     type: GET_PORTFOLIO,
@@ -15,7 +15,7 @@ export const getPortfolio = () => async (dispatch) => {
 };
 
 export const getProject = id => async (dispatch) => {
-  const response = await axios.get('/api//genesis');
+  const response = await axios.get('/api/genesis');
   const { data } = response;
   const item = data.portfolio.filter(items => items.id === parseInt(id, 10));
   dispatch({
@@ -25,7 +25,7 @@ export const getProject = id => async (dispatch) => {
 };
 
 export const getProfile = () => async (dispatch) => {
-  const response = await axios.get('/api//genesis');
+  const response = await axios.get('/api/genesis');
   const { data } = response;
   dispatch({
     type: GET_PROFILE,
