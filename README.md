@@ -1,8 +1,8 @@
 # Genesis Mallorca Obtera Personal Website
 
 <p align="center">
-    <img src="./frontend/static/images/genesis.jpg"><br><br>
-    A mobile friendly, minimal, modern, and performance focused react page.
+    <img src="./public/images/genesis.jpg"><br><br>
+    A mobile friendly, minimal, modern, performance & seo focused react page.
 </p>
 
 ---

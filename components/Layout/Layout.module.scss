@@ -1,0 +1,14 @@
+.Layout {
+  display: flex;
+  margin: 0 auto;
+  padding: 80px 8px 32px;
+  max-width: 1200px;
+  flex-flow: row wrap;
+  justify-content: center;
+  overflow: hidden;
+
+  @media (min-width: 769px) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}

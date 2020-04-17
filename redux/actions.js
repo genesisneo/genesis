@@ -1,0 +1,41 @@
+import axios from 'axios';
+import {
+  GET_PORTFOLIO,
+  GET_PROJECT,
+  GET_PROFILE,
+} from './types';
+
+export const getPortfolio = (domain) => async (dispatch) => {
+  const protocol = domain.indexOf('localhost') !== -1 ? 'http://' : 'https://';
+  const { data } = await axios.get(`${protocol}${domain}/api`);
+  return dispatch({
+    type: GET_PORTFOLIO,
+    payload: data.portfolio
+      ? data.portfolio.sort(() => Math.random() - 0.5)
+      : { error: 'Page not found' },
+  });
+};
+
+export const getProject = (domain, id) => async (dispatch) => {
+  const protocol = domain.indexOf('localhost') !== -1 ? 'http://' : 'https://';
+  const { data } = await axios.get(`${protocol}${domain}/api`);
+  const item = data.portfolio
+    .filter((items) => items.id === parseInt(id, 10));
+  return dispatch({
+    type: GET_PROJECT,
+    payload: item.length !== 0
+      ? item[0]
+      : { error: 'Page not found' },
+  });
+};
+
+export const getProfile = (domain) => async (dispatch) => {
+  const protocol = domain.indexOf('localhost') !== -1 ? 'http://' : 'https://';
+  const { data } = await axios.get(`${protocol}${domain}/api`);
+  return dispatch({
+    type: GET_PROFILE,
+    payload: data.about
+      ? data.about
+      : { error: 'Page not found' },
+  });
+};

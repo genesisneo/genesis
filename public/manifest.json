@@ -1,0 +1,40 @@
+{
+  "dir": "ltr",
+  "lang": "en-us",
+  "name": "Genesis Mallorca Obtera",
+  "short_name": "Genesis",
+  "description": "Project Designer and Developer",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "theme_color": "#333",
+  "background_color": "#3B3B3B",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/images/app/48x48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "/images/app/96x96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "/images/app/144x144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "/images/app/192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/app/512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

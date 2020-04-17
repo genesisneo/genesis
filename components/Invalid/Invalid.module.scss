@@ -1,0 +1,43 @@
+.Invalid {
+  display: block;
+  width: 100%;
+
+  &-title {
+    margin: 16px auto 32px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  &-description {
+    display: block;
+    color: var(--text-secondary);
+    font-size: 0.750rem;
+    letter-spacing: 0;
+  }
+
+  &-name {
+    display: block;
+    color: var(--color-white);
+    font-size: 1.500rem;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  &-image {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    max-width: 590px;
+    max-height: 390px;
+    background-color: var(--color-primary-dark);
+  }
+
+  &-message {
+    margin: 32px auto 16px;
+    color: var(--color-white);
+    text-align: center;
+  }
+}

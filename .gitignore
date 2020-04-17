@@ -1,4 +1,11 @@
-.DS_Store
-node_modules/
+# Directories
+
+.next/
 build/
-*.lock
+dist/
+node_modules/
+
+# Files
+
+.DS_Store
+.env

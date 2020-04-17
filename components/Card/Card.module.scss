@@ -1,0 +1,51 @@
+.Card {
+  display: flex;
+  margin: 0 0 16px;
+  padding: 0;
+  max-width: 384px;
+  box-sizing: border-box;
+
+  @media (min-width: 769px) {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  &-link {
+    display: block;
+    background-color: var(--color-white);
+    border-radius: 4px;
+    box-shadow: 0 1.6px 3.6px 0 rgba(0, 0, 0, 0.132), 0 0.3px 0.9px 0 rgba(0, 0, 0, 0.108);
+    color: var(--text-primary);
+    overflow: hidden;
+    text-decoration: none;
+  }
+
+  &-image {
+    display: inline-block;
+    min-width: 304px;
+    min-height: 152px;
+
+    @media (min-width: 769px) {
+      min-width: 384px;
+      min-height: 192px;
+    }
+  }
+
+  &-title {
+    display: flex;
+    margin: 16px 8px;
+    padding: 0;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (min-width: 769px) {
+      margin-left: 16px;
+      margin-right: 16px;
+    }
+  }
+
+  &-year {
+    color: var(--text-secondary);
+    font-size: 0.750rem;
+  }
+}

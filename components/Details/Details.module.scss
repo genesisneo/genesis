@@ -1,0 +1,129 @@
+.Details {
+  display: block;
+  width: 100%;
+
+  &-particleNetwork {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 240px;
+    z-index: 0;
+  }
+
+  &-title {
+    position: relative;
+    margin: 16px auto 32px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    z-index: 1;
+  }
+
+  &-description {
+    display: block;
+    color: var(--text-secondary);
+    font-size: 0.750rem;
+    letter-spacing: 0;
+  }
+
+  &-name {
+    display: block;
+    color: var(--color-white);
+    font-size: 1.500rem;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  &-avatar {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 128px;
+    height: 128px;
+    background-color: var(--color-primary-dark);
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  &-container {
+    position: relative;
+    display: flex;
+    margin: 32px auto 0;
+    background-color: var(--color-white);
+    border-radius: 4px;
+    box-shadow: 0 1.6px 3.6px 0 rgba(0, 0, 0, 0.132), 0 0.3px 0.9px 0 rgba(0, 0, 0, 0.108);
+    flex-wrap: wrap;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  &-information {
+    margin: 0 auto;
+    padding: 32px 32px 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    flex: 0 0 100%;
+
+    @media (min-width: 769px) {
+      padding: 32px;
+      max-width: 75%;
+      flex: 0 0 75%;
+    }
+  }
+
+  &-items {
+    margin: 16px auto;
+    padding: 0;
+  }
+
+  &-headings {
+    display: block;
+    color: var(--text-secondary);
+    font-size: 0.750rem;
+    letter-spacing: 0;
+    text-transform: uppercase;
+  }
+
+  &-body {
+    display: inline-block;
+    margin: 2px auto 8px;
+    text-decoration: none;
+  }
+
+  &-socialNetwork {
+    margin: 0 auto;
+    padding: 0 32px 32px;
+    max-width: 100%;
+    box-sizing: border-box;
+    flex: 0 0 100%;
+
+    @media (min-width: 769px) {
+      padding: 32px;
+      max-width: 25%;
+      flex: 0 0 25%;
+    }
+  }
+
+  &-socialLink {
+    display: block;
+    margin: 8px 8px 8px 0;
+    padding: 0 0 8px;
+    border-bottom: 1px solid var(--color-divider);
+    color: var(--color-primary);
+    text-decoration: none;
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+  &-socialIcon {
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+  }
+}
