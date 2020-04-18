@@ -1,4 +1,3 @@
-const { VERSION_HASH } = process.env;
 const {
   siteName,
   siteDescription,
@@ -6,13 +5,21 @@ const {
   imagePlaceholder,
 } = require('../config.json');
 
+// zeit system environment variables
+const processEnvNowGithubCommitSha = process.env.NOW_GITHUB_COMMIT_SHA;
+// custom environment variables
+const processEnvVersionHash = process.env.VERSION_HASH;
+const versionHash = processEnvNowGithubCommitSha
+  || processEnvVersionHash
+  || '75EZM9';
+
 const initialState = {
   global: {
     siteName,
     siteDescription,
     siteDomain,
     imagePlaceholder,
-    versionHash: VERSION_HASH || '75EZM9',
+    versionHash,
   },
   portfolio: [],
   profile: {},

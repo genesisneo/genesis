@@ -2,5 +2,8 @@
   display: block;
   width: 100%;
   background-color: var(--color-divider);
+  border: none;
+  color: var(--color-divider);
+  outline: none;
   overflow: hidden;
 }

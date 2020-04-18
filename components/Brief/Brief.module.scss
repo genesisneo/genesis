@@ -23,7 +23,7 @@
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
-    z-index: 1;
+    z-index: 2;
   }
 
   &-year {
@@ -48,7 +48,7 @@
     border-radius: 4px;
     box-shadow: 0 1.6px 3.6px 0 rgba(0, 0, 0, 0.132), 0 0.3px 0.9px 0 rgba(0, 0, 0, 0.108);
     overflow: hidden;
-    z-index: 1;
+    z-index: 2;
   }
 
   &-information {
