@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useEffect } from 'react';
 import Gallery from '../Gallery/Gallery';
 import styles from './Brief.module.scss';
@@ -41,16 +42,27 @@ export default ({
     });
   });
 
-  const renderChips = (arrayProps) => (
-    arrayProps.map((item, index) => {
-      const key = `${item}-${index}`;
-      return (
-        <span key={key} className={`${styles['Brief-chips']} ${title}`}>
-          {item}
-        </span>
-      );
-    })
-  );
+  const renderChips = (arrayProps) => {
+    const dynamicPath = arrayProps === technology
+      ? 'technology'
+      : 'tag';
+    return (
+      arrayProps.map((item, index) => {
+        const key = `${item}-${index}`;
+        return (
+          <Link
+            key={key}
+            href={`/${dynamicPath}/[key]`}
+            as={`/${dynamicPath}/${item}`}
+          >
+            <a className={`${styles['Brief-chips']} ${title}`}>
+              {item}
+            </a>
+          </Link>
+        );
+      })
+    );
+  };
 
   return (
     <div className={styles.Brief}>

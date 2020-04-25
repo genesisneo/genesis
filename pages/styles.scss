@@ -86,3 +86,33 @@ img {
     background-color: var(--color-accent);
   }
 }
+
+/* Tags & Technology */
+
+.Technology,
+.Tag {
+  &-title {
+    position: relative;
+    margin: 16px auto 32px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    z-index: 2;
+  }
+  
+  &-year {
+    display: block;
+    color: var(--text-secondary);
+    font-size: 0.750rem;
+    letter-spacing: 0;
+  }
+  
+  &-name {
+    display: block;
+    color: var(--color-white);
+    font-size: 1.500rem;
+    font-weight: 700;
+    line-height: 24px;
+  }
+}
