@@ -1,3 +1,5 @@
 User-Agent: *
-Allow: /api
+Sitemap: https://genesis.obtera.com/sitemap.xml
+Allow: /*
+Disallow: /api
 Disallow: /images
