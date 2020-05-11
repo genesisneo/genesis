@@ -5,7 +5,6 @@ const Invalid = ({
   code = 404,
   error = 'Page not found',
   global: {
-    versionHash,
     imagePlaceholder,
   },
 }) => (
@@ -19,7 +18,7 @@ const Invalid = ({
       loading="lazy"
       alt={error}
       src={imagePlaceholder}
-      data-src={`/images/error.jpg?v=${versionHash}`}
+      data-src="/images/error.jpg"
     />
     <p className={styles['Invalid-message']}>
       Sorry, we can&apos;t find that page. It might be an old link or maybe it moved.

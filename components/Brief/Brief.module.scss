@@ -83,10 +83,13 @@
 
   &-chips {
     margin: 2px 4px 2px 0;
-    padding: 4px 8px;
+    padding: 8px 16px;
     background-color: var(--color-accent);
     border-radius: 4px;
     color: var(--color-white);
-    text-transform: capitalize;
+    font-size: 0.750rem;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
   }
 }

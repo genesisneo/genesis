@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Device Offline</title>
@@ -52,13 +51,26 @@
         height: auto;
         max-width: 590px;
         max-height: 390px;
-        background-color: #232323;
       }
       .Offline-message {
         margin: 32px auto 16px;
         padding: 0 16px;
         color: #fff;
         text-align: center;
+      }
+      .Offline-button {
+        display: block;
+        margin: 0 auto 16px;
+        padding: 8px 16px;
+        background-color: #ff5252;
+        border: none;
+        border-radius: 4px;
+        color: #fff;
+        font-size: 0.750rem;
+        font-weight: 700;
+        line-height: 16px;
+        outline: none;
+        text-transform: uppercase;
       }
     </style>
   </head>
@@ -76,6 +88,12 @@
       <p class="Offline-message">
         This device is offline! Try refreshing this page once you got back online.
       </p>
+      <button
+        class="Offline-button"
+        onClick="location.reload()"
+      >
+        Reload Now!
+      </button>
     </div>
   </body>
 </html>

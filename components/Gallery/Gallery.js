@@ -17,7 +17,7 @@ const Gallery = ({
 
   const imageTag = ({ name, image }) => (
     <img
-      className={showSwiper ? 'swiper-lazy' : 'lazyload'}
+      className={`${styles['Gallery-image']} ${showSwiper ? 'swiper-lazy' : 'lazyload'}`}
       loading="lazy"
       alt={name}
       title={name}

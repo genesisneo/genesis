@@ -31,13 +31,6 @@ class MyApp extends App {
             <meta charSet="utf-8" />
             <meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1" />
 
-            {/* Icon */}
-            <link rel="icon" type="image/png" href="/favicon.png" />
-            <link rel="icon shortcut" type="image/png" href="/favicon.png" />
-
-            {/* Manifest */}
-            <link rel="manifest" href="/manifest.json" />
-
             {/* Font */}
             <link
               rel="stylesheet"
