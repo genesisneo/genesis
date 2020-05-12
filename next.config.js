@@ -1,7 +1,7 @@
 const webpack = require('webpack');
 
-// zeit system environment variables
-const processEnvNowGithubCommitSha = process.env.NOW_GITHUB_COMMIT_SHA;
+// vercel system environment variables
+const processEnvNowGithubCommitSha = process.env.VERCEL_GITHUB_COMMIT_SHA;
 // custom environment variables
 const processEnvVersionHash = process.env.VERSION_HASH;
 const versionHash = processEnvNowGithubCommitSha
