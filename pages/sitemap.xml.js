@@ -12,13 +12,13 @@ const sitemapXml = ({ portfolio }) => {
 
   portfolio.forEach((project) => {
     const {
-      id,
+      slug,
       technology: technologies,
       tags,
     } = project;
 
     // project
-    const projectUrl = `${siteDomain}/project/${id}`;
+    const projectUrl = `${siteDomain}/project/${slug}`;
     projectsXml += `
       <url>
         <loc>${projectUrl}</loc>

@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import styles from './Card.module.scss';
 
 const Card = ({
-  id,
+  slug,
   thumbnail,
   title,
   year,
@@ -28,10 +28,10 @@ const Card = ({
 
   return (
     <div className={styles.Card}>
-      <Link href="/project/[id]" as={`/project/${id}`}>
+      <Link href="/project/[slug]" as={`/project/${slug}`}>
         <a
           className={styles['Card-link']}
-          onClick={() => onClickHandle(title, `/project/${id}`)}
+          onClick={() => onClickHandle(title, `/project/${slug}`)}
         >
           <img
             className={`${styles['Card-image']} lazyload`}

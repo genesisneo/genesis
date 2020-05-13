@@ -35,13 +35,14 @@ class Index extends React.PureComponent {
           id,
           thumbnail,
           title,
+          slug,
           year,
         }) => (
           <Card
             key={id}
-            id={id}
             thumbnail={thumbnail}
             title={title}
+            slug={slug}
             year={year}
           />
         ))}

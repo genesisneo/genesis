@@ -26,7 +26,7 @@ RUN rm -rf /app/.git
 FROM node:13.13-alpine
 WORKDIR /app
 ARG COMMIT_HASH=docker
-ENV VERSION_HASH=$COMMIT_HASH
+ENV VERCEL_GITHUB_COMMIT_SHA=$COMMIT_HASH
 COPY --from=builder /app .
 EXPOSE 3000
 CMD yarn start

@@ -14,8 +14,8 @@ class Project extends React.PureComponent {
     query,
   }) => {
     const domain = req ? req.headers.host : window.location.host;
-    const { id } = query;
-    await store.dispatch(getProject(domain, id));
+    const { slug } = query;
+    await store.dispatch(getProject(domain, slug));
     return { isServer };
   };
 
@@ -28,8 +28,8 @@ class Project extends React.PureComponent {
       project,
       project: {
         error,
-        id,
         title,
+        slug,
         technology,
         description,
         year,
@@ -56,7 +56,7 @@ class Project extends React.PureComponent {
           {/* Facebook */}
           <meta property="og:title" content={title} />
           <meta property="og:description" content={`${description.substring(0, 157)}...`} />
-          <meta property="og:url" content={`${siteDomain}/project/${id}`} />
+          <meta property="og:url" content={`${siteDomain}/project/${slug}`} />
           <meta property="og:image" content={images[0]} />
           <meta property="og:image:secure_url" content={images[0]} />
 

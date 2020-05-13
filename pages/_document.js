@@ -2,10 +2,11 @@ import Document, { Head, Main, NextScript } from 'next/document';
 import getConfig from 'next/config';
 
 const {
-  publicRuntimeConfig: {
-    versionHash,
-  },
+  publicRuntimeConfig,
 } = getConfig();
+const versionHash = publicRuntimeConfig.versionHash.length > 5
+  ? publicRuntimeConfig.versionHash.substring(0, 5)
+  : publicRuntimeConfig.versionHash;
 
 export default class MyDocument extends Document {
   render() {

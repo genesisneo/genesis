@@ -4,7 +4,7 @@
   "license": "ISC",
   "browserslist": "defaults",
   "scripts": {
-    "dev": "VERSION_HASH=$(git rev-parse --short HEAD) next",
+    "dev": "VERCEL_GITHUB_COMMIT_SHA=$(git rev-parse --short HEAD) next",
     "build": "next build",
     "start": "next start",
     "lint": "eslint --ext js,jsx . && stylelint --syntax scss **/*.scss"

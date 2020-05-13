@@ -18,11 +18,11 @@ export const getPortfolio = (domain) => async (dispatch) => {
   });
 };
 
-export const getProject = (domain, id) => async (dispatch) => {
+export const getProject = (domain, slug) => async (dispatch) => {
   const protocol = domain.indexOf('localhost') !== -1 ? 'http://' : 'https://';
   const { data } = await axios.get(`${protocol}${domain}/api`);
   const item = data.portfolio
-    .filter((items) => items.id === parseInt(id, 10));
+    .filter((items) => items.slug === slug);
   return dispatch({
     type: GET_PROJECT,
     payload: item.length !== 0

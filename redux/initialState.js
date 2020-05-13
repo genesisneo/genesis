@@ -1,9 +1,7 @@
 import getConfig from 'next/config';
 
 const {
-  publicRuntimeConfig: {
-    versionHash,
-  },
+  publicRuntimeConfig,
 } = getConfig();
 const {
   siteName,
@@ -18,7 +16,9 @@ const initialState = {
     siteDescription,
     siteDomain,
     imagePlaceholder,
-    versionHash,
+    versionHash: publicRuntimeConfig.versionHash.length > 5
+      ? publicRuntimeConfig.versionHash.substring(0, 5)
+      : publicRuntimeConfig.versionHash,
   },
   portfolio: [],
   profile: {},

@@ -41,7 +41,7 @@ class Schema extends React.PureComponent {
           "https://dribbble.com/genesis_neo",
           "https://stackoverflow.com/users/7702792/neo-genesis",
           "https://mixer.com/genesis_neo",
-          "https://obtera.com/author/genesis",
+          "https://obtera.com/author/genesis"
         ]
       }
     `;

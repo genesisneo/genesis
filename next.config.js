@@ -2,11 +2,7 @@ const webpack = require('webpack');
 
 // vercel system environment variables
 const processEnvNowGithubCommitSha = process.env.VERCEL_GITHUB_COMMIT_SHA;
-// custom environment variables
-const processEnvVersionHash = process.env.VERSION_HASH;
-const versionHash = processEnvNowGithubCommitSha
-  || processEnvVersionHash
-  || '75EZM9';
+const versionHash = processEnvNowGithubCommitSha || '75EZM9';
 
 module.exports = {
   publicRuntimeConfig: {
