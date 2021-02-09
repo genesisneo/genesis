@@ -5,15 +5,11 @@ import Details from '../components/Details/Details';
 import Invalid from '../components/Invalid/Invalid';
 
 class About extends React.PureComponent {
-  static getInitialProps = async ({
-    req,
-    store,
-    isServer,
-  }) => {
+  static async getInitialProps({ req, store, isServer }) {
     const domain = req ? req.headers.host : window.location.host;
     await store.dispatch(getProfile(domain));
     return { isServer };
-  };
+  }
 
   render() {
     const {

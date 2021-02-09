@@ -1,4 +1,9 @@
-import Document, { Head, Main, NextScript } from 'next/document';
+import Document, {
+  Html,
+  Head,
+  Main,
+  NextScript,
+} from 'next/document';
 import getConfig from 'next/config';
 
 const {
@@ -11,7 +16,7 @@ const versionHash = publicRuntimeConfig.versionHash.length > 5
 export default class MyDocument extends Document {
   render() {
     return (
-      <html lang="en">
+      <Html lang="en">
         <Head>
 
           {/* Icon */}
@@ -85,7 +90,7 @@ export default class MyDocument extends Document {
           />
 
         </body>
-      </html>
+      </Html>
     );
   }
 }

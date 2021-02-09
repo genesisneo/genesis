@@ -27,7 +27,7 @@
         },
         {
           "name": "Flickr",
-          "url": "https://flickr.com/photos/genesis_neo"
+          "url": "https://www.flickr.com/photos/genesis_neo/albums"
         },
         {
           "name": "YouTube",
@@ -42,10 +42,6 @@
           "url": "https://stackoverflow.com/users/7702792/neo-genesis"
         },
         {
-          "name": "Mixer",
-          "url": "https://mixer.com/genesis_neo"
-        },
-        {
           "name": "Blog",
           "url": "https://obtera.com/author/genesis"
         }
@@ -58,561 +54,1585 @@
       "thumbnail": "/images/portfolio/ascendas.jpg",
       "title": "Ascendas",
       "slug": "ascendas",
-      "technology": ["aftereffects", "audition", "autodesk", "flash", "photoshop", "sketchup"],
       "description": "Also known as Accralaw Tower. An I.T. building located at Fort Bonifacio Global City, Taguig, Philippines. The presentation includes project location, design concept, building features, sun study, wind direction, floor plans, sections, elevations, perspectives, and walkthrough animation.",
       "year": 2007,
-      "images": ["/images/portfolio/ascendas-1.jpg"],
-      "tags": ["animation", "architecture", "presentation"]
+      "images": [
+        "/images/portfolio/ascendas-1.jpg"
+      ],
+      "technology": [
+        "aftereffects",
+        "audition",
+        "autodesk",
+        "flash",
+        "photoshop",
+        "sketchup",
+        "actionscript"
+      ],
+      "tags": [
+        "animation",
+        "architecture",
+        "presentation",
+        "real-estate",
+        "building",
+        "engineering"
+      ]
     },
     {
       "id": 2,
       "thumbnail": "/images/portfolio/aseana.jpg",
       "title": "Aseana",
       "slug": "aseana",
-      "technology": ["audition", "autodesk", "flash", "photoshop", "premiere", "sketchup"],
       "description": "A simple flash interactive presentation for the proposed building for Aseana Philippines. Aseana City is a monumental real estate undertaking. Aseana City's vision of turning water into land and land into life was realized through the successful partnership of Filipino, Belgian, and Japanese corporations.",
       "year": 2010,
-      "images": ["/images/portfolio/aseana-1.jpg"],
-      "tags": ["animation", "architecture", "presentation"]
+      "images": [
+        "/images/portfolio/aseana-1.jpg"
+      ],
+      "technology": [
+        "audition",
+        "autodesk",
+        "flash",
+        "photoshop",
+        "premiere",
+        "sketchup",
+        "actionscript"
+      ],
+      "tags": [
+        "animation",
+        "architecture",
+        "presentation",
+        "real-estate",
+        "building",
+        "engineering"
+      ]
     },
     {
       "id": 3,
       "thumbnail": "/images/portfolio/avidacentrio.jpg",
       "title": "Avida Tower Centrio",
       "slug": "avida-tower-centrio",
-      "technology": ["audition", "autodesk", "flash", "illustrator", "sketchup"],
       "description": "Avida Tower Centrio is a residential condominium building in Cagayan de Oro City, Philippines. Situated at the back of the under-construction mall and hotel, the Centrio. This perspective project of Ayala Land is proposed to be a 24-story tower and construction will start in September 2012. By that time, the Mall and Hotel are already completed.",
       "year": 2011,
-      "images": ["/images/portfolio/avidacentrio-1.jpg"],
-      "tags": ["animation", "architecture", "presentation"]
+      "images": [
+        "/images/portfolio/avidacentrio-1.jpg"
+      ],
+      "technology": [
+        "audition",
+        "autodesk",
+        "flash",
+        "illustrator",
+        "sketchup",
+        "actionscript"
+      ],
+      "tags": [
+        "animation",
+        "architecture",
+        "presentation",
+        "real-estate",
+        "building",
+        "engineering"
+      ]
     },
     {
       "id": 4,
       "thumbnail": "/images/portfolio/avidatowers.jpg",
       "title": "Avida Towers",
       "slug": "avida-towers",
-      "technology": ["autodesk", "flash", "photoshop", "premiere", "sketchup"],
       "description": "An interactive flash presentation of 3 projects of Avida in the Philippines. The Avida Tower Villareal in Cebu, Avida Centrio in Cagayan De Oro, and the Avida Tower in Davao. The presentation includes project location, design concept, building features, sun study, wind direction, floor plans, sections, elevations, perspectives, and walkthrough animation.",
       "year": 2011,
-      "images": ["/images/portfolio/avidatowers-1.jpg"],
-      "tags": ["animation", "architecture", "presentation"]
+      "images": [
+        "/images/portfolio/avidatowers-1.jpg"
+      ],
+      "technology": [
+        "autodesk",
+        "flash",
+        "photoshop",
+        "premiere",
+        "sketchup",
+        "actionscript"
+      ],
+      "tags": [
+        "animation",
+        "architecture",
+        "presentation",
+        "real-estate",
+        "building",
+        "engineering"
+      ]
     },
     {
       "id": 5,
       "thumbnail": "/images/portfolio/avidavertisnorth.jpg",
       "title": "Avida Vertis North",
       "slug": "avida-vertis-north",
-      "technology": ["audition", "autodesk", "flash", "illustrator", "sketchup"],
       "description": "Interactive presentation for Avida Tower Vertis North, located in Quezon City, Philippines. The presentation includes project location, design concept, building features, sun study, wind direction, floor plans, sections, elevations, perspectives, walkthrough animation, area tabulation, and computation.",
       "year": 2010,
-      "images": ["/images/portfolio/avidavertisnorth-1.jpg"],
-      "tags": ["animation", "architecture", "presentation"]
+      "images": [
+        "/images/portfolio/avidavertisnorth-1.jpg"
+      ],
+      "technology": [
+        "audition",
+        "autodesk",
+        "flash",
+        "illustrator",
+        "sketchup",
+        "actionscript"
+      ],
+      "tags": [
+        "animation",
+        "architecture",
+        "presentation",
+        "real-estate",
+        "building",
+        "engineering"
+      ]
     },
     {
       "id": 6,
       "thumbnail": "/images/portfolio/dedon.jpg",
       "title": "Dedon Cebu",
       "slug": "dedon-cebu",
-      "technology": ["audition", "autodesk", "flash", "photoshop", "premiere", "sketchup"],
       "description": "Flash interactive presentation by G&W Architects for Dedon Philippines. Dedon revolutionized the business of outdoor furniture and owned land in Cebu, Philippines. The presentation includes building concepts, floor plans, elevations, sections, and perspectives.",
       "year": 2006,
-      "images": ["/images/portfolio/dedon-1.jpg"],
-      "tags": ["animation", "architecture", "presentation"]
+      "images": [
+        "/images/portfolio/dedon-1.jpg"
+      ],
+      "technology": [
+        "audition",
+        "autodesk",
+        "flash",
+        "photoshop",
+        "premiere",
+        "sketchup",
+        "actionscript"
+      ],
+      "tags": [
+        "animation",
+        "architecture",
+        "presentation",
+        "retail",
+        "store",
+        "factory",
+        "engineering"
+      ]
     },
     {
       "id": 7,
       "thumbnail": "/images/portfolio/etongreencitytower.jpg",
       "title": "Eton Green Tower",
       "slug": "eton-green-tower",
-      "technology": ["aftereffects", "audition", "autodesk", "flash", "photoshop", "sketchup"],
       "description": "A simple interactive presentation for Ayala's Eton City located at the heart of Makati, Philippines. The presentation includes building concept, sun study, wind direction, floor plans, sections, elevations, perspectives, walkthrough, and area tabulation.",
       "year": 2009,
-      "images": ["/images/portfolio/etongreencitytower-1.jpg"],
-      "tags": ["animation", "architecture", "presentation"]
+      "images": [
+        "/images/portfolio/etongreencitytower-1.jpg"
+      ],
+      "technology": [
+        "aftereffects",
+        "audition",
+        "autodesk",
+        "flash",
+        "photoshop",
+        "sketchup",
+        "actionscript"
+      ],
+      "tags": [
+        "animation",
+        "architecture",
+        "presentation",
+        "real-estate",
+        "building",
+        "engineering"
+      ]
     },
     {
       "id": 8,
       "thumbnail": "/images/portfolio/etonricogen.jpg",
       "title": "Eton Ricogen",
       "slug": "eton-ricogen",
-      "technology": ["aftereffects", "audition", "autodesk", "flash", "photoshop", "sketchup"],
       "description": "Interactive flash presentation for Ayala's Eton project the Eton Ricogen building located in Manila, Philippines. The presentation will be used by the marketing side and included by the concept of the proposed building, floor plans, elevations, perspectives, and 3D animation exported from Autodesk 3D Studio Max by Arch. Ryan Saldua.",
       "year": 2011,
-      "images": ["/images/portfolio/etonricogen-1.jpg"],
-      "tags": ["animation", "architecture", "presentation"]
+      "images": [
+        "/images/portfolio/etonricogen-1.jpg"
+      ],
+      "technology": [
+        "aftereffects",
+        "audition",
+        "autodesk",
+        "flash",
+        "photoshop",
+        "sketchup",
+        "actionscript"
+      ],
+      "tags": [
+        "animation",
+        "architecture",
+        "presentation",
+        "real-estate",
+        "building",
+        "engineering"
+      ]
     },
     {
       "id": 9,
       "thumbnail": "/images/portfolio/grandhampton.jpg",
       "title": "Grand Hamptons",
       "slug": "grand-hamptons",
-      "technology": ["autodesk", "flash", "photoshop", "sketchup"],
       "description": "The fourth Build To Own projects by G&W Architects. It is the fourth condominium providing a corner view on all sides for each unit in Fort Bonifacio Global City, Philippines, Philippines. Sandwich by Manila Golf and Crescent Park view. Build To Own system is building your home at a direct cost by eliminating middle man developers, a non-project related add on costs.",
       "year": 2006,
-      "images": ["/images/portfolio/grandhampton-1.jpg", "/images/portfolio/grandhampton-2.jpg", "/images/portfolio/grandhampton-3.jpg"],
-      "tags": ["animation", "architecture", "presentation", "print", "web"]
+      "images": [
+        "/images/portfolio/grandhampton-1.jpg",
+        "/images/portfolio/grandhampton-2.jpg",
+        "/images/portfolio/grandhampton-3.jpg"
+      ],
+      "technology": [
+        "css",
+        "html",
+        "javascript",
+        "autodesk",
+        "flash",
+        "photoshop",
+        "sketchup",
+        "actionscript"
+      ],
+      "tags": [
+        "animation",
+        "architecture",
+        "presentation",
+        "print",
+        "web",
+        "real-estate",
+        "building",
+        "build-to-own",
+        "engineering"
+      ]
     },
     {
       "id": 10,
       "thumbnail": "/images/portfolio/gwarchitects.jpg",
       "title": "G&W Architects",
       "slug": "gw-architects",
-      "technology": ["css", "flash", "html", "photoshop", "sketchup"],
       "description": "G&W Architects, Engineers is a professional and full-service organization engaged in project development consultancy, architectural and engineering design, construction supervision and management services. Founded in 1971, G&W has grown steadily but dramatically through the years under its maiden name, Gilbert C. Yu and Willie C. Yu Architects and Associates.",
       "year": 2006,
-      "images": ["/images/portfolio/gwarchitects-1.jpg", "/images/portfolio/gwarchitects-2.jpg"],
-      "tags": ["animation", "architecture", "presentation", "web"]
+      "images": [
+        "/images/portfolio/gwarchitects-1.jpg",
+        "/images/portfolio/gwarchitects-2.jpg"
+      ],
+      "technology": [
+        "css",
+        "flash",
+        "html",
+        "javascript",
+        "photoshop",
+        "sketchup",
+        "actionscript"
+      ],
+      "tags": [
+        "animation",
+        "architecture",
+        "presentation",
+        "web",
+        "services",
+        "engineering"
+      ]
     },
     {
       "id": 11,
       "thumbnail": "/images/portfolio/jnj.jpg",
       "title": "Johnson & Johnson",
       "slug": "johnson-johnson",
-      "technology": ["aftereffects", "audition", "autodesk", "flash", "photoshop", "sketchup"],
       "description": "Interactive flash presentation of G&W Architects proposed building for Johnson & Johnson Philippines. The presentation includes project location, design concept, building features, sun study, wind direction, floor plans, sections, elevations, perspectives, walkthrough animation, area tabulation, and computation.",
       "year": 2009,
-      "images": ["/images/portfolio/jnj-1.jpg"],
-      "tags": ["animation", "architecture", "presentation"]
+      "images": [
+        "/images/portfolio/jnj-1.jpg"
+      ],
+      "technology": [
+        "aftereffects",
+        "audition",
+        "autodesk",
+        "flash",
+        "photoshop",
+        "sketchup",
+        "actionscript"
+      ],
+      "tags": [
+        "animation",
+        "architecture",
+        "presentation",
+        "retail",
+        "store",
+        "factory",
+        "engineering"
+      ]
     },
     {
       "id": 12,
       "thumbnail": "/images/portfolio/klaveness.jpg",
       "title": "Torvald Klaveness Group",
       "slug": "torvald-klaveness-group",
-      "technology": ["audition", "autodesk", "flash", "illustrator", "photoshop", "sketchup"],
       "description": "Interactive flash presentation for Torvald Klaveness Group. The presentation will be used by the marketing side and included by the concept of the proposed building, floor plans, elevations, perspectives, and 3D animation exported from Autodesk 3D Studio Max by Arch. Ryan Saldua.",
       "year": 2007,
-      "images": ["/images/portfolio/klaveness-1.jpg"],
-      "tags": ["animation", "architecture", "presentation"]
+      "images": [
+        "/images/portfolio/klaveness-1.jpg"
+      ],
+      "technology": [
+        "audition",
+        "autodesk",
+        "flash",
+        "illustrator",
+        "photoshop",
+        "sketchup",
+        "actionscript"
+      ],
+      "tags": [
+        "animation",
+        "architecture",
+        "presentation",
+        "retail",
+        "real-estate",
+        "build-to-own",
+        "engineering"
+      ]
     },
     {
       "id": 13,
       "thumbnail": "/images/portfolio/majestic.jpg",
       "title": "Majestic Hotel",
       "slug": "majestic-hotel",
-      "technology": ["audition", "autodesk", "flash", "photoshop", "sketchup"],
       "description": "An interactive touch screen presentation for the proposed eighth Build To Own project. The presentation includes information regarding the proposed project, project location, rooms, floor plans, amenities, and perspectives. Build To Own system is building your home at direct cost by eliminating middle man developer's a non-project related add on costs.",
       "year": 2009,
-      "images": ["/images/portfolio/majestic-1.jpg"],
-      "tags": ["animation", "architecture", "presentation"]
+      "images": [
+        "/images/portfolio/majestic-1.jpg"
+      ],
+      "technology": [
+        "audition",
+        "autodesk",
+        "flash",
+        "photoshop",
+        "sketchup",
+        "actionscript"
+      ],
+      "tags": [
+        "animation",
+        "architecture",
+        "presentation",
+        "real-estate",
+        "build-to-own",
+        "building",
+        "engineering"
+      ]
     },
     {
       "id": 14,
       "thumbnail": "/images/portfolio/palmdale.jpg",
       "title": "Palm Dale Heights",
       "slug": "palm-dale-heights",
-      "technology": ["autodesk", "flash", "photoshop", "premiere", "sketchup"],
       "description": "Simple interactive flash presentation for Palm Dale Heights in Quezon City, Philippines. The presentation is used for marketing and includes floor plans, sections, elevations, amenities, and a simple 3D animation exported from Google Sketchup by Arch. Nicoy Delos Reyes.",
       "year": 2008,
-      "images": ["/images/portfolio/palmdale-1.jpg"],
-      "tags": ["animation", "architecture", "presentation"]
+      "images": [
+        "/images/portfolio/palmdale-1.jpg"
+      ],
+      "technology": [
+        "autodesk",
+        "flash",
+        "photoshop",
+        "premiere",
+        "sketchup",
+        "actionscript"
+      ],
+      "tags": [
+        "animation",
+        "architecture",
+        "presentation",
+        "real-estate",
+        "building",
+        "engineering"
+      ]
     },
     {
       "id": 15,
       "thumbnail": "/images/portfolio/sapphire.jpg",
       "title": "The Sapphire Residences",
       "slug": "the-sapphire-residences",
-      "technology": ["autodesk", "flash", "photoshop", "premiere", "sketchup"],
       "description": "The fifth Build To Own projects by G&W Architects. It is the fifth condominium providing a corner view on all sides for each unit in Fort Bonifacio Global City, Philippines. Sandwich by Manila Golf and Crescent Park view. Build To Own system is building your home at a direct cost by eliminating middle man developers, a non-project related add on costs.",
       "year": 2006,
-      "images": ["/images/portfolio/sapphire-1.jpg", "/images/portfolio/sapphire-2.jpg", "/images/portfolio/sapphire-3.jpg", "/images/portfolio/sapphire-4.jpg"],
-      "tags": ["animation", "architecture", "identity", "presentation", "print", "web"]
+      "images": [
+        "/images/portfolio/sapphire-1.jpg",
+        "/images/portfolio/sapphire-2.jpg",
+        "/images/portfolio/sapphire-3.jpg",
+        "/images/portfolio/sapphire-4.jpg"
+      ],
+      "technology": [
+        "css",
+        "html",
+        "javascript",
+        "autodesk",
+        "flash",
+        "photoshop",
+        "premiere",
+        "sketchup",
+        "actionscript"
+      ],
+      "tags": [
+        "animation",
+        "architecture",
+        "identity",
+        "presentation",
+        "print",
+        "web",
+        "real-estate",
+        "building",
+        "build-to-own",
+        "engineering"
+      ]
     },
     {
       "id": 16,
       "thumbnail": "/images/portfolio/songlim.jpg",
       "title": "Songlim Philippines",
       "slug": "songlim-philippines",
-      "technology": ["audition", "autodesk", "flash", "photoshop", "sketchup"],
       "description": "Interactive flash presentation for Songlim. A Korean company that owned land in Bataan, Philippines. The presentation includes project location, sun study, building concept, floor plans, elevations, perspectives, and a walkthrough animation of the proposed design on the land.",
       "year": 2007,
-      "images": ["/images/portfolio/songlim-1.jpg"],
-      "tags": ["animation", "architecture", "presentation"]
+      "images": [
+        "/images/portfolio/songlim-1.jpg"
+      ],
+      "technology": [
+        "audition",
+        "autodesk",
+        "flash",
+        "photoshop",
+        "sketchup",
+        "actionscript"
+      ],
+      "tags": [
+        "animation",
+        "architecture",
+        "presentation",
+        "real-estate",
+        "building",
+        "engineering"
+      ]
     },
     {
       "id": 17,
       "thumbnail": "/images/portfolio/titan.jpg",
       "title": "Titan Dragon Property",
       "slug": "titan-dragon-property",
-      "technology": ["audition", "autodesk", "flash", "photoshop", "sketchup"],
       "description": "Interactive flash presentation of G&W Architects proposed building for Titan Dragon Property in Quezon City, Philippines. The presentation includes project location, design concept, building features, sun study, wind direction, floor plans, sections, elevations, perspectives, walkthrough animation, area tabulation, and computation.",
       "year": 2010,
-      "images": ["/images/portfolio/titan-1.jpg"],
-      "tags": ["animation", "architecture", "presentation"]
+      "images": [
+        "/images/portfolio/titan-1.jpg"
+      ],
+      "technology": [
+        "audition",
+        "autodesk",
+        "flash",
+        "photoshop",
+        "sketchup",
+        "actionscript"
+      ],
+      "tags": [
+        "animation",
+        "architecture",
+        "presentation",
+        "real-estate",
+        "building",
+        "engineering"
+      ]
     },
     {
       "id": 18,
       "thumbnail": "/images/portfolio/widus.jpg",
       "title": "Widus International Leisure",
       "slug": "widus-international-leisure",
-      "technology": ["aftereffects", "audition", "autodesk", "flash", "photoshop", "sketchup"],
       "description": "Interactive flash presentation for Widus International. The presentation includes project location, sun study, wind directions, building concept, sections, elevations, perspectives, and simple 3D animation of the project.",
       "year": 2008,
-      "images": ["/images/portfolio/widus-1.jpg"],
-      "tags": ["animation", "architecture", "presentation"]
+      "images": [
+        "/images/portfolio/widus-1.jpg"
+      ],
+      "technology": [
+        "aftereffects",
+        "audition",
+        "autodesk",
+        "flash",
+        "photoshop",
+        "sketchup",
+        "actionscript"
+      ],
+      "tags": [
+        "animation",
+        "architecture",
+        "presentation",
+        "real-estate",
+        "building",
+        "engineering"
+      ]
     },
     {
       "id": 19,
       "thumbnail": "/images/portfolio/xavier.jpg",
       "title": "Xavier Aurora",
       "slug": "xavier-aurora",
-      "technology": ["aftereffects", "audition", "autodesk", "flash", "photoshop", "sketchup"],
       "description": "A fully animated interactive presentation export from Google Sketchup by Arch. Ryan Saldua. The presentation includes building concept, sun study, wind direction, floor plans, sections, elevations, perspectives, and 3D animation.",
       "year": 2008,
-      "images": ["/images/portfolio/xavier-1.jpg"],
-      "tags": ["animation", "architecture", "presentation"]
+      "images": [
+        "/images/portfolio/xavier-1.jpg"
+      ],
+      "technology": [
+        "aftereffects",
+        "audition",
+        "autodesk",
+        "flash",
+        "photoshop",
+        "sketchup",
+        "actionscript"
+      ],
+      "tags": [
+        "animation",
+        "architecture",
+        "presentation",
+        "education",
+        "learning",
+        "building",
+        "engineering",
+        "school",
+        "university"
+      ]
     },
     {
       "id": 20,
       "thumbnail": "/images/portfolio/bluesapphire.jpg",
       "title": "Blue Sapphire Residences",
       "slug": "blue-sapphire-residences",
-      "technology": ["autodesk", "css", "flash", "html", "photoshop", "sketchup"],
       "description": "The sixth Build To Own projects by G&W Architects. It is the sixth condominium providing a corner view on all sides for each unit in Fort Bonifacio Global City, Philippines. Sandwich by Manila Golf and Crescent Park view. Build To Own system is building your home at a direct cost by eliminating middle man developers, a non-project related add on costs.",
       "year": 2007,
-      "images": ["/images/portfolio/bluesapphire-1.jpg", "/images/portfolio/bluesapphire-2.jpg", "/images/portfolio/bluesapphire-3.jpg"],
-      "tags": ["animation", "architecture", "identity", "print", "web"]
+      "images": [
+        "/images/portfolio/bluesapphire-1.jpg",
+        "/images/portfolio/bluesapphire-2.jpg",
+        "/images/portfolio/bluesapphire-3.jpg"
+      ],
+      "technology": [
+        "autodesk",
+        "css",
+        "flash",
+        "html",
+        "javascript",
+        "photoshop",
+        "sketchup",
+        "actionscript"
+      ],
+      "tags": [
+        "animation",
+        "architecture",
+        "identity",
+        "print",
+        "web",
+        "real-estate",
+        "building",
+        "engineering"
+      ]
     },
     {
       "id": 21,
       "thumbnail": "/images/portfolio/bto.jpg",
       "title": "Build To Own System",
       "slug": "build-to-own-system",
-      "technology": ["autodesk", "css", "flash", "html", "photoshop", "sketchup"],
       "description": "Build To Own System is a construction industry initiated development led by G&W Architects, that build your home at direct cost by eliminating middle man developer's a non-project related add on costs, while at the same time giving homeowners unprecedented protection through the involvement of a trustee bank.",
       "year": 2008,
-      "images": ["/images/portfolio/bto-1.jpg"],
-      "tags": ["animation", "architecture", "web"]
+      "images": [
+        "/images/portfolio/bto-1.jpg"
+      ],
+      "technology": [
+        "autodesk",
+        "css",
+        "flash",
+        "html",
+        "javascript",
+        "photoshop",
+        "sketchup",
+        "actionscript"
+      ],
+      "tags": [
+        "animation",
+        "architecture",
+        "web",
+        "real-estate",
+        "building",
+        "build-to-own",
+        "engineering"
+      ]
     },
     {
       "id": 22,
       "thumbnail": "/images/portfolio/crescentpark.jpg",
       "title": "Crescent Park Residences",
       "slug": "crescent-park-residences",
-      "technology": ["autodesk", "css", "flash", "html", "photoshop", "sketchup"],
       "description": "The seventh Build To Own projects by G&W Architects. It is the seventh condominium providing a corner view on all sides for each unit in Fort Bonifacio Global City, Philippines. Sandwich by Manila Golf and Crescent Park view. Build To Own system is building your home at a direct cost by eliminating middle man developers, a non-project related add on costs.",
       "year": 2007,
-      "images": ["/images/portfolio/crescentpark-1.jpg", "/images/portfolio/crescentpark-2.jpg", "/images/portfolio/crescentpark-3.jpg"],
-      "tags": ["animation", "architecture", "identity", "print", "web"]
+      "images": [
+        "/images/portfolio/crescentpark-1.jpg",
+        "/images/portfolio/crescentpark-2.jpg",
+        "/images/portfolio/crescentpark-3.jpg"
+      ],
+      "technology": [
+        "autodesk",
+        "css",
+        "flash",
+        "html",
+        "javascript",
+        "photoshop",
+        "sketchup",
+        "actionscript"
+      ],
+      "tags": [
+        "animation",
+        "architecture",
+        "identity",
+        "print",
+        "web",
+        "real-estate",
+        "building",
+        "build-to-own",
+        "engineering"
+      ]
     },
     {
       "id": 23,
       "thumbnail": "/images/portfolio/hamptons.jpg",
       "title": "Hamptons Residences",
       "slug": "hamptons-residences",
-      "technology": ["autodesk", "css", "flash", "html", "photoshop", "sketchup"],
       "description": "The third Build To Own projects by G&W Architects. It is the third condominium providing a corner view on all sides for each unit in Fort Bonifacio Global City, Philippines. Sandwich by Manila Golf and Crescent Park view. Build To Own system is building your home at a direct cost by eliminating middle man developers, a non-project related add on costs.",
       "year": 2006,
-      "images": ["/images/portfolio/hamptons-1.jpg"],
-      "tags": ["animation", "architecture", "web"]
+      "images": [
+        "/images/portfolio/hamptons-1.jpg"
+      ],
+      "technology": [
+        "autodesk",
+        "css",
+        "flash",
+        "html",
+        "javascript",
+        "photoshop",
+        "sketchup",
+        "actionscript"
+      ],
+      "tags": [
+        "animation",
+        "architecture",
+        "web",
+        "real-estate",
+        "building",
+        "build-to-own",
+        "engineering"
+      ]
     },
     {
       "id": 24,
       "thumbnail": "/images/portfolio/kabillion.jpg",
       "title": "Kabillion",
       "slug": "kabillion",
-      "technology": ["css", "html", "photoshop"],
       "description": "Kabillion is the first multi-platform kid's network built around today's hottest TV audience viewing trends, broadband, and Video on Demand. From Comcast cable and television's top kids' program producers. It's not just a show, it's what you want when you want it.",
       "year": 2004,
-      "images": ["/images/portfolio/kabillion-1.jpg"],
-      "tags": ["animation", "entertainment", "web"]
+      "images": [
+        "/images/portfolio/kabillion-1.jpg"
+      ],
+      "technology": [
+        "css",
+        "html",
+        "jquery",
+        "javascript",
+        "photoshop",
+        "illustrator"
+      ],
+      "tags": [
+        "animation",
+        "entertainment",
+        "web",
+        "family",
+        "kids",
+        "gaming",
+        "subscription"
+      ]
     },
     {
       "id": 25,
       "thumbnail": "/images/portfolio/kensington.jpg",
       "title": "Kensington Place",
       "slug": "kensington-place",
-      "technology": ["autodesk", "css", "flash", "html", "photoshop", "sketchup"],
       "description": "The second Build To Own projects by G&W Architects. It is the second condominium providing a corner view on all sides for each unit in Fort Bonifacio Global City, Philippines. Sandwich by Manila Golf and Crescent Park view. Build To Own system is building your home at a direct cost by eliminating middle man developers, a non-project related add on costs.",
       "year": 2008,
-      "images": ["/images/portfolio/kensington-1.jpg"],
-      "tags": ["animation", "architecture", "web"]
+      "images": [
+        "/images/portfolio/kensington-1.jpg"
+      ],
+      "technology": [
+        "autodesk",
+        "css",
+        "flash",
+        "html",
+        "javascript",
+        "photoshop",
+        "sketchup",
+        "actionscript"
+      ],
+      "tags": [
+        "animation",
+        "architecture",
+        "web",
+        "real-estate",
+        "building",
+        "build-to-own",
+        "engineering"
+      ]
     },
     {
       "id": 26,
       "thumbnail": "/images/portfolio/lavidaverde.jpg",
       "title": "La Vida Verde",
       "slug": "la-vida-verde",
-      "technology": ["css", "html", "photoshop"],
       "description": "La Vida Verde is a furniture retail company specializing in modern contemporary designs. Selling the best quality furniture sourced out from Asia and North America. They also offer a lifetime service to their valued customers.",
       "year": 2011,
-      "images": ["/images/portfolio/lavidaverde-1.jpg"],
-      "tags": ["furniture", "retail", "store", "web"]
+      "images": [
+        "/images/portfolio/lavidaverde-1.jpg"
+      ],
+      "technology": [
+        "css",
+        "html",
+        "javascript",
+        "jquery",
+        "photoshop",
+        "illustrator"
+      ],
+      "tags": [
+        "furniture",
+        "retail",
+        "store",
+        "web",
+        "e-commerce"
+      ]
     },
     {
       "id": 27,
       "thumbnail": "/images/portfolio/penhurst.jpg",
       "title": "Penhurst Parkplace",
       "slug": "penhurst-parkplace",
-      "technology": ["autodesk", "css", "flash", "html", "photoshop", "sketchup"],
       "description": "The first Build To Own projects by G&W Architects. It is the first condominium providing a corner view on all sides for each unit in Fort Bonifacio Global City, Philippines. Sandwich by Manila Golf and Crescent Park view. Build To Own system is building your home at a direct cost by eliminating middle man developers, a non-project related add on costs.",
       "year": 2008,
-      "images": ["/images/portfolio/penhurst-1.jpg"],
-      "tags": ["animation", "architecture", "web"]
+      "images": [
+        "/images/portfolio/penhurst-1.jpg"
+      ],
+      "technology": [
+        "autodesk",
+        "css",
+        "flash",
+        "html",
+        "javascript",
+        "photoshop",
+        "sketchup",
+        "actionscript"
+      ],
+      "tags": [
+        "animation",
+        "architecture",
+        "web",
+        "real-estate",
+        "building",
+        "build-to-own",
+        "engineering"
+      ]
     },
     {
       "id": 28,
       "thumbnail": "/images/portfolio/vanarch.jpg",
       "title": "Vanarch",
       "slug": "vanarch",
-      "technology": ["autodesk", "css", "flash", "html", "photoshop", "sketchup"],
       "description": "Vanarch is a collaboration of young and upcoming talented architects and designers. After gaining significant experience with well-known firms in the region, the company was established in 2007 by Glenn Fredrick T. Khu and Ryan L. Saldua. They provide fresh and creative designs with a focus on practicality that can maximize your living environment and elevate your quality of life.",
       "year": 2011,
-      "images": ["/images/portfolio/vanarch-1.jpg"],
-      "tags": ["animation", "architecture", "web"]
+      "images": [
+        "/images/portfolio/vanarch-1.jpg"
+      ],
+      "technology": [
+        "autodesk",
+        "css",
+        "flash",
+        "html",
+        "javascript",
+        "photoshop",
+        "sketchup",
+        "actionscript"
+      ],
+      "tags": [
+        "animation",
+        "architecture",
+        "presentation",
+        "web",
+        "services",
+        "engineering"
+      ]
     },
     {
       "id": 29,
       "thumbnail": "/images/portfolio/axzone.jpg",
       "title": "AX Zone",
       "slug": "ax-zone",
-      "technology": ["css", "html", "photoshop"],
       "description": "AX Zone is a personal web site owned by Allen Luhtrex where he shares the world all the places he goes on his monthly tour.",
       "year": 2007,
-      "images": ["/images/portfolio/axzone-1.jpg"],
-      "tags": ["blog", "identity", "personal"]
+      "images": [
+        "/images/portfolio/axzone-1.jpg"
+      ],
+      "technology": [
+        "css",
+        "html",
+        "javascript",
+        "jquery",
+        "photoshop"
+      ],
+      "tags": [
+        "blog",
+        "identity",
+        "personal",
+        "web",
+        "diary",
+        "journal"
+      ]
     },
     {
       "id": 30,
       "thumbnail": "/images/portfolio/bottleneck.jpg",
       "title": "Bottleneck",
       "slug": "bottleneck",
-      "technology": ["illustrator", "photoshop"],
       "description": "Bottleneck is the name of an indie band in the Philippines that originated in Cebu. Their first album was launch in October 2009 titled 'Free World'.",
       "year": 2009,
-      "images": ["/images/portfolio/bottleneck-1.jpg", "/images/portfolio/bottleneck-2.jpg"],
-      "tags": ["entertainment", "identity", "music"]
+      "images": [
+        "/images/portfolio/bottleneck-1.jpg",
+        "/images/portfolio/bottleneck-2.jpg"
+      ],
+      "technology": [
+        "illustrator",
+        "photoshop"
+      ],
+      "tags": [
+        "entertainment",
+        "identity",
+        "music",
+        "presentation",
+        "album"
+      ]
     },
     {
       "id": 31,
       "thumbnail": "/images/portfolio/deffects.jpg",
       "title": "D:Effects",
       "slug": "d-effects",
-      "technology": ["illustrator", "photoshop", "premiere"],
       "description": "D:Effects or Digital Effects is a video editing company located in Hong Kong. They specialized in TV commercials, ads, and Audio Visual Presentations.",
       "year": 2005,
-      "images": ["/images/portfolio/deffects-1.jpg"],
-      "tags": ["entertainment", "identity", "services"]
+      "images": [
+        "/images/portfolio/deffects-1.jpg"
+      ],
+      "technology": [
+        "illustrator",
+        "photoshop",
+        "premiere"
+      ],
+      "tags": [
+        "entertainment",
+        "identity",
+        "services",
+        "print",
+        "store",
+        "retail"
+      ]
     },
     {
       "id": 32,
       "thumbnail": "/images/portfolio/guitara.jpg",
       "title": "Guitara",
       "slug": "guitara",
-      "technology": ["illustrator", "photoshop"],
       "description": "Guitara is an acoustic guitar shop located at Los Baños Laguna, Philippines. Specialized in hand made acoustic guitar for beginner to a professional guitarist.",
       "year": 2005,
-      "images": ["/images/portfolio/guitara-1.jpg"],
-      "tags": ["identity", "music", "retail", "store"]
+      "images": [
+        "/images/portfolio/guitara-1.jpg"
+      ],
+      "technology": [
+        "illustrator",
+        "photoshop"
+      ],
+      "tags": [
+        "identity",
+        "music",
+        "retail",
+        "store",
+        "services"
+      ]
     },
     {
       "id": 33,
       "thumbnail": "/images/portfolio/hackerz.jpg",
       "title": ".Hackerz",
       "slug": "hackerz",
-      "technology": ["illustrator", "photoshop"],
       "description": ".Hackerz (dot Hackerz) is a group or a community preventing mobile hacking in the Philippines. Specialized in Symbian, iOS, Windows Mobile, and Android applications.",
       "year": 2007,
-      "images": ["/images/portfolio/hackerz-1.jpg"],
-      "tags": ["community", "group", "identity"]
+      "images": [
+        "/images/portfolio/hackerz-1.jpg"
+      ],
+      "technology": [
+        "illustrator",
+        "photoshop"
+      ],
+      "tags": [
+        "community",
+        "group",
+        "identity",
+        "web"
+      ]
     },
     {
       "id": 34,
       "thumbnail": "/images/portfolio/helphosting.jpg",
       "title": "Help Hosting",
       "slug": "help-hosting",
-      "technology": ["illustrator", "photoshop"],
       "description": "Help Hosting is like a yellow page for free web hosting, either it's a Windows or Linux server, Help Hosting gets you covered.",
       "year": 2007,
-      "images": ["/images/portfolio/helphosting-1.jpg"],
-      "tags": ["identity", "services"]
+      "images": [
+        "/images/portfolio/helphosting-1.jpg"
+      ],
+      "technology": [
+        "illustrator",
+        "photoshop"
+      ],
+      "tags": [
+        "identity",
+        "services",
+        "group",
+        "community",
+        "web"
+      ]
     },
     {
       "id": 35,
       "thumbnail": "/images/portfolio/hyperides.jpg",
       "title": "Hyperides",
       "slug": "hyperides",
-      "technology": ["illustrator", "photoshop"],
       "description": "Hyperides is a car shop located in Ortigas Philippines. From imported exotic cars to sporty to V.I.P. cars, whether you're shopping for a new, certified or used car, you can find it here.",
       "year": 2005,
-      "images": ["/images/portfolio/hyperides-1.jpg"],
-      "tags": ["automobile", "identity", "print", "retail", "store"]
+      "images": [
+        "/images/portfolio/hyperides-1.jpg"
+      ],
+      "technology": [
+        "illustrator",
+        "photoshop"
+      ],
+      "tags": [
+        "automobile",
+        "identity",
+        "print",
+        "retail",
+        "store",
+        "services"
+      ]
     },
     {
       "id": 36,
       "thumbnail": "/images/portfolio/mediadesign.jpg",
       "title": "Media Design",
       "slug": "media-design",
-      "technology": ["illustrator", "photoshop", "premiere"],
       "description": "Media Design also known as MeDesign is a printing company located in Mandaluyong Philippines. They specialized in banners, business cards, calling cards, postcards, brochures, leaflets, flyers, stationery, posters, booklets, and tarpaulin printing.",
       "year": 2008,
-      "images": ["/images/portfolio/mediadesign-1.jpg"],
-      "tags": ["identity", "retail", "services", "store"]
+      "images": [
+        "/images/portfolio/mediadesign-1.jpg"
+      ],
+      "technology": [
+        "illustrator",
+        "photoshop",
+        "premiere"
+      ],
+      "tags": [
+        "identity",
+        "retail",
+        "services",
+        "store"
+      ]
     },
     {
       "id": 37,
       "thumbnail": "/images/portfolio/skatex.jpg",
       "title": "Skate X",
       "slug": "skate-x",
-      "technology": ["illustrator", "photoshop"],
       "description": "Skate X is your one-stop skate shop located at Tutuban in Manila, Philippines. From branded boards to branded parts, Skate X is totally your one-stop skate shop.",
       "year": 2009,
-      "images": ["/images/portfolio/skatex-1.jpg"],
-      "tags": ["identity", "retail", "sports", "store"]
+      "images": [
+        "/images/portfolio/skatex-1.jpg"
+      ],
+      "technology": [
+        "illustrator",
+        "photoshop"
+      ],
+      "tags": [
+        "identity",
+        "retail",
+        "sports",
+        "store",
+        "services"
+      ]
     },
     {
       "id": 38,
       "thumbnail": "/images/portfolio/vlink.jpg",
       "title": "Vlink",
       "slug": "vlink",
-      "technology": ["illustrator", "photoshop"],
       "description": "Vlink is a computer rental located in Manila, the Philippines near Adamson University of the Philippines.",
       "year": 2009,
-      "images": ["/images/portfolio/vlink-1.jpg"],
-      "tags": ["computer", "identity", "services"]
+      "images": [
+        "/images/portfolio/vlink-1.jpg"
+      ],
+      "technology": [
+        "illustrator",
+        "photoshop"
+      ],
+      "tags": [
+        "computer",
+        "identity",
+        "services",
+        "retail",
+        "store"
+      ]
     },
     {
       "id": 39,
       "thumbnail": "/images/portfolio/wiltshire.jpg",
       "title": "Wiltshire",
       "slug": "wiltshire",
-      "technology": ["illustrator", "photoshop", "premiere"],
       "description": "Bonifacio Wiltshire is a proposed condominium building in Fort Bonifacio Global City. Wiltshire is a ceremonial county in South West England. It is landlocked and borders the counties of Dorset, Somerset, Hampshire, Gloucestershire, Oxfordshire, and Berkshire.",
       "year": 2010,
-      "images": ["/images/portfolio/wiltshire-1.jpg"],
-      "tags": ["architecture", "identity"]
+      "images": [
+        "/images/portfolio/wiltshire-1.jpg"
+      ],
+      "technology": [
+        "illustrator",
+        "photoshop",
+        "premiere"
+      ],
+      "tags": [
+        "architecture",
+        "identity",
+        "architecture",
+        "engineering",
+        "building"
+      ]
     },
     {
       "id": 40,
       "thumbnail": "/images/portfolio/mobitrans.jpg",
       "title": "Mobitrans",
       "slug": "mobitrans",
-      "technology": ["css", "html", "illustrator", "photoshop", "wordpress"],
       "description": "From m-learning to mobile gaming, Mobitrans is the global leader in value-added services for mobile devices. Founded in 2006 and headquartered in the vibrant city of Dubai, Mobitrans employs over 50 multinational experts in the digital media industry. In partnership with over 120 mobile operators and advertisers worldwide, we have expanded our award-winning portfolio into 42 countries, and are live on every continent.",
       "year": 2014,
-      "images": ["/images/portfolio/mobitrans-1.jpg", "/images/portfolio/mobitrans-2.jpg"],
-      "tags": ["services", "web"]
+      "images": [
+        "/images/portfolio/mobitrans-1.jpg",
+        "/images/portfolio/mobitrans-2.jpg"
+      ],
+      "technology": [
+        "css",
+        "html",
+        "javascript",
+        "jquery",
+        "illustrator",
+        "photoshop",
+        "wordpress"
+      ],
+      "tags": [
+        "services",
+        "web",
+        "subscription"
+      ]
     },
     {
       "id": 41,
       "thumbnail": "/images/portfolio/babelbay.jpg",
       "title": "Babelbay",
       "slug": "babelbay",
-      "technology": ["css", "html", "illustrator", "photoshop", "wordpress"],
       "description": "Babel Bay is a premium language learning service. Our service contains interactive courses on some of the world's most popular languages. They are perfect for beginners, travelers, or anyone who wants to improve their foreign language vocabulary.",
       "year": 2016,
-      "images": ["/images/portfolio/babelbay-1.jpg"],
-      "tags": ["learning", "subscription", "web"]
+      "images": [
+        "/images/portfolio/babelbay-1.jpg"
+      ],
+      "technology": [
+        "css",
+        "html",
+        "javascript",
+        "jquery",
+        "illustrator",
+        "photoshop",
+        "wordpress"
+      ],
+      "tags": [
+        "learning",
+        "education",
+        "subscription",
+        "web",
+        "school",
+        "university",
+        "services"
+      ]
     },
     {
       "id": 42,
       "thumbnail": "/images/portfolio/macademy.jpg",
       "title": "MAcademy",
       "slug": "macademy",
-      "technology": ["css", "html", "illustrator", "photoshop", "wordpress"],
       "description": "MAcademy is the world’s number one mobile learning service where you can learn when and where you want. All MAcademy courses are developed based on the Interpolated Memory Test Methodology (IMTM), which according to Harvard studies by Karl K. Szpunar reduces mind wandering and improves learning online lectures.",
       "year": 2013,
-      "images": ["/images/portfolio/macademy-1.jpg", "/images/portfolio/macademy-2.jpg", "/images/portfolio/macademy-3.jpg"],
-      "tags": ["identity", "learning", "subscription", "web"]
+      "images": [
+        "/images/portfolio/macademy-1.jpg",
+        "/images/portfolio/macademy-2.jpg",
+        "/images/portfolio/macademy-3.jpg"
+      ],
+      "technology": [
+        "css",
+        "html",
+        "javascript",
+        "jquery",
+        "illustrator",
+        "photoshop",
+        "wordpress"
+      ],
+      "tags": [
+        "identity",
+        "learning",
+        "education",
+        "subscription",
+        "web",
+        "school",
+        "university",
+        "services"
+      ]
     },
     {
       "id": 43,
       "thumbnail": "/images/portfolio/mobileacademy.jpg",
       "title": "Mobile Academy",
       "slug": "mobile-academy",
-      "technology": ["css", "html", "illustrator", "photoshop", "wordpress"],
       "description": "Mobile Academy is one of the top m-learning services in the world that puts the ‘smart’ in your smartphone. Our award-winning service is packed with stimulating and interactive courses on a variety of subjects ranging from personal to professional development. These mobile-optimized courses are designed to ensure that your learning experience is fun and effective.",
       "year": 2012,
-      "images": ["/images/portfolio/mobileacademy-1.jpg", "/images/portfolio/mobileacademy-2.jpg"],
-      "tags": ["learning", "subscription", "web"]
+      "images": [
+        "/images/portfolio/mobileacademy-1.jpg",
+        "/images/portfolio/mobileacademy-2.jpg"
+      ],
+      "technology": [
+        "css",
+        "html",
+        "javascript",
+        "jquery",
+        "illustrator",
+        "photoshop",
+        "wordpress"
+      ],
+      "tags": [
+        "learning",
+        "education",
+        "subscription",
+        "web",
+        "school",
+        "university",
+        "services"
+      ]
     },
     {
       "id": 44,
       "thumbnail": "/images/portfolio/vipgames.jpg",
       "title": "VIP Games",
       "slug": "vip-games",
-      "technology": ["css", "html", "illustrator", "photoshop", "wordpress"],
       "description": "VIPgames.me delivers the most popular games in the world straight to your mobile device. Enjoy the best of an arcade, sports, and brain-teasing games that guarantee hours of gaming entertainment!",
       "year": 2014,
-      "images": ["/images/portfolio/vipgames-1.jpg", "/images/portfolio/vipgames-2.jpg"],
-      "tags": ["entertainment", "gaming", "subscription", "web"]
+      "images": [
+        "/images/portfolio/vipgames-1.jpg",
+        "/images/portfolio/vipgames-2.jpg"
+      ],
+      "technology": [
+        "css",
+        "html",
+        "javascript",
+        "jquery",
+        "illustrator",
+        "photoshop",
+        "wordpress"
+      ],
+      "tags": [
+        "entertainment",
+        "gaming",
+        "subscription",
+        "web",
+        "services",
+        "identity"
+      ]
     },
     {
       "id": 45,
       "thumbnail": "/images/portfolio/gamepanda.jpg",
       "title": "Game Panda",
       "slug": "game-panda",
-      "technology": ["css", "html", "illustrator", "photoshop", "wordpress"],
       "description": "GamePanda delivers the world's top trending games straight to your mobile device. Enjoy the best of arcade, sports, and brain games that guarantee hours of gaming entertainment!",
       "year": 2015,
-      "images": ["/images/portfolio/gamepanda-1.jpg", "/images/portfolio/gamepanda-2.jpg", "/images/portfolio/gamepanda-3.jpg"],
-      "tags": ["entertainment", "identity", "gaming", "subscription", "web"]
+      "images": [
+        "/images/portfolio/gamepanda-1.jpg",
+        "/images/portfolio/gamepanda-2.jpg",
+        "/images/portfolio/gamepanda-3.jpg"
+      ],
+      "technology": [
+        "css",
+        "html",
+        "javascript",
+        "jquery",
+        "illustrator",
+        "photoshop",
+        "wordpress"
+      ],
+      "tags": [
+        "entertainment",
+        "identity",
+        "gaming",
+        "subscription",
+        "web",
+        "services"
+      ]
     },
     {
       "id": 46,
       "thumbnail": "/images/portfolio/skygames.jpg",
       "title": "Sky Games",
       "slug": "sky-games",
-      "technology": ["css", "html", "illustrator", "photoshop", "wordpress"],
       "description": "SkyGames delivers the world's most popular games straight to your mobile device. Enjoy the best of the arcade, sports, and brain-teasing games that guarantee hours of gaming entertainment.",
       "year": 2014,
-      "images": ["/images/portfolio/skygames-1.jpg", "/images/portfolio/skygames-2.jpg", "/images/portfolio/skygames-3.jpg"],
-      "tags": ["entertainment", "identity", "gaming", "subscription", "web"]
+      "images": [
+        "/images/portfolio/skygames-1.jpg",
+        "/images/portfolio/skygames-2.jpg",
+        "/images/portfolio/skygames-3.jpg"
+      ],
+      "technology": [
+        "css",
+        "html",
+        "javascript",
+        "jquery",
+        "illustrator",
+        "photoshop",
+        "wordpress"
+      ],
+      "tags": [
+        "entertainment",
+        "identity",
+        "gaming",
+        "subscription",
+        "web",
+        "services"
+      ]
     },
     {
       "id": 47,
       "thumbnail": "/images/portfolio/moxigames.jpg",
       "title": "Moxi Games",
       "slug": "moxi-games",
-      "technology": ["css", "html", "illustrator", "photoshop", "wordpress"],
       "description": "MoxiGames.me delivers the world’s most popular games straight to your mobile device. Enjoy the best of the arcade, sports, and brain-teasing games that guarantee hours of mobile gaming entertainment.",
       "year": 2014,
-      "images": ["/images/portfolio/moxigames-1.jpg", "/images/portfolio/moxigames-2.jpg", "/images/portfolio/moxigames-3.jpg"],
-      "tags": ["entertainment", "identity", "gaming", "subscription", "web"]
+      "images": [
+        "/images/portfolio/moxigames-1.jpg",
+        "/images/portfolio/moxigames-2.jpg",
+        "/images/portfolio/moxigames-3.jpg"
+      ],
+      "technology": [
+        "css",
+        "html",
+        "javascript",
+        "jquery",
+        "illustrator",
+        "photoshop",
+        "wordpress"
+      ],
+      "tags": [
+        "entertainment",
+        "identity",
+        "gaming",
+        "subscription",
+        "web",
+        "services"
+      ]
     },
     {
       "id": 48,
       "thumbnail": "/images/portfolio/gap.jpg",
       "title": "GAP",
       "slug": "gap",
-      "technology": ["css", "html", "node", "react"],
       "description": "GAP is an American worldwide clothing and accessories retailer. GAP was founded in 1969 by Donald Fisher and Doris F. Fisher and is headquartered in San Francisco, California. The company operates six primary divisions: Gap (the namesake banner), Banana Republic, Old Navy, Intermix, Hill City, and Athleta.",
       "year": 2017,
-      "images": ["/images/portfolio/gap-1.jpg", "/images/portfolio/gap-2.jpg", "/images/portfolio/gap-3.jpg"],
-      "tags": ["e-commerce", "lifestyle", "web"]
+      "images": [
+        "/images/portfolio/gap-1.jpg",
+        "/images/portfolio/gap-2.jpg",
+        "/images/portfolio/gap-3.jpg"
+      ],
+      "technology": [
+        "css",
+        "html",
+        "javascript",
+        "jquery",
+        "node",
+        "magento",
+        "express"
+      ],
+      "tags": [
+        "e-commerce",
+        "lifestyle",
+        "web",
+        "retail",
+        "store"
+      ]
     },
     {
       "id": 49,
       "thumbnail": "/images/portfolio/mamasandpapas.jpg",
       "title": "Mamas & Papas",
       "slug": "mamas-papas",
-      "technology": ["css", "html", "node", "react"],
       "description": "Mamas & Papas is a UK-based nursery brand and manufacturer supplying prams, pushchairs, baby products, furniture, and maternity wear. It was established in Huddersfield in 1981 by David and Luisa Scacchetti, both of Italian ancestry, whose initial aim was to bring Italian design to the UK baby buggy market.",
       "year": 2017,
-      "images": ["/images/portfolio/mamasandpapas-1.jpg", "/images/portfolio/mamasandpapas-2.jpg", "/images/portfolio/mamasandpapas-3.jpg"],
-      "tags": ["e-commerce", "lifestyle", "web"]
+      "images": [
+        "/images/portfolio/mamasandpapas-1.jpg",
+        "/images/portfolio/mamasandpapas-2.jpg",
+        "/images/portfolio/mamasandpapas-3.jpg"
+      ],
+      "technology": [
+        "css",
+        "html",
+        "javascript",
+        "jquery",
+        "node",
+        "magento",
+        "express"
+      ],
+      "tags": [
+        "e-commerce",
+        "lifestyle",
+        "web",
+        "retail",
+        "store"
+      ]
     },
     {
       "id": 50,
       "thumbnail": "/images/portfolio/nisnass.jpg",
       "title": "Nisnass",
       "slug": "nisnass",
-      "technology": ["css", "html", "node", "react"],
       "description": "Nisnass isn't just a brand, it's a community - an app where you will find something for everyone: trendy styles for the fashion-savvy, comfortable basics for the minimalists, fun outfits for the kids with imagination, and tasteful touches to amp up your home décor, all at your fingertips.",
       "year": 2018,
-      "images": ["/images/portfolio/nisnass-1.jpg", "/images/portfolio/nisnass-2.jpg", "/images/portfolio/nisnass-3.jpg"],
-      "tags": ["e-commerce", "luxury", "web"]
+      "images": [
+        "/images/portfolio/nisnass-1.jpg",
+        "/images/portfolio/nisnass-2.jpg",
+        "/images/portfolio/nisnass-3.jpg"
+      ],
+      "technology": [
+        "css",
+        "html",
+        "node",
+        "react",
+        "javascript",
+        "jquery",
+        "magento",
+        "express"
+      ],
+      "tags": [
+        "e-commerce",
+        "luxury",
+        "web"
+      ]
     },
     {
       "id": 51,
       "thumbnail": "/images/portfolio/ounass.jpg",
       "title": "Ounass",
       "slug": "ounass",
-      "technology": ["css", "html", "node", "react"],
       "description": "Ounass, the definitive home of luxury, is the Middle East’s first premier luxury website offering the world’s most exclusive brands in an editorial environment that is globally relevant but locally-led. The dual-language website offers a curated selection of women’s ready-to-wear, footwear, handbags, fine jewelry, cosmetics, and home merchandise, with many exclusive items found only on Ounass.com.",
       "year": 2018,
-      "images": ["/images/portfolio/ounass-1.jpg", "/images/portfolio/ounass-2.jpg", "/images/portfolio/ounass-3.jpg"],
-      "tags": ["e-commerce", "luxury", "web"]
+      "images": [
+        "/images/portfolio/ounass-1.jpg",
+        "/images/portfolio/ounass-2.jpg",
+        "/images/portfolio/ounass-3.jpg"
+      ],
+      "technology": [
+        "css",
+        "html",
+        "node",
+        "react",
+        "javascript",
+        "jquery",
+        "magento",
+        "express"
+      ],
+      "tags": [
+        "e-commerce",
+        "luxury",
+        "web"
+      ]
+    },
+    {
+      "id": 52,
+      "thumbnail": "/images/portfolio/spinneys.jpg",
+      "title": "Spinneys",
+      "slug": "spinneys",
+      "description": "Spinneys is a multinational supermarket chain active in the United Arab Emirates, Qatar, Lebanon, Oman and Pakistan. It began as a railway provision merchant company, and expanded to a grocery firm importing British Empire goods to Mandate Palestine.",
+      "year": 2020,
+      "images": [
+        "/images/portfolio/spinneys-1.jpg",
+        "/images/portfolio/spinneys-2.jpg",
+        "/images/portfolio/spinneys-3.jpg"
+      ],
+      "technology": [
+        "css",
+        "html",
+        "jquery",
+        "python",
+        "django"
+      ],
+      "tags": [
+        "e-commerce",
+        "grocery",
+        "web",
+        "retail",
+        "store"
+      ]
+    },
+    {
+      "id": 53,
+      "thumbnail": "/images/portfolio/choithrams.jpg",
+      "title": "Choithrams",
+      "slug": "choithrams",
+      "description": "Choithram and Sons was established in 1944 in Sierra Leone, West Africa. Since then, it has developed into an international company spanning Europe, North America, Africa as well as the Gulf. The company is a private business that also funds and manages a group of schools and hospitals in India and West Africa.",
+      "year": 2020,
+      "images": [
+        "/images/portfolio/choithrams-1.jpg",
+        "/images/portfolio/choithrams-2.jpg",
+        "/images/portfolio/choithrams-3.jpg"
+      ],
+      "technology": [
+        "css",
+        "html",
+        "jquery",
+        "python",
+        "django"
+      ],
+      "tags": [
+        "e-commerce",
+        "grocery",
+        "web",
+        "retail",
+        "store"
+      ]
+    },
+    {
+      "id": 54,
+      "thumbnail": "/images/portfolio/waitrose.jpg",
+      "title": "Waitrose & Partners",
+      "slug": "waitrose",
+      "description": "Waitrose & Partners is a brand of British supermarkets, founded in 1904 as Waite, Rose & Taylor, later shortened to Waitrose. They also aims to provide the best quality food sourced in the most responsible way. It was acquired in 1937 by employee-owned retailer John Lewis Partnership, which still sells groceries under the brand.",
+      "year": 2020,
+      "images": [
+        "/images/portfolio/waitrose-1.jpg",
+        "/images/portfolio/waitrose-2.jpg",
+        "/images/portfolio/waitrose-3.jpg"
+      ],
+      "technology": [
+        "css",
+        "html",
+        "jquery",
+        "python",
+        "django"
+      ],
+      "tags": [
+        "e-commerce",
+        "grocery",
+        "web",
+        "retail",
+        "store"
+      ]
+    },
+    {
+      "id": 55,
+      "thumbnail": "/images/portfolio/seddiqi.jpg",
+      "title": "Ahmed Seddiqi & Sons",
+      "slug": "seddiqi",
+      "description": "Recognized today as a pioneer among leading retailers in the Gulf, Ahmed Seddiqi & Sons represents more than 60 luxury timepieces and jewellery brands across 51 destinations in the United Arab Emirates. What started as one man's passion over 60 years ago is today an empire that brings luxury and honesty to the hearts of watch collectors all over the world.",
+      "year": 2020,
+      "images": [
+        "/images/portfolio/seddiqi-1.jpg",
+        "/images/portfolio/seddiqi-2.jpg",
+        "/images/portfolio/seddiqi-3.jpg"
+      ],
+      "technology": [
+        "css",
+        "html",
+        "jquery",
+        "python",
+        "django"
+      ],
+      "tags": [
+        "e-commerce",
+        "grocery",
+        "web",
+        "retail",
+        "luxury",
+        "store"
+      ]
+    },
+    {
+      "id": 56,
+      "thumbnail": "/images/portfolio/wlth.jpg",
+      "title": "Wlth",
+      "slug": "wlth",
+      "description": "Wlth aims to revolutionise financial services in Australia. With Wlth proprietry state-of-the-art technology platform, they will endeavour to actually help other banks, fintechs and corporates in the future to unlock the potential capabilities of our platform to assist their customers.",
+      "year": 2020,
+      "images": [
+        "/images/portfolio/wlth-1.jpg",
+        "/images/portfolio/wlth-2.jpg",
+        "/images/portfolio/wlth-3.jpg"
+      ],
+      "technology": [
+        "css",
+        "html",
+        "node",
+        "vue",
+        "python",
+        "django",
+        "gsap"
+      ],
+      "tags": [
+        "bank",
+        "loan",
+        "web",
+        "financial"
+      ]
+    },
+    {
+      "id": 57,
+      "thumbnail": "/images/portfolio/corefit.jpg",
+      "title": "CoreFit",
+      "slug": "corefit",
+      "description": "CoreFit connect an expansive health-orientated community to a multitude of services within the wellbeing, sports and fitness industry. Their sleek, web-based mobile application houses personal trainers, facilities, nutrition providers and more to enable people to live happy, healthy lives.",
+      "year": 2020,
+      "images": [
+        "/images/portfolio/corefit-1.jpg",
+        "/images/portfolio/corefit-2.jpg",
+        "/images/portfolio/corefit-3.jpg"
+      ],
+      "technology": [
+        "css",
+        "html",
+        "jquery",
+        "python",
+        "django",
+        "gsap"
+      ],
+      "tags": [
+        "fitness",
+        "sports",
+        "gym",
+        "health",
+        "wellness",
+        "nutrition",
+        "e-commerce"
+      ]
     }
   ]
 }

@@ -7,17 +7,17 @@ import Invalid from '../../components/Invalid/Invalid';
 import Schema from '../../components/Schema/Schema';
 
 class Project extends React.PureComponent {
-  static getInitialProps = async ({
+  static async getInitialProps({
     req,
     store,
     isServer,
     query,
-  }) => {
+  }) {
     const domain = req ? req.headers.host : window.location.host;
     const { slug } = query;
     await store.dispatch(getProject(domain, slug));
     return { isServer };
-  };
+  }
 
   render() {
     const {

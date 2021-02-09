@@ -43,7 +43,6 @@ const precacheFiles = [
   `/images/icons/icon-github.svg?v=${version}`,
   `/images/icons/icon-instagram.svg?v=${version}`,
   `/images/icons/icon-linkedin.svg?v=${version}`,
-  `/images/icons/icon-mixer.svg?v=${version}`,
   `/images/icons/icon-portfolio.svg?v=${version}`,
   `/images/icons/icon-stackoverflow.svg?v=${version}`,
   `/images/icons/icon-twitter.svg?v=${version}`,

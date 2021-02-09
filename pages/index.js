@@ -5,15 +5,11 @@ import Card from '../components/Card/Card';
 import Invalid from '../components/Invalid/Invalid';
 
 class Index extends React.PureComponent {
-  static getInitialProps = async ({
-    req,
-    store,
-    isServer,
-  }) => {
+  static async getInitialProps({ req, store, isServer }) {
     const domain = req ? req.headers.host : window.location.host;
     await store.dispatch(getPortfolio(domain));
     return { isServer };
-  };
+  }
 
   render() {
     const {

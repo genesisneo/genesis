@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import Gallery from '../Gallery/Gallery';
 import styles from './Brief.module.scss';
 
-export default ({
+const Brief = ({
   title,
   technology,
   description,
@@ -40,7 +40,7 @@ export default ({
         script.parentNode.removeChild(script);
       }
     });
-  });
+  }, []);
 
   const renderChips = (arrayProps) => {
     const dynamicPath = arrayProps === technology
@@ -102,3 +102,5 @@ export default ({
     </div>
   );
 };
+
+export default Brief;

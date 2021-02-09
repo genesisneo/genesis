@@ -6,17 +6,17 @@ import Card from '../../components/Card/Card';
 import Invalid from '../../components/Invalid/Invalid';
 
 class Tag extends React.PureComponent {
-  static getInitialProps = async ({
+  static async getInitialProps({
     req,
     store,
     isServer,
     query,
-  }) => {
+  }) {
     const domain = req ? req.headers.host : window.location.host;
     const { key } = query;
     await store.dispatch(getPortfolioByTags(domain, key));
     return { isServer, tag: key };
-  };
+  }
 
   render() {
     const {
