@@ -34,6 +34,6 @@ const Invalid = ({
   );
 };
 
-const mapStateToProps = ({ global }) => ({ global });
+const mapStateToProps = (state) => state;
 
 export default connect(mapStateToProps)(Invalid);

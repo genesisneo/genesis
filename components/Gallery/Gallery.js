@@ -1,3 +1,4 @@
+import React from 'react';
 import Swiper from 'react-id-swiper';
 import { connect } from 'react-redux';
 import styles from './Gallery.module.scss';
@@ -6,6 +7,7 @@ const Gallery = ({
   title = 'Genesis Mallorca Obtera',
   gallery = [],
   global: {
+    imagePlaceholder,
     versionHash,
   },
 }) => {
@@ -21,6 +23,7 @@ const Gallery = ({
       loading="lazy"
       alt={name}
       title={name}
+      src={imagePlaceholder}
       data-src={`${image}?v=${versionHash}`}
     />
   );
@@ -31,6 +34,13 @@ const Gallery = ({
     lazy: true,
     speed: 300,
     loop: true,
+    autoplay: {
+      delay: 5000,
+    },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+    },
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
@@ -63,6 +73,6 @@ const Gallery = ({
   );
 };
 
-const mapStateToProps = ({ global }) => ({ global });
+const mapStateToProps = (state) => state;
 
 export default connect(mapStateToProps)(Gallery);

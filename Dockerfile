@@ -1,4 +1,4 @@
-FROM node:13.13-alpine AS builder
+FROM node:14.18-alpine AS builder
 LABEL maintainer="genesis"
 
 RUN apk update
@@ -10,7 +10,7 @@ WORKDIR /app
 # install yarn
 RUN rm /usr/local/bin/yarn
 RUN rm -rf /usr/local/bin/yarnpkg
-RUN npm i -gq yarn@1.10.1 --unsafe-perm
+RUN npm i -gq yarn@1.22.15 --unsafe-perm
 
 # install app dependencies
 COPY package.json .
@@ -23,7 +23,7 @@ COPY . .
 RUN yarn run build
 RUN rm -rf /app/.git
 
-FROM node:13.13-alpine
+FROM node:14.18-alpine
 WORKDIR /app
 ARG COMMIT_HASH=docker
 ENV VERCEL_GITHUB_COMMIT_SHA=$COMMIT_HASH

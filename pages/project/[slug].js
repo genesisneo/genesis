@@ -1,50 +1,31 @@
-import React from 'react';
-import { connect } from 'react-redux';
 import Head from 'next/head';
+import { connect } from 'react-redux';
+import { wrapper } from '../../redux/store';
 import { getProject } from '../../redux/actions';
-import Brief from '../../components/Brief/Brief';
 import Invalid from '../../components/Invalid/Invalid';
+import Brief from '../../components/Brief/Brief';
 import Schema from '../../components/Schema/Schema';
 
-class Project extends React.PureComponent {
-  static async getInitialProps({
-    req,
-    store,
-    isServer,
-    query,
-  }) {
-    const domain = req ? req.headers.host : window.location.host;
-    const { slug } = query;
-    await store.dispatch(getProject(domain, slug));
-    return { isServer };
-  }
-
-  render() {
-    const {
-      global: {
-        siteName,
-        siteDomain,
-      },
-      project,
-      project: {
-        error,
-        title,
-        slug,
-        technology,
-        description,
-        year,
-        images,
-        tags,
-      },
-    } = this.props;
-
-    if (error) {
-      return (
-        <Invalid error={error} />
-      );
-    }
-
-    return (
+const Project = ({
+  global: {
+    siteName,
+    siteDomain,
+  },
+  portfolio,
+  project,
+  project: {
+    error = null,
+    title,
+    slug,
+    technology,
+    description,
+    year,
+    images,
+    tags,
+  },
+}) => (
+  project && Object.keys(project).length
+    ? (
       <>
         <Head>
 
@@ -73,13 +54,23 @@ class Project extends React.PureComponent {
           year={year}
           images={images}
           tags={tags}
+          featured={portfolio.slice(-2)}
         />
         <Schema schemaProject={project} />
       </>
-    );
-  }
-}
+    )
+    : error
+      ? <Invalid error={error} />
+      : null
+);
 
-const mapStateToProps = ({ global, project }) => ({ global, project });
+export const getServerSideProps = wrapper.getServerSideProps(
+  // eslint-disable-next-line no-return-await
+  (store) => async ({ req, params: { slug: key } }) => {
+    await store.dispatch(getProject(req.headers.host, key));
+  },
+);
+
+const mapStateToProps = (state) => state;
 
 export default connect(mapStateToProps)(Project);

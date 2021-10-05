@@ -6,8 +6,8 @@ const precacheFiles = [
 
   /*
   we need to do this manually because the service worker
-  doesn't know all the files on the servver, the sad part
-  is if one file is missing, this will break 😔
+  doesn't know all the files on the servver, the sad part is
+  if one file is missing, this will break 😔
   */
 
   /* documents */
@@ -15,9 +15,6 @@ const precacheFiles = [
   `/manifest.json?v=${version}`,
   '/robots.txt',
   '/google898111cce6c361f7.html',
-
-  /* scripts */
-  '/js/particles.min.js',
 
   /* images */
   `/favicon.png?v=${version}`,
@@ -34,7 +31,6 @@ const precacheFiles = [
   `/images/app/windows-310x150.png?v=${version}`,
   `/images/app/windows-310x310.png?v=${version}`,
 
-  `/images/icons/icon-about.svg?v=${version}`,
   `/images/icons/icon-blog.svg?v=${version}`,
   `/images/icons/icon-dribbble.svg?v=${version}`,
   `/images/icons/icon-facebook.svg?v=${version}`,
@@ -43,7 +39,6 @@ const precacheFiles = [
   `/images/icons/icon-github.svg?v=${version}`,
   `/images/icons/icon-instagram.svg?v=${version}`,
   `/images/icons/icon-linkedin.svg?v=${version}`,
-  `/images/icons/icon-portfolio.svg?v=${version}`,
   `/images/icons/icon-stackoverflow.svg?v=${version}`,
   `/images/icons/icon-twitter.svg?v=${version}`,
   `/images/icons/icon-youtube.svg?v=${version}`

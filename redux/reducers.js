@@ -7,7 +7,7 @@ import {
   GET_PORTFOLIO_BY_TECHNOLOGY,
 } from './types';
 
-const reducer = (state = initialState, { type, payload }) => {
+const reducers = (state = initialState, { type, payload }) => {
   switch (type) {
     case GET_PORTFOLIO:
     case GET_PORTFOLIO_BY_TAGS:
@@ -20,7 +20,8 @@ const reducer = (state = initialState, { type, payload }) => {
     case GET_PROJECT:
       return {
         ...state,
-        project: payload,
+        portfolio: payload.portfolio,
+        project: payload.project,
       };
 
     case GET_PROFILE:
@@ -34,4 +35,4 @@ const reducer = (state = initialState, { type, payload }) => {
   }
 };
 
-export default reducer;
+export default reducers;

@@ -1,51 +1,27 @@
 .Card {
-  display: flex;
-  margin: 0 0 16px;
-  padding: 0;
-  max-width: 384px;
   box-sizing: border-box;
-
-  @media (min-width: 769px) {
-    margin-left: 8px;
-    margin-right: 8px;
-  }
+  content-visibility: auto;
 
   &-link {
+    position: relative;
     display: block;
+    margin: 0;
+    padding: 50% 0 0;
     background-color: var(--color-white);
-    border-radius: 4px;
-    box-shadow: 0 1.6px 3.6px 0 rgba(0, 0, 0, 0.132), 0 0.3px 0.9px 0 rgba(0, 0, 0, 0.108);
-    color: var(--text-primary);
+    border-radius: 0.500rem;
+    box-shadow: 0 0.125rem 0.250rem 0 rgba(0, 0, 0, 0.16), 0 0.250rem 0.500rem 0 rgba(0, 0, 0, 0.08);
     overflow: hidden;
-    text-decoration: none;
   }
 
   &-image {
+    position: absolute;
     display: block;
-    min-width: 304px;
-    min-height: 152px;
+    inset: 0;
+    transition: all 0.25s ease-out;
+    transform: scale(1);
 
-    @media (min-width: 769px) {
-      min-width: 384px;
-      min-height: 192px;
+    &:hover {
+      transform: scale(1.025);
     }
-  }
-
-  &-title {
-    display: flex;
-    margin: 16px 8px;
-    padding: 0;
-    align-items: center;
-    justify-content: space-between;
-
-    @media (min-width: 769px) {
-      margin-left: 16px;
-      margin-right: 16px;
-    }
-  }
-
-  &-year {
-    color: var(--text-secondary);
-    font-size: 0.750rem;
   }
 }

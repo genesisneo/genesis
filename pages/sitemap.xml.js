@@ -66,7 +66,7 @@ const sitemapXml = ({ portfolio }) => {
         <priority>1.0</priority>
       </url>
       <url>
-        <loc>${siteDomain}/about</loc>
+        <loc>${siteDomain}/profile</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
       </url>
@@ -79,8 +79,8 @@ const sitemapXml = ({ portfolio }) => {
 
 class Sitemap extends React.PureComponent {
   static async getInitialProps({ req, res }) {
-    const domain = req ? req.headers.host : window.location.host;
-    const protocol = domain.indexOf('localhost') !== -1 ? 'http://' : 'https://';
+    const domain = req.headers.host;
+    const protocol = domain.indexOf('localhost') === 0 ? 'http://' : 'https://';
     const { data } = await axios.get(`${protocol}${domain}/api`);
 
     res.setHeader('Content-Type', 'text/xml');

@@ -1,42 +1,22 @@
-import React from 'react';
-import { connect } from 'react-redux';
 import Head from 'next/head';
+import { connect } from 'react-redux';
+import { wrapper } from '../../redux/store';
 import { getPortfolioByTechnology } from '../../redux/actions';
-import Card from '../../components/Card/Card';
 import Invalid from '../../components/Invalid/Invalid';
+import Cards from '../../components/Cards/Cards';
 
-class Technology extends React.PureComponent {
-  static async getInitialProps({
-    req,
-    store,
-    isServer,
-    query,
-  }) {
-    const domain = req ? req.headers.host : window.location.host;
-    const { key } = query;
-    await store.dispatch(getPortfolioByTechnology(domain, key));
-    return { isServer, technology: key };
-  }
-
-  render() {
-    const {
-      global: {
-        siteName,
-      },
-      portfolio,
-      portfolio: {
-        error,
-      },
-      technology,
-    } = this.props;
-
-    if (!technology || error) {
-      return (
-        <Invalid error={error} />
-      );
-    }
-
-    return (
+const Technology = ({
+  global: {
+    siteName,
+  },
+  portfolio,
+  portfolio: {
+    error = null,
+  },
+  technology,
+}) => (
+  portfolio.length
+    ? (
       <>
         <Head>
           <title>
@@ -47,26 +27,23 @@ class Technology extends React.PureComponent {
           <b className="Technology-year">TECHNOLOGY</b>
           <span className="Technology-name">{technology}</span>
         </p>
-        {portfolio.map(({
-          id,
-          thumbnail,
-          title,
-          slug,
-          year,
-        }) => (
-          <Card
-            key={id}
-            thumbnail={thumbnail}
-            title={title}
-            slug={slug}
-            year={year}
-          />
-        ))}
+        <Cards portfolio={portfolio} />
       </>
-    );
-  }
-}
+    )
+    : error
+      ? <Invalid error={error} />
+      : null
+);
 
-const mapStateToProps = ({ global, portfolio }) => ({ global, portfolio });
+export const getServerSideProps = wrapper.getServerSideProps(
+  (store) => async ({ req, params: { key } }) => {
+    await store.dispatch(getPortfolioByTechnology(req.headers.host, key));
+    return {
+      props: { technology: key },
+    };
+  },
+);
+
+const mapStateToProps = (state) => state;
 
 export default connect(mapStateToProps)(Technology);

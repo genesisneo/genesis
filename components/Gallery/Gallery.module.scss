@@ -1,23 +1,9 @@
 .Gallery {
-  display: block;
   width: 100%;
-  min-height: 190px;
-  background-color: var(--color-divider);
   border: none;
-  color: var(--color-divider);
   outline: none;
-  overflow: hidden;
-
-  @media (min-width: 769px) {
-    min-height: 750px;
-  }
 
   &-image {
     display: block;
-    min-height: 190px;
-
-    @media (min-width: 769px) {
-      min-height: 750px;
-    }
   }
 }

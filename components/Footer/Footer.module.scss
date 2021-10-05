@@ -1,16 +1,16 @@
 .Footer {
-  margin: 0 auto 32px;
+  margin: 0 auto 2.000rem;
   width: 100%;
   background-color: var(--color-primary);
 
   &-copyright {
     display: block;
     margin: 0 auto;
-    padding: 32px 0;
-    max-width: 1200px;
+    padding: 2.000rem 0;
+    max-width: 100rem;
     box-sizing: border-box;
     color: var(--text-secondary);
-    font-size: 0.75rem;
+    font-size: 0.750rem;
     text-align: center;
   }
 }

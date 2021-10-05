@@ -1,42 +1,22 @@
-import React from 'react';
-import { connect } from 'react-redux';
 import Head from 'next/head';
+import { connect } from 'react-redux';
+import { wrapper } from '../../redux/store';
 import { getPortfolioByTags } from '../../redux/actions';
-import Card from '../../components/Card/Card';
 import Invalid from '../../components/Invalid/Invalid';
+import Cards from '../../components/Cards/Cards';
 
-class Tag extends React.PureComponent {
-  static async getInitialProps({
-    req,
-    store,
-    isServer,
-    query,
-  }) {
-    const domain = req ? req.headers.host : window.location.host;
-    const { key } = query;
-    await store.dispatch(getPortfolioByTags(domain, key));
-    return { isServer, tag: key };
-  }
-
-  render() {
-    const {
-      global: {
-        siteName,
-      },
-      portfolio,
-      portfolio: {
-        error,
-      },
-      tag,
-    } = this.props;
-
-    if (!tag || error) {
-      return (
-        <Invalid error={error} />
-      );
-    }
-
-    return (
+const Tag = ({
+  global: {
+    siteName,
+  },
+  portfolio,
+  portfolio: {
+    error = null,
+  },
+  tag,
+}) => (
+  portfolio.length
+    ? (
       <>
         <Head>
           <title>
@@ -47,26 +27,23 @@ class Tag extends React.PureComponent {
           <b className="Tag-year">TAG</b>
           <span className="Tag-name">{tag}</span>
         </p>
-        {portfolio.map(({
-          id,
-          thumbnail,
-          title,
-          slug,
-          year,
-        }) => (
-          <Card
-            key={id}
-            thumbnail={thumbnail}
-            title={title}
-            slug={slug}
-            year={year}
-          />
-        ))}
+        <Cards portfolio={portfolio} />
       </>
-    );
-  }
-}
+    )
+    : error
+      ? <Invalid error={error} />
+      : null
+);
 
-const mapStateToProps = ({ global, portfolio }) => ({ global, portfolio });
+export const getServerSideProps = wrapper.getServerSideProps(
+  (store) => async ({ req, params: { key } }) => {
+    await store.dispatch(getPortfolioByTags(req.headers.host, key));
+    return {
+      props: { tag: key },
+    };
+  },
+);
+
+const mapStateToProps = (state) => state;
 
 export default connect(mapStateToProps)(Tag);

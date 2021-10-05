@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { connect } from 'react-redux';
 import styles from './AppBar.module.scss';
 
@@ -24,55 +23,31 @@ const AppBar = ({
 
   return (
     <header className={styles.AppBar}>
-      <Link href="/">
+      <a
+        className={styles['AppBar-brand']}
+        aria-label="Genesis"
+        title="Genesis"
+        onClick={() => onClickHandle('home', '/')}
+        href="/"
+      >
+        <img
+          className={`${styles['AppBar-logo']} lazyload`}
+          loading="lazy"
+          alt="Genesis"
+          src={imagePlaceholder}
+          data-src={`/images/icons/icon-genesis.svg?v=${versionHash}`}
+        />
+      </a>
+      <div>
         <a
-          className={styles['AppBar-brand']}
-          aria-label="Genesis"
-          title="Genesis"
-          onClick={() => onClickHandle('home', '/')}
+          className={styles['AppBar-link']}
+          aria-label="Profile"
+          title="Profile"
+          onClick={() => onClickHandle('profile', '/profile')}
+          href="/profile"
         >
-          <img
-            className={`${styles['AppBar-logo']} lazyload`}
-            loading="lazy"
-            alt="Genesis"
-            src={imagePlaceholder}
-            data-src={`/images/icons/icon-genesis.svg?v=${versionHash}`}
-          />
+          Profile
         </a>
-      </Link>
-      <div className={styles['Appbar-navigation']}>
-        <Link href="/">
-          <a
-            className={styles['AppBar-link']}
-            aria-label="Portfolio"
-            title="Portfolio"
-            onClick={() => onClickHandle('portfolio', '/')}
-          >
-            <img
-              className={`${styles['AppBar-icon']} lazyload`}
-              loading="lazy"
-              alt="Portfolio"
-              src={imagePlaceholder}
-              data-src={`/images/icons/icon-portfolio.svg?v=${versionHash}`}
-            />
-          </a>
-        </Link>
-        <Link href="/about">
-          <a
-            className={styles['AppBar-link']}
-            aria-label="About"
-            title="About"
-            onClick={() => onClickHandle('about', '/about')}
-          >
-            <img
-              className={`${styles['AppBar-icon']} lazyload`}
-              loading="lazy"
-              alt="About"
-              src={imagePlaceholder}
-              data-src={`/images/icons/icon-about.svg?v=${versionHash}`}
-            />
-          </a>
-        </Link>
       </div>
     </header>
   );

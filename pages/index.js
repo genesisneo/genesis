@@ -1,52 +1,29 @@
-import React from 'react';
 import { connect } from 'react-redux';
+import { wrapper } from '../redux/store';
 import { getPortfolio } from '../redux/actions';
-import Card from '../components/Card/Card';
 import Invalid from '../components/Invalid/Invalid';
+import Cards from '../components/Cards/Cards';
 
-class Index extends React.PureComponent {
-  static async getInitialProps({ req, store, isServer }) {
-    const domain = req ? req.headers.host : window.location.host;
-    await store.dispatch(getPortfolio(domain));
-    return { isServer };
-  }
+const Index = ({
+  portfolio,
+  portfolio: {
+    error = null,
+  },
+}) => (
+  portfolio.length
+    ? <Cards portfolio={portfolio} />
+    : error
+      ? <Invalid error={error} />
+      : null
+);
 
-  render() {
-    const {
-      portfolio,
-      portfolio: {
-        error,
-      },
-    } = this.props;
+export const getServerSideProps = wrapper.getServerSideProps(
+  // eslint-disable-next-line no-return-await
+  (store) => async ({ req }) => {
+    await store.dispatch(getPortfolio(req.headers.host));
+  },
+);
 
-    if (error) {
-      return (
-        <Invalid error={error} />
-      );
-    }
-
-    return (
-      <>
-        {portfolio.map(({
-          id,
-          thumbnail,
-          title,
-          slug,
-          year,
-        }) => (
-          <Card
-            key={id}
-            thumbnail={thumbnail}
-            title={title}
-            slug={slug}
-            year={year}
-          />
-        ))}
-      </>
-    );
-  }
-}
-
-const mapStateToProps = ({ portfolio }) => ({ portfolio });
+const mapStateToProps = (state) => state;
 
 export default connect(mapStateToProps)(Index);

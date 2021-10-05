@@ -1,8 +1,8 @@
 {
-  "about": {
+  "profile": {
     "content": {
       "name": "Genesis Mallorca Obtera",
-      "description": "Project Designer and Developer",
+      "description": "Product Designer and Developer",
       "avatar": "/images/avatar.jpg",
       "onlinePresence": [
         {
@@ -11,7 +11,7 @@
         },
         {
           "name": "Facebook",
-          "url": "https://facebook.com/genesis.neo"
+          "url": "https://www.facebook.com/genesis.obtera/"
         },
         {
           "name": "Instagram",
@@ -57,7 +57,8 @@
       "description": "Also known as Accralaw Tower. An I.T. building located at Fort Bonifacio Global City, Taguig, Philippines. The presentation includes project location, design concept, building features, sun study, wind direction, floor plans, sections, elevations, perspectives, and walkthrough animation.",
       "year": 2007,
       "images": [
-        "/images/portfolio/ascendas-1.jpg"
+        "/images/portfolio/ascendas-1.jpg",
+        "/images/portfolio/ascendas-2.jpg"
       ],
       "technology": [
         "aftereffects",
@@ -85,7 +86,8 @@
       "description": "A simple flash interactive presentation for the proposed building for Aseana Philippines. Aseana City is a monumental real estate undertaking. Aseana City's vision of turning water into land and land into life was realized through the successful partnership of Filipino, Belgian, and Japanese corporations.",
       "year": 2010,
       "images": [
-        "/images/portfolio/aseana-1.jpg"
+        "/images/portfolio/aseana-1.jpg",
+        "/images/portfolio/aseana-2.jpg"
       ],
       "technology": [
         "audition",
@@ -113,7 +115,8 @@
       "description": "Avida Tower Centrio is a residential condominium building in Cagayan de Oro City, Philippines. Situated at the back of the under-construction mall and hotel, the Centrio. This perspective project of Ayala Land is proposed to be a 24-story tower and construction will start in September 2012. By that time, the Mall and Hotel are already completed.",
       "year": 2011,
       "images": [
-        "/images/portfolio/avidacentrio-1.jpg"
+        "/images/portfolio/avidacentrio-1.jpg",
+        "/images/portfolio/avidacentrio-2.jpg"
       ],
       "technology": [
         "audition",
@@ -140,7 +143,8 @@
       "description": "An interactive flash presentation of 3 projects of Avida in the Philippines. The Avida Tower Villareal in Cebu, Avida Centrio in Cagayan De Oro, and the Avida Tower in Davao. The presentation includes project location, design concept, building features, sun study, wind direction, floor plans, sections, elevations, perspectives, and walkthrough animation.",
       "year": 2011,
       "images": [
-        "/images/portfolio/avidatowers-1.jpg"
+        "/images/portfolio/avidatowers-1.jpg",
+        "/images/portfolio/avidatowers-2.jpg"
       ],
       "technology": [
         "autodesk",
@@ -167,7 +171,8 @@
       "description": "Interactive presentation for Avida Tower Vertis North, located in Quezon City, Philippines. The presentation includes project location, design concept, building features, sun study, wind direction, floor plans, sections, elevations, perspectives, walkthrough animation, area tabulation, and computation.",
       "year": 2010,
       "images": [
-        "/images/portfolio/avidavertisnorth-1.jpg"
+        "/images/portfolio/avidavertisnorth-1.jpg",
+        "/images/portfolio/avidavertisnorth-2.jpg"
       ],
       "technology": [
         "audition",
@@ -194,7 +199,8 @@
       "description": "Flash interactive presentation by G&W Architects for Dedon Philippines. Dedon revolutionized the business of outdoor furniture and owned land in Cebu, Philippines. The presentation includes building concepts, floor plans, elevations, sections, and perspectives.",
       "year": 2006,
       "images": [
-        "/images/portfolio/dedon-1.jpg"
+        "/images/portfolio/dedon-1.jpg",
+        "/images/portfolio/dedon-2.jpg"
       ],
       "technology": [
         "audition",
@@ -223,7 +229,8 @@
       "description": "A simple interactive presentation for Ayala's Eton City located at the heart of Makati, Philippines. The presentation includes building concept, sun study, wind direction, floor plans, sections, elevations, perspectives, walkthrough, and area tabulation.",
       "year": 2009,
       "images": [
-        "/images/portfolio/etongreencitytower-1.jpg"
+        "/images/portfolio/etongreencitytower-1.jpg",
+        "/images/portfolio/etongreencitytower-2.jpg"
       ],
       "technology": [
         "aftereffects",
@@ -251,7 +258,8 @@
       "description": "Interactive flash presentation for Ayala's Eton project the Eton Ricogen building located in Manila, Philippines. The presentation will be used by the marketing side and included by the concept of the proposed building, floor plans, elevations, perspectives, and 3D animation exported from Autodesk 3D Studio Max by Arch. Ryan Saldua.",
       "year": 2011,
       "images": [
-        "/images/portfolio/etonricogen-1.jpg"
+        "/images/portfolio/etonricogen-1.jpg",
+        "/images/portfolio/etonricogen-2.jpg"
       ],
       "technology": [
         "aftereffects",
@@ -342,7 +350,8 @@
       "description": "Interactive flash presentation of G&W Architects proposed building for Johnson & Johnson Philippines. The presentation includes project location, design concept, building features, sun study, wind direction, floor plans, sections, elevations, perspectives, walkthrough animation, area tabulation, and computation.",
       "year": 2009,
       "images": [
-        "/images/portfolio/jnj-1.jpg"
+        "/images/portfolio/jnj-1.jpg",
+        "/images/portfolio/jnj-2.jpg"
       ],
       "technology": [
         "aftereffects",
@@ -371,7 +380,8 @@
       "description": "Interactive flash presentation for Torvald Klaveness Group. The presentation will be used by the marketing side and included by the concept of the proposed building, floor plans, elevations, perspectives, and 3D animation exported from Autodesk 3D Studio Max by Arch. Ryan Saldua.",
       "year": 2007,
       "images": [
-        "/images/portfolio/klaveness-1.jpg"
+        "/images/portfolio/klaveness-1.jpg",
+        "/images/portfolio/klaveness-2.jpg"
       ],
       "technology": [
         "audition",
@@ -400,7 +410,8 @@
       "description": "An interactive touch screen presentation for the proposed eighth Build To Own project. The presentation includes information regarding the proposed project, project location, rooms, floor plans, amenities, and perspectives. Build To Own system is building your home at direct cost by eliminating middle man developer's a non-project related add on costs.",
       "year": 2009,
       "images": [
-        "/images/portfolio/majestic-1.jpg"
+        "/images/portfolio/majestic-1.jpg",
+        "/images/portfolio/majestic-2.jpg"
       ],
       "technology": [
         "audition",
@@ -428,7 +439,8 @@
       "description": "Simple interactive flash presentation for Palm Dale Heights in Quezon City, Philippines. The presentation is used for marketing and includes floor plans, sections, elevations, amenities, and a simple 3D animation exported from Google Sketchup by Arch. Nicoy Delos Reyes.",
       "year": 2008,
       "images": [
-        "/images/portfolio/palmdale-1.jpg"
+        "/images/portfolio/palmdale-1.jpg",
+        "/images/portfolio/palmdale-2.jpg"
       ],
       "technology": [
         "autodesk",
@@ -492,7 +504,8 @@
       "description": "Interactive flash presentation for Songlim. A Korean company that owned land in Bataan, Philippines. The presentation includes project location, sun study, building concept, floor plans, elevations, perspectives, and a walkthrough animation of the proposed design on the land.",
       "year": 2007,
       "images": [
-        "/images/portfolio/songlim-1.jpg"
+        "/images/portfolio/songlim-1.jpg",
+        "/images/portfolio/songlim-2.jpg"
       ],
       "technology": [
         "audition",
@@ -519,7 +532,8 @@
       "description": "Interactive flash presentation of G&W Architects proposed building for Titan Dragon Property in Quezon City, Philippines. The presentation includes project location, design concept, building features, sun study, wind direction, floor plans, sections, elevations, perspectives, walkthrough animation, area tabulation, and computation.",
       "year": 2010,
       "images": [
-        "/images/portfolio/titan-1.jpg"
+        "/images/portfolio/titan-1.jpg",
+        "/images/portfolio/titan-2.jpg"
       ],
       "technology": [
         "audition",
@@ -546,7 +560,8 @@
       "description": "Interactive flash presentation for Widus International. The presentation includes project location, sun study, wind directions, building concept, sections, elevations, perspectives, and simple 3D animation of the project.",
       "year": 2008,
       "images": [
-        "/images/portfolio/widus-1.jpg"
+        "/images/portfolio/widus-1.jpg",
+        "/images/portfolio/widus-2.jpg"
       ],
       "technology": [
         "aftereffects",
@@ -574,7 +589,8 @@
       "description": "A fully animated interactive presentation export from Google Sketchup by Arch. Ryan Saldua. The presentation includes building concept, sun study, wind direction, floor plans, sections, elevations, perspectives, and 3D animation.",
       "year": 2008,
       "images": [
-        "/images/portfolio/xavier-1.jpg"
+        "/images/portfolio/xavier-1.jpg",
+        "/images/portfolio/xavier-2.jpg"
       ],
       "technology": [
         "aftereffects",
@@ -638,7 +654,8 @@
       "description": "Build To Own System is a construction industry initiated development led by G&W Architects, that build your home at direct cost by eliminating middle man developer's a non-project related add on costs, while at the same time giving homeowners unprecedented protection through the involvement of a trustee bank.",
       "year": 2008,
       "images": [
-        "/images/portfolio/bto-1.jpg"
+        "/images/portfolio/bto-1.jpg",
+        "/images/portfolio/bto-2.jpg"
       ],
       "technology": [
         "autodesk",
@@ -702,7 +719,8 @@
       "description": "The third Build To Own projects by G&W Architects. It is the third condominium providing a corner view on all sides for each unit in Fort Bonifacio Global City, Philippines. Sandwich by Manila Golf and Crescent Park view. Build To Own system is building your home at a direct cost by eliminating middle man developers, a non-project related add on costs.",
       "year": 2006,
       "images": [
-        "/images/portfolio/hamptons-1.jpg"
+        "/images/portfolio/hamptons-1.jpg",
+        "/images/portfolio/hamptons-2.jpg"
       ],
       "technology": [
         "autodesk",
@@ -732,7 +750,8 @@
       "description": "Kabillion is the first multi-platform kid's network built around today's hottest TV audience viewing trends, broadband, and Video on Demand. From Comcast cable and television's top kids' program producers. It's not just a show, it's what you want when you want it.",
       "year": 2004,
       "images": [
-        "/images/portfolio/kabillion-1.jpg"
+        "/images/portfolio/kabillion-1.jpg",
+        "/images/portfolio/kabillion-2.jpg"
       ],
       "technology": [
         "css",
@@ -760,7 +779,8 @@
       "description": "The second Build To Own projects by G&W Architects. It is the second condominium providing a corner view on all sides for each unit in Fort Bonifacio Global City, Philippines. Sandwich by Manila Golf and Crescent Park view. Build To Own system is building your home at a direct cost by eliminating middle man developers, a non-project related add on costs.",
       "year": 2008,
       "images": [
-        "/images/portfolio/kensington-1.jpg"
+        "/images/portfolio/kensington-1.jpg",
+        "/images/portfolio/kensington-2.jpg"
       ],
       "technology": [
         "autodesk",
@@ -790,7 +810,8 @@
       "description": "La Vida Verde is a furniture retail company specializing in modern contemporary designs. Selling the best quality furniture sourced out from Asia and North America. They also offer a lifetime service to their valued customers.",
       "year": 2011,
       "images": [
-        "/images/portfolio/lavidaverde-1.jpg"
+        "/images/portfolio/lavidaverde-1.jpg",
+        "/images/portfolio/lavidaverde-2.jpg"
       ],
       "technology": [
         "css",
@@ -816,7 +837,8 @@
       "description": "The first Build To Own projects by G&W Architects. It is the first condominium providing a corner view on all sides for each unit in Fort Bonifacio Global City, Philippines. Sandwich by Manila Golf and Crescent Park view. Build To Own system is building your home at a direct cost by eliminating middle man developers, a non-project related add on costs.",
       "year": 2008,
       "images": [
-        "/images/portfolio/penhurst-1.jpg"
+        "/images/portfolio/penhurst-1.jpg",
+        "/images/portfolio/penhurst-2.jpg"
       ],
       "technology": [
         "autodesk",
@@ -846,7 +868,8 @@
       "description": "Vanarch is a collaboration of young and upcoming talented architects and designers. After gaining significant experience with well-known firms in the region, the company was established in 2007 by Glenn Fredrick T. Khu and Ryan L. Saldua. They provide fresh and creative designs with a focus on practicality that can maximize your living environment and elevate your quality of life.",
       "year": 2011,
       "images": [
-        "/images/portfolio/vanarch-1.jpg"
+        "/images/portfolio/vanarch-1.jpg",
+        "/images/portfolio/vanarch-2.jpg"
       ],
       "technology": [
         "autodesk",
@@ -901,8 +924,7 @@
       "description": "Bottleneck is the name of an indie band in the Philippines that originated in Cebu. Their first album was launch in October 2009 titled 'Free World'.",
       "year": 2009,
       "images": [
-        "/images/portfolio/bottleneck-1.jpg",
-        "/images/portfolio/bottleneck-2.jpg"
+        "/images/portfolio/bottleneck-1.jpg"
       ],
       "technology": [
         "illustrator",
