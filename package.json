@@ -22,7 +22,7 @@
     "redux-devtools-extension": "2.13.9",
     "redux-thunk": "2.3.0",
     "sass": "^1.26.3",
-    "swiper": "^5.4.5",
+    "swiper": "^6.5.1",
     "webpack": "^5.55.1"
   },
   "devDependencies": {
