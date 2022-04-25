@@ -1655,6 +1655,100 @@
         "nutrition",
         "e-commerce"
       ]
+    },
+    {
+      "id": 58,
+      "thumbnail": "/images/portfolio/byouty.jpg",
+      "title": "Project bYouty",
+      "slug": "byouty",
+      "description": "Project bYouty is the conscious online destination for women (and men) in the Middle East. It’s not just about skincare and selfcare, it’s way more than that. Project bYouty is on a journey of self-discovery with you: spiritually, emotionally, and physically.",
+      "year": 2021,
+      "images": [
+        "/images/portfolio/byouty-1.jpg",
+        "/images/portfolio/byouty-2.jpg",
+        "/images/portfolio/byouty-3.jpg"
+      ],
+      "technology": [
+        "css",
+        "html",
+        "jquery",
+        "python",
+        "django"
+      ],
+      "tags": [
+        "grocery",
+        "web",
+        "health",
+        "wellness",
+        "nutrition",
+        "e-commerce",
+        "store"
+      ]
+    },
+    {
+      "id": 59,
+      "thumbnail": "/images/portfolio/glu.jpg",
+      "title": "Glu",
+      "slug": "glu",
+      "description": "Glu provides workable solutions to issues encountered, when pushing for the best learning outcomes for students. Students - improve your grades with tailor-made online support. Parents - support your children and help them achieve. Find a teacher with the expertise you need, and much more.",
+      "year": 2021,
+      "images": [
+        "/images/portfolio/glu-1.jpg",
+        "/images/portfolio/glu-2.jpg",
+        "/images/portfolio/glu-3.jpg"
+      ],
+      "technology": [
+        "css",
+        "html",
+        "node",
+        "react",
+        "javascript",
+        "node",
+        "express",
+        "postgres"
+      ],
+      "tags": [
+        "identity",
+        "learning",
+        "education",
+        "subscription",
+        "web",
+        "school",
+        "university",
+        "services"
+      ]
+    },
+    {
+      "id": 60,
+      "thumbnail": "/images/portfolio/kmmrce.jpg",
+      "title": "Kmmrce",
+      "slug": "kmmrce",
+      "description": "Kmmrce is a digital enablement platform providing turnkey solutions to Retail and FinTech companies.",
+      "year": 2021,
+      "images": [
+        "/images/portfolio/kmmrce-1.jpg",
+        "/images/portfolio/kmmrce-2.jpg",
+        "/images/portfolio/kmmrce-3.jpg"
+      ],
+      "technology": [
+        "css",
+        "html",
+        "node",
+        "react",
+        "javascript",
+        "node",
+        "express",
+        "python",
+        "django"
+      ],
+      "tags": [
+        "identity",
+        "retail",
+        "learning",
+        "subscription",
+        "web",
+        "services"
+      ]
     }
   ]
 }

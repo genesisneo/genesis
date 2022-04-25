@@ -7,6 +7,7 @@ import {
 import getConfig from 'next/config';
 
 const MyDocument = () => {
+  const isDev = process.env.NODE_ENV === 'development';
   const { publicRuntimeConfig } = getConfig();
   const versionHash = publicRuntimeConfig.versionHash.length > 5
     ? publicRuntimeConfig.versionHash.substring(0, 5)
@@ -16,12 +17,9 @@ const MyDocument = () => {
     <Html lang="en">
       <Head>
 
-        {/* Icon */}
-        <link rel="icon" type="image/png" href={`/favicon.png?v=${versionHash}`} />
-        <link rel="icon shortcut" type="image/png" href={`/favicon.png?v=${versionHash}`} />
-
-        {/* Manifest */}
-        <link rel="manifest" href={`/manifest.json?v=${versionHash}`} />
+        {/* Meta */}
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1" />
 
         {/* Android & iOS */}
         <meta name="theme-color" content="#333333" />
@@ -35,56 +33,75 @@ const MyDocument = () => {
         <meta name="msapplication-wide310x150logo" content={`/images/app/windows-310x150.png?v=${versionHash}`} />
         <meta name="msapplication-square310x310logo" content={`/images/app/windows-310x310.png?v=${versionHash}`} />
 
+        {/* Icon */}
+        <link rel="icon" type="image/png" href={`/favicon.png?v=${versionHash}`} />
+        <link rel="icon shortcut" type="image/png" href={`/favicon.png?v=${versionHash}`} />
+
+        {/* Manifest */}
+        <link rel="manifest" href={`/manifest.json?v=${versionHash}`} />
+
+        {/* Font */}
+        <link
+          rel="stylesheet"
+          href={decodeURI('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap')}
+        />
+
       </Head>
       <body>
 
         <Main />
         <NextScript />
 
-        {/* Google Analytics */}
-        <script async src="https://googletagmanager.com/gtag/js?id=UA-142241147-1" />
-        <script
-          type="application/javascript"
-          dangerouslySetInnerHTML={{
-            __html:
-            `
-              window.dataLayer = window.dataLayer || [];
-              function gtag() { dataLayer.push(arguments); }
-              gtag('js', new Date());
-              gtag('config', 'UA-142241147-1');
-            `.replace(/(\r\n|\n|\r)/gm, ''),
-          }}
-        />
+        {!isDev && (
+          <>
 
-        {/* Service Worker */}
-        <script
-          type="application/javascript"
-          dangerouslySetInnerHTML={{
-            __html:
-            `
-              if ('serviceWorker' in navigator && !navigator.serviceWorker.controller) {
-                window.addEventListener('load', async function() {
-                  try {
-                    const serviceWorkerRegistered = await navigator
-                      .serviceWorker
-                      .register(
-                        '/service-worker.js?version=${versionHash}',
-                        {
-                          scope: '/',
-                          useCache: false
+            {/* Google Analytics */}
+            <script async src="https://googletagmanager.com/gtag/js?id=UA-142241147-1" />
+            <script
+              type="application/javascript"
+              dangerouslySetInnerHTML={{
+                __html:
+                `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag() { dataLayer.push(arguments); }
+                  gtag('js', new Date());
+                  gtag('config', 'UA-142241147-1');
+                `.replace(/(\t\r\n|\n|\r|\t)/, ''),
+              }}
+            />
+
+            {/* Service Worker */}
+            <script
+              type="application/javascript"
+              dangerouslySetInnerHTML={{
+                __html:
+                `
+                  if ('serviceWorker' in navigator && !navigator.serviceWorker.controller) {
+                    window.addEventListener('load', async function() {
+                      try {
+                        const serviceWorkerRegistered = await navigator
+                          .serviceWorker
+                          .register(
+                            '/service-worker.js?version=${versionHash}',
+                            {
+                              scope: '/',
+                              useCache: false
+                            }
+                          );
+                        if (serviceWorkerRegistered) {
+                          console.info('ServiceWorker registration successful!');
                         }
-                      );
-                    if (serviceWorkerRegistered) {
-                      console.info('ServiceWorker registration successful!');
-                    }
-                  } catch(error) {
-                    console.info('ServiceWorker registration failed!');
+                      } catch(error) {
+                        console.info('ServiceWorker registration failed!');
+                      }
+                    });
                   }
-                });
-              }
-            `,
-          }}
-        />
+                `,
+              }}
+            />
+
+          </>
+        )}
 
       </body>
     </Html>
