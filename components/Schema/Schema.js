@@ -22,9 +22,9 @@ const Schema = ({
       "description": "${siteDescription}",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Dubai, United Arab Emirates",
-        "postalCode": "Dubai",
-        "streetAddress": "Downtown Dubai"
+        "addressLocality": "Winnipeg, Manitoba, Canada",
+        "postalCode": "R3K1G1",
+        "streetAddress": "Shelley Street"
       },
       "sameAs": [
         "https://linkedin.com/in/genesisobtera",

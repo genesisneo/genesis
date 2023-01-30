@@ -39,20 +39,20 @@ const Details = ({
         {/* Meta */}
         <meta
           name="description"
-          content="Genesis is a Project Designer and Developer based in Dubai, United Arab Emirates."
+          content="Genesis is a Project Designer and Developer based in Winnipeg, Manitoba, Canada."
         />
 
         {/* Facebook */}
         <meta
           property="og:description"
-          content="Genesis is a Project Designer and Developer based in Dubai, United Arab Emirates."
+          content="Genesis is a Project Designer and Developer based in Winnipeg, Manitoba, Canada."
         />
         <meta property="og:url" content={`${siteDomain}/profile`} />
 
         {/* Twitter */}
         <meta
           name="twitter:description"
-          content="Genesis is a Project Designer and Developer based in Dubai, United Arab Emirates."
+          content="Genesis is a Project Designer and Developer based in Winnipeg, Manitoba, Canada."
         />
 
       </Head>
@@ -75,7 +75,7 @@ const Details = ({
         <div className={styles['Details-information']}>
           <b className={styles['Details-headings']}>Biography</b>
           <span className={styles['Details-body']}>
-            Genesis is a Project Designer and Developer based in Dubai, United Arab Emirates.
+            Genesis is a Project Designer and Developer based in Winnipeg, Manitoba, Canada.
             An innovative, task-driven professional with 8+ years of experience in web design
             and development across diverse industries. Suit with a record of success in
             consistently identifying and providing the technological needs of companies through
@@ -101,6 +101,38 @@ const Details = ({
         <div className={styles['Details-experience']}>
           <b className={styles['Details-headings']}>Experience</b>
           <div className={styles['Details-experience-table']}>
+
+            {/* sam media */}
+            <div className={styles['Details-experience-row']}>
+              <div className={styles['Details-experience-col']}>
+                <p className={styles['Details-experience-position']}>Senior Front-End Engineer</p>
+                <p className={styles['Details-experience-company']}>SAM Media</p>
+                <p className={styles['Details-experience-location']}>Dubai, United Arab Emirates</p>
+                <p className={styles['Details-experience-date']}>Nov 2021 - Current</p>
+                <p className={styles['Details-experience-responsibilities']}>
+                  Responsible for designing and implementing user-friendly landing pages for
+                  desktop and mobile and making sure that visitors will subscribe to the service.
+                  Collaborating with product owners, stakeholders, and other team members to
+                  understand product requirements, business goals, and user needs. Mentoring and
+                  guiding junior front-end developers, code review, and researching new technology
+                  and tools that can help improve the development process. Continues AB testing to
+                  construct a hypothesis and to learn why some elements of the experiences impact
+                  user behavior.
+                </p>
+              </div>
+              <div className={`${styles['Details-experience-col']} ${styles['Details-experience-col-avatar']}`}>
+                <div className={styles['Details-experience-companyAvatar']}>
+                  <Image
+                    className={styles['Details-experience-companyAvatar-image']}
+                    alt="SAM Media"
+                    src="/images/experience/sammedia.jpg"
+                    blurDataURL={imagePlaceholder}
+                    layout="fill"
+                    placeholder="blur"
+                  />
+                </div>
+              </div>
+            </div>
 
             {/* digital and code */}
             <div className={styles['Details-experience-row']}>
