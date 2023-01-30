@@ -1,6 +1,7 @@
+// eslint-disable-next-line import/no-unresolved
+import { Analytics } from '@vercel/analytics/react';
 import { useEffect } from 'react';
 import Head from 'next/head';
-import { Analytics } from '@vercel/analytics/react';
 import { wrapper } from '../redux/store';
 import Layout from '../components/Layout/Layout';
 import './styles.scss';
