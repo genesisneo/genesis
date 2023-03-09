@@ -76,10 +76,10 @@ const Details = ({
           <b className={styles['Details-headings']}>Biography</b>
           <span className={styles['Details-body']}>
             Genesis is a Project Designer and Developer based in Winnipeg, Manitoba, Canada.
-            An innovative, task-driven professional with 8+ years of experience in web design
-            and development across diverse industries. Suit with a record of success in
-            consistently identifying and providing the technological needs of companies through
-            ingenious innovation.
+            An innovative, task-driven professional with more than 10 years of experience
+            in web design and development across diverse industries. Suit with a record of
+            success in consistently identifying and providing the technological needs of
+            companies through ingenious innovation.
           </span>
           <span className={styles['Details-body']}>
             He has been part of a team that develops some of the known e-commerce sites in
@@ -107,7 +107,7 @@ const Details = ({
               <div className={styles['Details-experience-col']}>
                 <p className={styles['Details-experience-position']}>Senior Front-End Engineer</p>
                 <p className={styles['Details-experience-company']}>SAM Media</p>
-                <p className={styles['Details-experience-location']}>Dubai, United Arab Emirates</p>
+                <p className={styles['Details-experience-location']}>Remote - Amsterdam, Netherlands</p>
                 <p className={styles['Details-experience-date']}>Nov 2021 - Current</p>
                 <p className={styles['Details-experience-responsibilities']}>
                   Responsible for designing and implementing user-friendly landing pages for
@@ -139,7 +139,7 @@ const Details = ({
               <div className={styles['Details-experience-col']}>
                 <p className={styles['Details-experience-position']}>Front-End Engineer</p>
                 <p className={styles['Details-experience-company']}>Digital &amp; Code DMCC</p>
-                <p className={styles['Details-experience-location']}>Dubai, United Arab Emirates</p>
+                <p className={styles['Details-experience-location']}>On-Site - Dubai, United Arab Emirates</p>
                 <p className={styles['Details-experience-date']}>Jul 2020 - Sep 2021</p>
                 <p className={styles['Details-experience-responsibilities']}>
                   Responsible for converting a design into a full working code, maintaining,
@@ -169,7 +169,7 @@ const Details = ({
               <div className={styles['Details-experience-col']}>
                 <p className={styles['Details-experience-position']}>Front-End Engineer</p>
                 <p className={styles['Details-experience-company']}>Al Tayer Insignia</p>
-                <p className={styles['Details-experience-location']}>Dubai, United Arab Emirates</p>
+                <p className={styles['Details-experience-location']}>On-Site - Dubai, United Arab Emirates</p>
                 <p className={styles['Details-experience-date']}>Oct 2017 - Jun 2020</p>
                 <p className={styles['Details-experience-responsibilities']}>
                   Ensure the technical feasibility of user interface and user experience
@@ -201,7 +201,7 @@ const Details = ({
               <div className={styles['Details-experience-col']}>
                 <p className={styles['Details-experience-position']}>Product Designer and Developer</p>
                 <p className={styles['Details-experience-company']}>First Screen FZ LLC</p>
-                <p className={styles['Details-experience-location']}>Dubai, United Arab Emirates</p>
+                <p className={styles['Details-experience-location']}>On-Site - Dubai, United Arab Emirates</p>
                 <p className={styles['Details-experience-date']}>Jun 2013 - Sep 2017</p>
                 <p className={styles['Details-experience-responsibilities']}>
                   Responsible for creating &amp; developing effective landing pages for
@@ -232,7 +232,7 @@ const Details = ({
               <div className={styles['Details-experience-col']}>
                 <p className={styles['Details-experience-position']}>Web and Graphic Designer</p>
                 <p className={styles['Details-experience-company']}>First Mobile Wallet FZ LLC</p>
-                <p className={styles['Details-experience-location']}>Dubai, United Arab Emirates</p>
+                <p className={styles['Details-experience-location']}>On-Site - Dubai, United Arab Emirates</p>
                 <p className={styles['Details-experience-date']}>Oct 2012 - May 2013</p>
                 <p className={styles['Details-experience-responsibilities']}>
                   Responsible for developing the layout and overall look of the website
