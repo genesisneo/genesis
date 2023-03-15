@@ -24,7 +24,7 @@
     "redux-thunk": "^2.4.1",
     "sass": "^1.50.1",
     "swiper": "^5.4.5",
-    "webpack": "^5.72.0"
+    "webpack": "^5.76.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
