@@ -1,0 +1,9 @@
+.Loading {
+  position: absolute;
+  display: flex;
+  inset: 0;
+  align-items: center;
+  backdrop-filter: blur(16px);
+  justify-content: center;
+  z-index: 11;
+}

@@ -1,12 +1,13 @@
-# Directories
-
+# folders
 .next/
-build/
-dist/
 node_modules/
+public/
+dist/
+build/
 
-# Files
-
+# files
 .DS_Store
 .env
-service-worker.js
+next-env.d.ts
+yarn.lock
+package-lock.json

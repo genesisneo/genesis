@@ -1,0 +1,70 @@
+{
+  // exclude files and folders
+  "files.exclude": {
+    "**/.git": true,
+    "**/.next": true,
+    "**/node_modules": true,
+    "**/.DS_Store": true
+  },
+  "search.exclude": {
+    "**/.husky": true,
+    "**/.next": true,
+    "**.vscode": true,
+    "**/node_modules": true
+  },
+
+  // editor
+  "editor.detectIndentation": false,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.guides.indentation": true,
+  "editor.insertSpaces": true,
+  "editor.renderControlCharacters": true,
+  "editor.renderWhitespace": "all",
+  "editor.tabSize": 2,
+  "editor.wordWrap": "off",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.format": "explicit"
+  },
+  "explorer.autoReveal": true,
+  "explorer.openEditors.visible": 0,
+  "workbench.editor.revealIfOpen": false,
+  "workbench.list.smoothScrolling": true,
+  "typescript.check.npmIsInstalled": false,
+
+  // EXTENSIONS
+
+  // prettier
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[sass]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // indent rainbow
+  "indentRainbow.colors": [
+    "rgba(255,145,145,0.16)",
+    "rgba(255,145,230,0.16)",
+    "rgba(180,145,255,0.16)",
+    "rgba(145,200,255,0.16)",
+    "rgba(145,255,240,0.16)",
+    "rgba(145,255,145,0.16)",
+    "rgba(255,255,145,0.16)",
+    "rgba(255,210,145,0.16)"
+  ],
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  }
+}

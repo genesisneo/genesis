@@ -1,100 +1,103 @@
 <html lang="en">
-  <head>
-    <title>Device Offline</title>
-    <meta charSet="utf-8" />
-    <meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
-    <link rel="icon shortcut" type="image/png" href="/favicon.png" />
-    <link rel="manifest" href="/manifest.json" />
-    <style type="text/css">
-      html,
-      body {
-        margin: 0;
-        padding: 0;
-        width: 100vw;
-        height: 100vh;
-        background-color: #3B3B3B;
-        font: normal normal 400 100%/1.5 Helvetica, Arial, sans-serif;
-        color: #222;
+
+<head>
+  <title>Device Offline</title>
+  <meta charSet="utf-8" />
+  <meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="icon shortcut" type="image/png" href="/favicon.png" />
+  <link rel="manifest" href="/manifest.json" />
+  <style type="text/css">
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: #3B3B3B;
+      font: normal normal 400 100%/1.5 Helvetica, Arial, sans-serif;
+      color: #222;
     }
-      .Offline {
-        display: flex;
-        width: 100%;
-        height: 100%;
-        flex-direction: column;
-        justify-content: center;
-      }
-      .Offline-title {
-        margin: 1.000rem auto 2.000rem;
-        text-align: center;
-        text-transform: uppercase;
-        text-decoration: none;
-      }
-      .Offline-description {
-        display: block;
-        color: #777;
-        font-size: 0.750rem;
-        letter-spacing: 0;
-      }
-      .Offline-name {
-        display: block;
-        color: #fff;
-        font-size: 1.500rem;
-        font-weight: 700;
-        line-height: 1.25;
-      }
-      .Offline-image {
-        display: block;
-        margin: 0 auto;
-        padding: 0;
-        width: 100%;
-        height: auto;
-        max-width: 36.875rem;
-        max-height: 24.375rem;
-      }
-      .Offline-message {
-        margin: 2.000rem auto 1.000rem;
-        padding: 0 1.000rem;
-        color: #fff;
-        text-align: center;
-      }
-      .Offline-button {
-        display: block;
-        margin: 0 auto 1.000rem;
-        padding: 1.000rem;
-        background-color: #ff5252;
-        border: none;
-        border-radius: 0.500rem;
-        color: #fff;
-        cursor: pointer;
-        font-size: 0.750rem;
-        font-weight: 700;
-        line-height: 1.25;
-        outline: none;
-        text-transform: uppercase;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="Offline">
-      <p class="Offline-title">
-        <b class="Offline-description">Error</b>
-        <span class="Offline-name">Device Offline</span>
-      </p>
-      <img
-        class="Offline-image"
-        alt="Device Offline"
-        src="/images/error.jpg"
-      />
-      <p class="Offline-message">
-        This device is offline! Try refreshing this page once you got back online.
-      </p>
-      <button
-        class="Offline-button"
-        onClick="location.reload()"
-      >
-        Reload Now!
-      </button>
-    </div>
-  </body>
+
+    .Offline {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .Offline-title {
+      margin: 1.000rem auto 2.000rem;
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+
+    .Offline-description {
+      display: block;
+      color: #777;
+      font-size: 0.750rem;
+      letter-spacing: 0;
+    }
+
+    .Offline-name {
+      display: block;
+      color: #fff;
+      font-size: 1.500rem;
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    .Offline-image {
+      display: block;
+      margin: 0 auto;
+      padding: 0;
+      width: 100%;
+      height: auto;
+      max-width: 36.875rem;
+      max-height: 24.375rem;
+    }
+
+    .Offline-message {
+      margin: 2.000rem auto 1.000rem;
+      padding: 0 1.000rem;
+      color: #fff;
+      text-align: center;
+    }
+
+    .Offline-button {
+      display: block;
+      margin: 0 auto 1.000rem;
+      padding: 1.000rem;
+      background-color: #d9073c;
+      border: none;
+      border-radius: 0.500rem;
+      color: #fff;
+      cursor: pointer;
+      font-size: 0.750rem;
+      font-weight: 700;
+      line-height: 1.25;
+      outline: none;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="Offline">
+    <p class="Offline-title">
+      <b class="Offline-description">Error</b>
+      <span class="Offline-name">Device Offline</span>
+    </p>
+    <img class="Offline-image" alt="Device Offline" src="/images/error.jpg" />
+    <p class="Offline-message">
+      This device is offline! Try refreshing this page once you got back online.
+    </p>
+    <button class="Offline-button" onClick="location.reload()">
+      Reload Now
+    </button>
+  </div>
+</body>
+
 </html>

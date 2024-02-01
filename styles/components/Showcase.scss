@@ -1,0 +1,132 @@
+.Showcase {
+  position: relative;
+  background-color: var(--theme-color-primary);
+  color: var(--theme-color-text-secondary);
+  z-index: 1;
+
+  &:has(+ .Statistics) {
+    padding-bottom: 8rem;
+  }
+
+  &:has(.is-transparent) {
+    z-index: 0;
+  }
+
+  @media screen and (min-width: $screen-tablet) {
+    padding-inline: 1rem;
+  }
+
+  &__content {
+    position: relative;
+    margin: 0 auto;
+    padding: 8rem 1rem;
+    max-width: 80rem;
+    background-color: var(--theme-color-background);
+    border-radius: var(--threme-border-radius);
+    text-align: center;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 8rem;
+      height: 8rem;
+      background-image: repeating-radial-gradient(
+        var(--theme-color-accent),
+        var(--theme-color-accent) 25%,
+        transparent 25%,
+        transparent 100%
+      );
+      background-size: 0.5rem 0.5rem;
+      opacity: 0.5;
+
+      @media screen and (min-width: $screen-tablet) {
+        width: 16rem;
+      }
+    }
+
+    &::before {
+      top: calc(-8rem / 2);
+      left: 1rem;
+    }
+
+    &::after {
+      bottom: calc(-4rem);
+      right: 1rem;
+      height: 4rem;
+    }
+
+    &.is-transparent {
+      background-color: var(--theme-color-primary);
+
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+    § &-subtitle,
+    &-title,
+    &-description {
+      margin: 0 auto;
+      padding: 0;
+      font-weight: 600;
+    }
+
+    &-subtitle {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+
+      @media screen and (min-width: $screen-tablet) {
+        font-size: 1rem;
+      }
+    }
+
+    &-title {
+      margin: 1rem auto 2rem;
+      color: var(--theme-color-text-primary);
+      font-family: var(--font-libre);
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: 2rem;
+      text-wrap: balance;
+
+      &::after {
+        content: "";
+        display: block;
+        margin: 2rem auto 0;
+        width: 8rem;
+        height: 1px;
+        background-color: var(--theme-color-accent);
+      }
+
+      @media screen and (min-width: $screen-tablet) {
+        font-size: 2rem;
+        line-height: 2.5rem;
+
+        &::after {
+          margin-top: 1rem;
+        }
+      }
+    }
+
+    &-description {
+      margin: 0 auto;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5rem;
+      text-wrap: balance;
+
+      @media screen and (min-width: $screen-tablet) {
+        font-size: 1.125rem;
+        line-height: 2rem;
+      }
+    }
+
+    &:has(.Showcase__content-button) {
+      .Showcase__content-description {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

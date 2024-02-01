@@ -1,0 +1,124 @@
+.Hero {
+  position: relative;
+  display: flex;
+  width: 100dvw;
+  min-height: 100svh;
+  align-items: center;
+  background-color: var(--theme-color-primary);
+  color: var(--theme-color-text-secondary);
+  z-index: 1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    bottom: -2rem;
+    margin: 0 auto;
+    width: 1px;
+    height: 4rem;
+    background-color: var(--theme-color-accent);
+
+    @media screen and (min-width: $screen-tablet) {
+      bottom: -4rem;
+      height: 8rem;
+    }
+  }
+
+  &__ornaments {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: block;
+      margin: 0 auto;
+      width: auto;
+      height: max(160dvw, 160dvh);
+      aspect-ratio: 1 / 1;
+      background-color: var(--theme-color-background);
+      border-radius: 50%;
+      transform: translateX(calc(-50% + 50dvw));
+    }
+  }
+
+  &__content {
+    position: relative;
+    margin: 8rem auto;
+    padding: 0 1rem;
+    max-width: 55rem;
+    text-align: center;
+
+    &-subtitle,
+    &-title,
+    &-description {
+      margin: 0 auto;
+      padding: 0;
+      font-weight: 600;
+    }
+
+    &-subtitle {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+
+      @media screen and (min-width: $screen-tablet) {
+        font-size: 1rem;
+      }
+    }
+
+    &-title {
+      margin: 1rem auto 2rem;
+      color: var(--theme-color-text-primary);
+      font-family: var(--font-libre);
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 2.5rem;
+      text-wrap: balance;
+
+      &::after {
+        content: "";
+        display: block;
+        margin: 2rem auto 0;
+        width: 8rem;
+        height: 1px;
+        background-color: var(--theme-color-accent);
+      }
+
+      @media screen and (min-width: $screen-tablet) {
+        font-size: 4.5rem;
+        line-height: 5rem;
+
+        &::after {
+          margin-top: 1rem;
+        }
+      }
+    }
+
+    &-description {
+      margin: 0 auto;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5rem;
+      text-wrap: balance;
+
+      @media screen and (min-width: $screen-tablet) {
+        font-size: 1.125rem;
+        line-height: 2rem;
+      }
+    }
+
+    &:has(.Hero__content-button) {
+      .Hero__content-description {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

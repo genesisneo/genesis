@@ -1,0 +1,18 @@
+@import "https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Libre+Baskerville:wght@400;700&display=swap";
+
+:root {
+  // theme
+  --theme-color-text-primary: #fff;
+  --theme-color-text-secondary: #6c737d;
+  --theme-color-background: #0b0b0c;
+  --theme-color-primary: #15171b;
+  --theme-color-accent: #d9073c;
+  --threme-border-radius: 0.5rem;
+
+  // font
+  --font-inter: "Inter", arial, sans-serif;
+  --font-libre: "Libre Baskerville", garamond, serif;
+  --font-line-height: 1.5;
+  --font-size: 100%;
+  --font-weight: 400;
+}

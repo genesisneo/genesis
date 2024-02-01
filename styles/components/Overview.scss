@@ -1,0 +1,121 @@
+.Overview {
+  position: relative;
+  background-color: var(--theme-color-primary);
+  color: var(--theme-color-text-secondary);
+  overflow: hidden;
+
+  &__content {
+    position: relative;
+    margin: 8rem auto;
+    padding: 0 1rem;
+    max-width: 80rem;
+    text-align: center;
+
+    &-subtitle,
+    &-title,
+    &-description {
+      margin: 0 auto;
+      padding: 0;
+      max-width: 55rem;
+      font-weight: 600;
+    }
+
+    &-subtitle {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+
+      @media screen and (min-width: $screen-tablet) {
+        font-size: 1rem;
+      }
+    }
+
+    &-title {
+      margin: 1rem auto 2rem;
+      color: var(--theme-color-text-primary);
+      font-family: var(--font-libre);
+      font-size: 1.5em;
+      font-weight: 700;
+      line-height: 2rem;
+      text-wrap: balance;
+
+      &::after {
+        content: "";
+        display: block;
+        margin: 2rem auto 0;
+        width: 8rem;
+        height: 1px;
+        background-color: var(--theme-color-accent);
+      }
+
+      @media screen and (min-width: $screen-tablet) {
+        font-size: 2rem;
+        line-height: 2.5rem;
+
+        &::after {
+          margin-top: 1rem;
+        }
+      }
+    }
+
+    &-description {
+      margin: 8rem auto 0;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5rem;
+      text-wrap: balance;
+
+      @media screen and (min-width: $screen-tablet) {
+        font-size: 1.125rem;
+        line-height: 2rem;
+      }
+    }
+
+    &:has(.Overview__content-link) {
+      .Overview__content-description {
+        margin-bottom: 4rem;
+      }
+    }
+  }
+
+  &__children {
+    position: relative;
+    display: grid;
+    margin: 8rem auto;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+    text-align: initial;
+
+    @media screen and (min-width: $screen-tablet) {
+      gap: 5rem;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &-bullet {
+      margin-bottom: 5rem;
+
+      &-title {
+        margin-bottom: 1rem;
+        color: var(--theme-color-text-primary);
+        font-size: 1.125rem;
+        font-weight: 600;
+        line-height: normal;
+
+        @media screen and (min-width: $screen-tablet) {
+          font-size: 1.5rem;
+        }
+      }
+
+      &-description {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5rem;
+        text-wrap: balance;
+
+        @media screen and (min-width: $screen-tablet) {
+          font-size: 1.125rem;
+          line-height: 2rem;
+        }
+      }
+    }
+  }
+}

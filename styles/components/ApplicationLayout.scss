@@ -1,0 +1,200 @@
+$screen-mobile: 36rem;
+$screen-tablet: 48rem;
+$screen-laptop: 75rem;
+$screen-desktop: 102.5rem;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
+  -o-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -moz-touch-callout: none;
+  -ms-touch-callout: none;
+  -o-touch-callout: none;
+  user-select: none;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: var(--theme-color-background);
+  font-family: var(--font-inter);
+  font-size: var(--font-size);
+  line-height: var(--font-line-height);
+  color: var(--theme-color-text-primary);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  -ms-tap-highlight-color: rgba(0, 0, 0, 0);
+  -o-tap-highlight-color: rgba(0, 0, 0, 0);
+  scroll-behavior: smooth;
+
+  a {
+    display: inline-block;
+    color: var(--theme-color-accent);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  // button
+
+  .button {
+    display: inline-block;
+    margin: 0 auto 0;
+    padding: 1rem 2rem;
+    min-width: 2rem;
+    appearance: unset;
+    background-color: var(--theme-color-accent);
+    border: unset;
+    border-radius: var(--threme-border-radius);
+    color: var(--theme-color-text-primary);
+    cursor: pointer;
+    font-size: 0.875rem;
+    outline: unset;
+    transition: filter 0.25s ease;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+      filter: brightness(1.125);
+      text-decoration: none;
+    }
+
+    @media screen and (min-width: $screen-tablet) {
+      font-size: 1.125rem;
+    }
+  }
+
+  // link
+
+  .link {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    color: var(--theme-color-accent);
+    cursor: pointer;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+
+    &:hover {
+      filter: brightness(1.125);
+
+      &::after {
+        animation: link 0.25s ease forwards;
+
+        @keyframes link {
+          0%,
+          100% {
+            transform: translate3d(0, 0, 0);
+          }
+          50% {
+            transform: translate3d(0.5rem, -0.5rem, 0);
+          }
+          51% {
+            transform: translate3d(-0.5rem, 0.5rem, 0);
+          }
+        }
+      }
+    }
+
+    @media screen and (min-width: $screen-tablet) {
+      font-size: 1rem;
+    }
+
+    &::after {
+      content: "";
+      position: relative;
+      display: inline-block;
+      margin-inline-start: 1rem;
+      width: 0.75rem;
+      height: 0.75rem;
+      background: linear-gradient(
+        135deg,
+        rgba(217, 7, 60, 0) 0%,
+        rgba(217, 7, 60, 0) calc(50% - 0.5px),
+        rgba(217, 7, 60, 1) calc(50% - 0.5px),
+        rgba(217, 7, 60, 1) calc(50% + 0.5px),
+        rgba(217, 7, 60, 0) calc(50% + 0.5px),
+        rgba(217, 7, 60, 0) 100%
+      );
+      background-repeat: no-repeat;
+      border: 1px solid var(--theme-color-accent);
+      border-left: none;
+      border-bottom: none;
+      vertical-align: baseline;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  // utilities
+
+  .d-none {
+    display: none !important;
+  }
+
+  @media screen and (min-width: $screen-mobile) {
+    .d-sm-none {
+      display: none !important;
+    }
+  }
+
+  @media screen and (min-width: $screen-tablet) {
+    .d-md-none {
+      display: none !important;
+    }
+  }
+
+  @media screen and (min-width: $screen-laptop) {
+    .d-lg-none {
+      display: none !important;
+    }
+  }
+
+  @media screen and (min-width: $screen-desktop) {
+    .d-xl-none {
+      display: none !important;
+    }
+  }
+
+  .d-block {
+    display: block !important;
+  }
+
+  @media screen and (min-width: $screen-mobile) {
+    .d-sm-block {
+      display: block !important;
+    }
+  }
+
+  @media screen and (min-width: $screen-tablet) {
+    .d-md-block {
+      display: block !important;
+    }
+  }
+
+  @media screen and (min-width: $screen-laptop) {
+    .d-lg-block {
+      display: block !important;
+    }
+  }
+
+  @media screen and (min-width: $screen-desktop) {
+    .d-xl-block {
+      display: block !important;
+    }
+  }
+}
+
+.ApplicationLayout {
+  main {
+    position: relative;
+  }
+}

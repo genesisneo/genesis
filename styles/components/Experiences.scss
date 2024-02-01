@@ -1,0 +1,80 @@
+.Experiences {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 65rem;
+
+  &__item {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+    text-align: initial;
+
+    &:not(:last-child) {
+      margin-bottom: 5rem;
+    }
+
+    @media screen and (min-width: $screen-tablet) {
+      grid-template-columns: 1fr 2fr 3fr;
+    }
+
+    &-company {
+      display: none;
+      width: 5rem;
+      height: 5rem;
+      aspect-ratio: 1 / 1;
+      border-radius: var(--threme-border-radius);
+      object-fit: cover;
+
+      @media screen and (min-width: $screen-tablet) {
+        display: block;
+      }
+    }
+
+    &-details {
+      .position,
+      .company,
+      .location,
+      .date {
+        display: block;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        text-wrap: balance;
+
+        @media screen and (min-width: $screen-tablet) {
+          font-size: 1.125rem;
+          line-height: 2rem;
+        }
+      }
+
+      .position,
+      .company {
+        color: var(--theme-color-text-primary);
+      }
+
+      .position {
+        font-weight: 600;
+      }
+    }
+
+    &-responsibilities {
+      > p {
+        margin: 0;
+        font-size: 1rem;
+        line-height: 1.5rem;
+
+        @media screen and (min-width: $screen-tablet) {
+          font-size: 1.125rem;
+          line-height: 2rem;
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+
+        &.linkedin {
+          margin: 4rem auto 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,215 @@
+.Footer {
+  position: relative;
+  padding: 8rem 0;
+  color: var(--theme-color-text-secondary);
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    right: calc(1rem + calc(2.5rem / 2));
+    width: 1px;
+    height: 8rem;
+    background-color: var(--theme-color-text-secondary);
+
+    @media screen and (min-width: $screen-tablet) {
+      right: calc(2rem + calc(2.5rem / 2));
+    }
+  }
+
+  &__content {
+    position: relative;
+    display: grid;
+    margin: auto;
+    padding: 0 1rem;
+    max-width: 80rem;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+
+    @media screen and (min-width: $screen-tablet) {
+      gap: 5rem;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &-subtitle,
+    &-title,
+    &-description {
+      margin: 0 auto;
+      padding: 0;
+      font-weight: 600;
+    }
+
+    &-subtitle {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+
+      @media screen and (min-width: $screen-tablet) {
+        font-size: 1rem;
+      }
+    }
+
+    &-title {
+      margin: 1rem auto 2rem;
+      color: var(--theme-color-text-primary);
+      font-family: var(--font-libre);
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: 2rem;
+      text-wrap: balance;
+
+      &::after {
+        content: "";
+        display: block;
+        margin: 2rem 0 0;
+        width: 8rem;
+        height: 1px;
+        background-color: var(--theme-color-accent);
+      }
+
+      @media screen and (min-width: $screen-tablet) {
+        font-size: 2rem;
+        line-height: 2.5rem;
+
+        &::after {
+          margin-top: 1rem;
+        }
+      }
+    }
+
+    &-description {
+      margin: 2rem auto 0;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5rem;
+      text-wrap: balance;
+
+      @media screen and (min-width: $screen-tablet) {
+        font-size: 1.125rem;
+        line-height: 2rem;
+      }
+    }
+
+    &-social {
+      margin: 0 auto;
+      padding: 0;
+
+      &:not(:last-child) {
+        margin-block-end: 2.5rem;
+      }
+
+      small {
+        display: block;
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+
+        @media screen and (min-width: $screen-tablet) {
+          font-size: 1rem;
+        }
+      }
+
+      a {
+        display: table;
+        margin-bottom: 0.5rem;
+        color: var(--theme-color-text-primary);
+        font-size: 1rem;
+        font-weight: 400;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+
+        @media screen and (min-width: $screen-tablet) {
+          font-size: 1.125rem;
+        }
+      }
+
+      &-table {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        @media screen and (min-width: $screen-tablet) {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    }
+
+    &:has(.Footer__content-button) {
+      .Footer__content-description {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  &__copyright {
+    margin: 2rem auto 0;
+    padding: 0 1rem;
+    max-width: 80rem;
+    font-size: 0.75rem;
+
+    @media screen and (min-width: $screen-tablet) {
+      margin-top: 5rem;
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    display: flex;
+    right: 1rem;
+    bottom: 8rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    align-items: center;
+    background-color: var(--theme-color-accent);
+    border-radius: 50%;
+    justify-content: center;
+
+    &:hover {
+      filter: brightness(1.125);
+
+      &::after {
+        animation: footer-arrow 0.25s ease forwards;
+
+        @keyframes footer-arrow {
+          0%,
+          100% {
+            transform: rotate(-45deg) translate3d(0, 0, 0);
+          }
+          50% {
+            transform: rotate(-45deg) translate3d(0.5rem, -0.5rem, 0);
+          }
+          51% {
+            transform: rotate(-45deg) translate3d(-0.5rem, 0.5rem, 0);
+          }
+        }
+      }
+    }
+
+    @media screen and (min-width: $screen-tablet) {
+      right: 2rem;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 0.75rem;
+      height: 0.75rem;
+      background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0) calc(50% - 0.5px),
+        rgba(255, 255, 255, 1) calc(50% - 0.5px),
+        rgba(255, 255, 255, 1) calc(50% + 0.5px),
+        rgba(255, 255, 255, 0) calc(50% + 0.5px),
+        rgba(255, 255, 255, 0) 100%
+      );
+      background-repeat: no-repeat;
+      border: 1px solid var(--theme-color-text-primary);
+      border-left: none;
+      border-bottom: none;
+      transform: rotate(-45deg);
+    }
+  }
+}

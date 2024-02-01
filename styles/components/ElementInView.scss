@@ -1,0 +1,39 @@
+.ElementInView {
+  position: relative;
+  display: inline-block;
+  text-decoration: inherit;
+
+  &__item {
+    display: inline-block;
+    opacity: 0;
+    text-decoration: inherit;
+    transform: translateY(1rem);
+    transition:
+      opacity 0.25s ease 0.125s,
+      transform 0.25s ease 0.125s;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    inset: 0 0 auto auto;
+    width: 100%;
+    height: 100%;
+    background-color: var(--theme-color-accent);
+    transition: width 0.25s ease;
+  }
+
+  &.is-visible {
+    .ElementInView {
+      &__item {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    &::after {
+      width: 0;
+    }
+  }
+}
