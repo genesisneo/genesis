@@ -3,7 +3,6 @@ import { IGlobal } from "@/redux/slices/global/types";
 
 const Schema = () => {
   const { name, description, domain, project }: IGlobal = reduxStore.getState().global;
-  console.log(">>>", "id" in project ? project.id : "");
 
   return (
     <>

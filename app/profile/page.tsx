@@ -1,6 +1,5 @@
 import { Metadata } from "next";
-import { api } from "@/utilities/api";
-import { endpoints } from "@/utilities/endpoints";
+import { domain, endpoints } from "@/utilities/endpoints";
 import { errorHandler } from "@/utilities/errorHandler";
 import { reduxStore } from "@/redux/store";
 import { revertAll, setLoading, setProfile } from "@/redux/slices/global";
@@ -26,9 +25,9 @@ async function getData() {
   reduxStore.dispatch(revertAll());
   reduxStore.dispatch(setLoading(true));
   try {
-    // set profile
-    const profile = await api.get(endpoints.profile);
-    reduxStore.dispatch(setProfile(profile?.data?.profile || {}));
+    const requestProfile = await fetch(`${domain}/${endpoints.profile}`);
+    const dataProfile = await requestProfile.json();
+    reduxStore.dispatch(setProfile(dataProfile?.profile || {}));
   } catch (error: any) {
     errorHandler(error);
   }

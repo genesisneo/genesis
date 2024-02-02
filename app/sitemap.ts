@@ -1,6 +1,5 @@
 import { MetadataRoute } from "next";
-import { api } from "@/utilities/api";
-import { endpoints } from "@/utilities/endpoints";
+import { domain, endpoints } from "@/utilities/endpoints";
 import { IProject, IProjects } from "@/redux/slices/global/types";
 
 const sitemapXml = (portfolio: IProjects): MetadataRoute.Sitemap => {
@@ -69,6 +68,7 @@ const sitemapXml = (portfolio: IProjects): MetadataRoute.Sitemap => {
 };
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const projects = await api.get(endpoints.projects);
-  return sitemapXml(projects?.data?.projects);
+  const requestProjects = await fetch(`${domain}/${endpoints.projects}`);
+  const dataProjects = await requestProjects.json();
+  return sitemapXml(dataProjects.projects || []);
 }

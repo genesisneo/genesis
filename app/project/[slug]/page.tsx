@@ -1,6 +1,5 @@
 import { Metadata } from "next";
-import { api } from "@/utilities/api";
-import { endpoints } from "@/utilities/endpoints";
+import { domain, endpoints } from "@/utilities/endpoints";
 import { errorHandler } from "@/utilities/errorHandler";
 import { reduxStore } from "@/redux/store";
 import { revertAll, setLoading, setProject, setProjects } from "@/redux/slices/global";
@@ -26,12 +25,12 @@ async function getData(slug: string) {
   reduxStore.dispatch(revertAll());
   reduxStore.dispatch(setLoading(true));
   try {
-    // set project
-    const project = await api.get(`${endpoints.project}/${slug}`);
-    reduxStore.dispatch(setProject(project?.data?.project || {}));
-    // set projects
-    const projects = await api.get(endpoints.projects);
-    reduxStore.dispatch(setProjects(projects?.data?.projects || []));
+    const requestProject = await fetch(`${domain}/${endpoints.project}/${slug}`);
+    const dataProject = await requestProject.json();
+    reduxStore.dispatch(setProject(dataProject?.project || {}));
+    const requestProjects = await fetch(`${domain}/${endpoints.projects}`);
+    const dataProjects = await requestProjects.json();
+    reduxStore.dispatch(setProjects(dataProjects?.projects || []));
   } catch (error: any) {
     errorHandler(error);
   }
