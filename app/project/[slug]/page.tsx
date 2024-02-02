@@ -1,9 +1,9 @@
 import { Metadata } from "next";
-import { domain, endpoints } from "@/utilities/endpoints";
 import { errorHandler } from "@/utilities/errorHandler";
 import { reduxStore } from "@/redux/store";
 import { revertAll, setLoading, setProject, setProjects } from "@/redux/slices/global";
 import { IProject, IProjects, IGlobal } from "@/redux/slices/global/types";
+import data from "@/app/api/data/data.json";
 import ElementInView from "@/components/ElementInView/ElementInView";
 import Gallery from "@/components/Gallery/Gallery";
 import Project from "@/components/Project/Project";
@@ -25,12 +25,8 @@ async function getData(slug: string) {
   reduxStore.dispatch(revertAll());
   reduxStore.dispatch(setLoading(true));
   try {
-    const requestProject = await fetch(`${domain}/${endpoints.project}/${slug}`);
-    const dataProject = await requestProject.json();
-    reduxStore.dispatch(setProject(dataProject?.project || {}));
-    const requestProjects = await fetch(`${domain}/${endpoints.projects}`);
-    const dataProjects = await requestProjects.json();
-    reduxStore.dispatch(setProjects(dataProjects?.projects || []));
+    reduxStore.dispatch(setProject(data.portfolio.find((item) => item.slug === slug) || {}));
+    reduxStore.dispatch(setProjects(data.portfolio || []));
   } catch (error: any) {
     errorHandler(error);
   }

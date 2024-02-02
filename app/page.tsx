@@ -1,9 +1,9 @@
 import { Metadata } from "next";
-import { domain, endpoints } from "@/utilities/endpoints";
 import { errorHandler } from "@/utilities/errorHandler";
 import { reduxStore } from "@/redux/store";
 import { revertAll, setLoading, setProjects } from "@/redux/slices/global";
 import { IProjects, IGlobal } from "@/redux/slices/global/types";
+import data from "@/app/api/data/data.json";
 import ElementInView from "@/components/ElementInView/ElementInView";
 import Hero from "@/components/Hero/Hero";
 import Overview from "@/components/Overview/Overview";
@@ -26,9 +26,7 @@ async function getData() {
   reduxStore.dispatch(revertAll());
   reduxStore.dispatch(setLoading(true));
   try {
-    const requestProjects = await fetch(`${domain}/${endpoints.projects}`);
-    const dataProjects = await requestProjects.json();
-    reduxStore.dispatch(setProjects(dataProjects?.projects || []));
+    reduxStore.dispatch(setProjects(data.portfolio || []));
   } catch (error: any) {
     errorHandler(error);
   }
