@@ -1,6 +1,6 @@
 import { MetadataRoute } from "next";
+import { domain, endpoints } from "@/utilities/endpoints";
 import { IProject, IProjects } from "@/redux/slices/global/types";
-import data from "@/app/api/data/data.json";
 
 const sitemapXml = (portfolio: IProjects): MetadataRoute.Sitemap => {
   const siteDomain: string = "https://genesis.obtera.com";
@@ -68,5 +68,7 @@ const sitemapXml = (portfolio: IProjects): MetadataRoute.Sitemap => {
 };
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  return sitemapXml(data.portfolio || []);
+  const requestProjects = await fetch(`${domain}/${endpoints.projects}`);
+  const dataProjects = await requestProjects.json();
+  return sitemapXml(dataProjects.projects || []);
 }

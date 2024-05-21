@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { GoogleTagManager } from "@next/third-parties/google";
 import { Providers } from "@/redux/providers";
 import { reduxStore } from "@/redux/store";
 import { IGlobal } from "@/redux/slices/global/types";
@@ -79,6 +80,12 @@ export default function RootLayout({ children }: React.PropsWithChildren) {
 
         {/* Manifest */}
         <link rel="manifest" href={`/manifest.json?v=${versionHash}`} />
+
+        {/*
+          Google tag Manager
+          Reference: https://nextjs.org/docs/app/building-your-application/optimizing/third-party-libraries#google-tag-manager
+        */}
+        {isProduction && <GoogleTagManager gtmId="GTM-WW9KLJ4N" />}
       </head>
       <body>
         <Providers>
@@ -86,19 +93,6 @@ export default function RootLayout({ children }: React.PropsWithChildren) {
         </Providers>
         {isProduction && (
           <>
-            {/* Google Analytics */}
-            <script async src="https://googletagmanager.com/gtag/js?id=UA-142241147-1" />
-            <script
-              type="application/javascript"
-              dangerouslySetInnerHTML={{
-                __html: `
-                  window.dataLayer = window.dataLayer || [];
-                  function gtag() { dataLayer.push(arguments); }
-                  gtag('js', new Date());
-                  gtag('config', 'UA-142241147-1');
-                `.replace(/(\t\r\n|\n|\r|\t)/, ""),
-              }}
-            />
             {/* Service Worker */}
             <script
               type="application/javascript"

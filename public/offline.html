@@ -8,95 +8,243 @@
   <link rel="icon shortcut" type="image/png" href="/favicon.png" />
   <link rel="manifest" href="/manifest.json" />
   <style type="text/css">
+    @import "https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Libre+Baskerville:wght@400;700&display=swap";
+
+    :root {
+      --theme-color-text-primary: #fff;
+      --theme-color-text-secondary: #6c737d;
+      --theme-color-background: #0b0b0c;
+      --theme-color-primary: #15171b;
+      --theme-color-accent: #d9073c;
+      --threme-border-radius: 0.5rem;
+
+      --font-inter: "Inter", arial, sans-serif;
+      --font-libre: "Libre Baskerville", garamond, serif;
+      --font-line-height: 1.5;
+      --font-size: 100%;
+      --font-weight: 400;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+      -moz-tap-highlight-color: transparent;
+      -ms-tap-highlight-color: transparent;
+      -o-tap-highlight-color: transparent;
+      -webkit-touch-callout: none;
+      -moz-touch-callout: none;
+      -ms-touch-callout: none;
+      -o-touch-callout: none;
+      user-select: none;
+    }
+
     html,
     body {
       margin: 0;
       padding: 0;
-      width: 100vw;
-      height: 100vh;
-      background-color: #3B3B3B;
-      font: normal normal 400 100%/1.5 Helvetica, Arial, sans-serif;
-      color: #222;
-    }
-
-    .Offline {
-      display: flex;
       width: 100%;
-      height: 100%;
-      flex-direction: column;
-      justify-content: center;
+      background-color: var(--theme-color-background);
+      font-family: var(--font-inter);
+      font-size: var(--font-size);
+      line-height: var(--font-line-height);
+      color: var(--theme-color-text-primary);
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+      -ms-tap-highlight-color: rgba(0, 0, 0, 0);
+      -o-tap-highlight-color: rgba(0, 0, 0, 0);
+      scroll-behavior: smooth;
     }
 
-    .Offline-title {
-      margin: 1.000rem auto 2.000rem;
-      text-align: center;
-      text-transform: uppercase;
+    a {
+      display: inline-block;
+      color: var(--theme-color-accent);
       text-decoration: none;
     }
 
-    .Offline-description {
-      display: block;
-      color: #777;
-      font-size: 0.750rem;
-      letter-spacing: 0;
+    a:hover {
+      text-decoration: underline;
     }
 
-    .Offline-name {
-      display: block;
-      color: #fff;
-      font-size: 1.500rem;
-      font-weight: 700;
-      line-height: 1.25;
+    .button {
+      display: inline-block;
+      margin: 0 auto 0;
+      padding: 1rem 2rem;
+      min-width: 2rem;
+      appearance: unset;
+      background-color: var(--theme-color-accent);
+      border: unset;
+      border-radius: var(--threme-border-radius);
+      color: var(--theme-color-text-primary);
+      cursor: pointer;
+      font-size: 0.875rem;
+      outline: unset;
+      transition: filter 0.25s ease;
+      text-decoration: none;
+      text-transform: uppercase;
     }
 
-    .Offline-image {
-      display: block;
-      margin: 0 auto;
-      padding: 0;
+    .button:hover {
+      filter: brightness(1.125);
+      text-decoration: none;
+    }
+
+    @media screen and (min-width: 48rem) {
+      .button {
+        font-size: 1.125rem;
+      }
+    }
+
+    .d-none {
+      display: none !important;
+    }
+
+    @media screen and (min-width: 36rem) {
+      .d-sm-none {
+        display: none !important;
+      }
+    }
+
+    @media screen and (min-width: 48rem) {
+      .d-md-none {
+        display: none !important;
+      }
+    }
+
+    @media screen and (min-width: 75rem) {
+      .d-lg-none {
+        display: none !important;
+      }
+    }
+
+    @media screen and (min-width: 102.5rem) {
+      .d-xl-none {
+        display: none !important;
+      }
+    }
+
+    .d-block {
+      display: block !important;
+    }
+
+    @media screen and (min-width: 36rem) {
+      .d-sm-block {
+        display: block !important;
+      }
+    }
+
+    @media screen and (min-width: 48rem) {
+      .d-md-block {
+        display: block !important;
+      }
+    }
+
+    @media screen and (min-width: 75rem) {
+      .d-lg-block {
+        display: block !important;
+      }
+    }
+
+    @media screen and (min-width: 102.5rem) {
+      .d-xl-block {
+        display: block !important;
+      }
+    }
+
+    .Error {
+      display: flex;
       width: 100%;
-      height: auto;
-      max-width: 36.875rem;
-      max-height: 24.375rem;
-    }
-
-    .Offline-message {
-      margin: 2.000rem auto 1.000rem;
-      padding: 0 1.000rem;
-      color: #fff;
+      height: 100%;
+      background-color: var(--theme-color-primary);
+      color: var(--theme-color-text-secondary);
+      flex-direction: column;
+      justify-content: center;
       text-align: center;
     }
 
-    .Offline-button {
-      display: block;
-      margin: 0 auto 1.000rem;
-      padding: 1.000rem;
-      background-color: #d9073c;
-      border: none;
-      border-radius: 0.500rem;
-      color: #fff;
-      cursor: pointer;
-      font-size: 0.750rem;
+    .Error__content {
+      position: relative;
+      margin: 0 auto;
+      max-width: 100rem;
+      border-radius: var(--threme-border-radius);
+      overflow: hidden;
+    }
+
+    .Error__content-title {
+      margin: 0 auto 2rem;
+      padding: 0;
+      color: var(--theme-color-text-primary);
+      font-family: var(--font-libre);
+      font-size: 1.5rem;
       font-weight: 700;
-      line-height: 1.25;
-      outline: none;
-      text-transform: uppercase;
+      line-height: 2rem;
+      text-wrap: balance;
+    }
+
+    .Error__content-title::after {
+      content: "";
+      display: block;
+      margin: 2rem auto 0;
+      width: 8rem;
+      height: 1px;
+      background-color: var(--theme-color-accent);
+    }
+
+    .Error__content-image {
+      width: 100%;
+      height: auto;
+      max-width: 40rem;
+      cursor: default;
+    }
+
+    .Error__content-description {
+      margin: 2rem auto;
+      padding: 0;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5rem;
+      text-wrap: balance;
+    }
+
+    @media screen and (min-width: 48rem) {
+      .Error__content-title {
+        font-size: 2rem;
+        line-height: 2.5rem;
+      }
+
+      .Error__content-title::after {
+        margin-top: 1rem;
+      }
+
+      .Error__content-description {
+        font-size: 1.125rem;
+        line-height: 2rem;
+      }
     }
   </style>
 </head>
 
 <body>
-  <div class="Offline">
-    <p class="Offline-title">
-      <b class="Offline-description">Error</b>
-      <span class="Offline-name">Device Offline</span>
-    </p>
-    <img class="Offline-image" alt="Device Offline" src="/images/error.jpg" />
-    <p class="Offline-message">
-      This device is offline! Try refreshing this page once you got back online.
-    </p>
-    <button class="Offline-button" onClick="location.reload()">
-      Reload Now
-    </button>
+  <div class="Error">
+    <div class="Error__content">
+      <h4 class="Error__content-title">Error</h4>
+      <a href="/">
+        <Image
+          class="Error__content-image"
+          src="/images/error.png"
+          alt="Error"
+        />
+      </a>
+      <p class="Error__content-description">
+        This device is currently offline.
+        <br class="d-none d-md-block" />
+        Please refresh this page once you are back online.
+      </p>
+      <a class="Error__content-button button" onClick="location.reload()">
+        Refresh
+      </a>
+    </div>
   </div>
 </body>
 

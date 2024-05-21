@@ -36,5 +36,31 @@
       "type": "image/png",
       "sizes": "512x512"
     }
+  ],
+  "shortcuts": [
+    {
+      "name": "Home",
+      "short_name": "Home",
+      "url": "/",
+      "description": "Product Designer and Developer"
+    },
+    {
+      "name": "Profile",
+      "short_name": "Profile",
+      "url": "/profile",
+      "description": "Get to know me better."
+    },
+    {
+      "name": "Projects",
+      "short_name": "Projects",
+      "url": "/projects",
+      "description": "All the projects I take great pride in working on."
+    },
+    {
+      "name": "Contacts",
+      "short_name": "Contacts",
+      "url": "/#contact",
+      "description": "A ways to keep in touch with me."
+    }
   ]
 }

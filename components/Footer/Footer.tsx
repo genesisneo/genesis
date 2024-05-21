@@ -1,3 +1,4 @@
+"use client";
 import ElementInView from "../ElementInView/ElementInView";
 
 const Footer = () => (
@@ -88,7 +89,15 @@ const Footer = () => (
     <div className="Footer__copyright">
       <ElementInView>Copyright © {new Date().getFullYear()}. All rights reserved.</ElementInView>
     </div>
-    <a className="Footer__arrow" href="#main" title="Back to top" />
+    <a
+      className="Footer__arrow"
+      href="#main"
+      title="Back to top"
+      onClick={(event: React.MouseEvent<HTMLAnchorElement>) => {
+        event.preventDefault();
+        window.scrollTo(0, 0);
+      }}
+    />
   </footer>
 );
 

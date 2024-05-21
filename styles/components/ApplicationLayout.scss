@@ -194,6 +194,9 @@ body {
 }
 
 .ApplicationLayout {
+  overflow-x: hidden;
+  overflow-y: auto;
+
   main {
     position: relative;
   }

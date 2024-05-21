@@ -1,9 +1,9 @@
 import { Metadata } from "next";
+import { domain, endpoints } from "@/utilities/endpoints";
 import { errorHandler } from "@/utilities/errorHandler";
 import { reduxStore } from "@/redux/store";
 import { revertAll, setLoading, setProfile } from "@/redux/slices/global";
 import { IProfile, IGlobal } from "@/redux/slices/global/types";
-import data from "@/app/api/data/data.json";
 import Experiences from "@/components/Experiences/Experiences";
 import Expertise from "@/components/Expertise/Expertise";
 import Hero from "@/components/Hero/Hero";
@@ -25,7 +25,9 @@ async function getData() {
   reduxStore.dispatch(revertAll());
   reduxStore.dispatch(setLoading(true));
   try {
-    reduxStore.dispatch(setProfile(data.profile || {}));
+    const requestProfile = await fetch(`${domain}/${endpoints.profile}`);
+    const dataProfile = await requestProfile.json();
+    reduxStore.dispatch(setProfile(dataProfile?.profile || {}));
   } catch (error: any) {
     errorHandler(error);
   }

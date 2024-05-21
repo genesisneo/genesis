@@ -1,9 +1,9 @@
 import { Metadata } from "next";
+import { domain, endpoints } from "@/utilities/endpoints";
 import { errorHandler } from "@/utilities/errorHandler";
 import { reduxStore } from "@/redux/store";
 import { revertAll, setLoading, setProjects } from "@/redux/slices/global";
 import { IProjects, IGlobal } from "@/redux/slices/global/types";
-import data from "@/app/api/data/data.json";
 import Expertise from "@/components/Expertise/Expertise";
 import Hero from "@/components/Hero/Hero";
 import Overview from "@/components/Overview/Overview";
@@ -25,7 +25,9 @@ async function getData() {
   reduxStore.dispatch(revertAll());
   reduxStore.dispatch(setLoading(true));
   try {
-    reduxStore.dispatch(setProjects(data.portfolio || []));
+    const requestProjects = await fetch(`${domain}/${endpoints.projects}`);
+    const dataProjects = await requestProjects.json();
+    reduxStore.dispatch(setProjects(dataProjects?.projects || []));
   } catch (error: any) {
     errorHandler(error);
   }
@@ -62,6 +64,10 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function Page() {
   await getData();
   const projects: IProjects = reduxStore.getState().global.projects;
+
+  if (!Object.keys(projects).length) {
+    return null;
+  }
 
   return (
     <>

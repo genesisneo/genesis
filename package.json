@@ -16,8 +16,9 @@
     "check:all": "npm run check:format && npm run check:lint && npm run check:types && npm run build"
   },
   "dependencies": {
+    "@next/third-parties": "^14.2.3",
     "@reduxjs/toolkit": "^1.9.5",
-    "next": "^13.4.16",
+    "next": "^14.2.3",
     "react": "^18.2.0",
     "react-countup": "^6.5.0",
     "react-dom": "^18.2.0",
