@@ -19,8 +19,11 @@ const precacheFiles = [
   /* images */
   `/favicon.png?v=${version}`,
   `/genesis.jpg?v=${version}`,
+  `/genesis.mp4?v=${version}`,
+  `/genesis.ogg?v=${version}`,
+  `/genesis.webm?v=${version}`,
   `/loading.gif?v=${version}`,
-  `/images/error.jpg?v=${version}`,
+  `/images/error.png?v=${version}`,
   `/images/icon-behance.svg?v=${version}`,
   `/images/icon-clients.svg?v=${version}`,
   `/images/icon-coffee.svg?v=${version}`,

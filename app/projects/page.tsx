@@ -40,7 +40,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: "Projects",
     description:
-      "The projects showcased below represent my extensive experience as a Senior Front-End Engineer. I’m exceptionally proud of my contributions to these endeavors.",
+      "The projects showcased below represent my extensive experience as a Senior UI/UX Designer and Engineer. I’m exceptionally proud of my contributions to these endeavors.",
     openGraph: {
       title: `Projects | ${name}`,
       siteName: name,
@@ -48,7 +48,7 @@ export async function generateMetadata(): Promise<Metadata> {
       type: "website",
       locale: "en_US",
       description:
-        "The projects showcased below represent my extensive experience as a Senior Front-End Engineer. I’m exceptionally proud of my contributions to these endeavors.",
+        "The projects showcased below represent my extensive experience as a Senior UI/UX Designer and Engineer. I’m exceptionally proud of my contributions to these endeavors.",
       images: [
         {
           alt: `Projects | ${name}`,
@@ -74,7 +74,7 @@ export default async function Page() {
       <Hero
         subtitle="Portfolio"
         title={`All the projects I take <u>great pride</u> in working on.`}
-        description="The projects showcased below represent my extensive experience as a Senior Front-End Engineer. I’m exceptionally
+        description="The projects showcased below represent my extensive experience as a Senior UI/UX Designer and Engineer. I’m exceptionally
         proud of my contributions to these endeavors. They embody my unwavering commitment to delivering excellence and my passion for
         creating innovative solutions."
       />

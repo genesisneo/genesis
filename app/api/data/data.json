@@ -3,17 +3,22 @@
     "experiences": [
       {
         "image": "/images/experiences/sammedia.jpg",
-        "position": "Senior Front-End Engineer",
+        "position": "Senior UI/UX Designer and Engineer",
         "company": "SAM Media",
         "location": "Manitoba, Canada",
         "start": "Nov 2021",
         "end": "Present",
         "responsibilities": [
-          "Employing persuasive design elements on the landing pages for desktop and mobile, achieving a 15% boost in conversion rates.",
-          "Worked closely with product owners, stakeholders, and cross-functional teams to deliver front-end solutions that met product requirements, business goals, and user needs.",
-          "Leading and coached junior engineers, promoting a culture of collaboration with Agile methodology, continuous learning, and best practices, resulting in a 20% increase in team productivity.",
-          "Learning and performing A/B testing to validate hypotheses and enhance user experiences, leading to a 10% growth in customer engagement and retention.",
-          "Encourage clean and maintainable code, responsible for reviews and continuous integration practices, reducing code defects by 15% and improving overall code quality."
+          "Liable for providing concept design, user story, wireframing, and prototyping landing pages for the organization services utilizing design applications such as Figma and Adobe Creative Cloud Apps such as Photoshop, Illustrator, Premiere, and After Effects.",
+          "Responsible for converting the design into a working application using ReactJs or NextJs with ReduxToolkit or Zustand, VueJs or NuxtJs with Vuex or Pinia, and testing each reusable component in isolation with Storybook.",
+          "Propose and implement persuasive design elements on every landing page achieving a 15% boost in conversion rates. Conducting meticulous A/B testing bi-weekly to validate ideas or hypotheses, and refining user experiences (UX) resulting in a significant 16% growth in customer engagement and retention.",
+          "Independently design and build the needed banner library application for the organization with NextJs and Firebase, where the design team can upload and share approved Google Ad banners with the company's partners and affiliates.",
+          "Working closely with DevOps for continues integration and continues deployment (CI/CD) of the company's applications utilizing GitLab, Docker, Kubernetes, and Jenkins for automating build, test, and deployment to any cloud services like Amazon Web Services (AWS), Microsoft Azure, Vercel, and DigitalOcean.",
+          "Managing, guiding, and mentoring a team of six, providing and receiving feedback, promoting a culture of collaboration with Agile methodology, and encouraging personal development, resulting in an impressive 24% increase in team productivity.",
+          "Introduce linting with the use of ESLint and StyleLint to encourage a simple, clean, reusable, easy-to-maintain, and scalable code base. Responsible for reviewing project merge and pull requests, reducing code defects by 16%, and improving overall code quality.",
+          "Responsible for identifying, diagnosing, and solving production design and engineering issues, maintaining the visual and functional integrity of the application, and providing valid estimates and deadlines for feature developments.",
+          "Worked with talented engineers to design and integrate cutting-edge machine learning (ML) and artificial intelligence (AI) capabilities into the organization's internal applications, enhancing reports, analytics, and other business aspect of the application.",
+          "Integrate best practices and principles for user interfaces, and user experiences (UI/UX) to enhance the accessibility and usability of the application, implement design systems and guidelines to accelerate the design and development process, and ensure design supports the organization's strategic goals and business objectives through collaboration with product, marketing, and operation teams."
         ]
       },
       {
@@ -24,11 +29,16 @@
         "start": "Jul 2020",
         "end": "Sep 2021",
         "responsibilities": [
-          "Engaging in the full development life cycle including architectural design and testing.",
-          "Optimized website performance, consistently achieving top-notch Lighthouse scores, ensuring optimal loading times and superior SEO rankings.",
-          "Responsible for unit testing, feature prioritization, and managed pull and merge requests.",
-          "Acting as the primary point of contact for clients, collaborating closely to understand project requirements and deliver tailored solutions.",
-          "Learning through engaging in regular discussions with the design team and back-end engineers, conceptualizing and implementing new features and enhancements, resulting in cutting-edge web applications."
+          "Utilizing Sketch and Figma to produce concepts, wireframes, and prototypes. Crafting design assets with Adobe Photoshop or Illustrator, and animation through Premiere or After Effects to provide a visual and possible user experience to the clients before the project development.",
+          "Accountable for converting the approved project design into a functional application by leveraging modern web frameworks such as ReactJs, VueJs, and AngularJs, focusing on creating readable, maintainable, and scalable solutions for clients.",
+          "Has direct contact with clients to understand business goals, clarify the project requirements, receive direct feedback, and manage expectations. Additionally, to communicate project timelines, address any concerns or issues promptly, and ensure alignment of the project design solutions and the client's vision.",
+          "Introduce and implement development best practices and coding standards, including modularization, code reusability, and performance optimization to ensure efficient and maintainable codebases. Achievable by taking advantage of Git hooks with Husky, reducing bug occurrences by 16% on the projects.",
+          "Present the use of BrowserStack and LambdaTest to the organization, resulting in an 80% improvement in visual design consistency across all browsers and devices. By conducting thorough testing and troubleshooting to address browser-specific issues and edge cases.",
+          "Collaborating with DevOps to implement continued integration and development (CI/CD) for the client's applications utilizing GitHub Actions, Docker, and Jenkins for the build, test, and deployment automation.",
+          "Accountable for optimizing and enhancing application performance, attaining at least 90% on Core Web Vital (CWV) scores, using Lighthouse, GTMetrix, and ByteCheck. Responsible for ensuring the mobile-first approach on every project, prioritizing accessibility, page loading times, SEO rankings, and ease of use.",
+          "Learned how to strategically organize project feature development, conducting extensive project unit and API testing through automation with Jest, Mocha, and Jasmine, and efficiently supervising merge and pull requests.",
+          "Leading a team of four and conducting regular discussions to identify automation opportunities that can enhance team productivity. Ensure alignment with team goals, provide support, advise, and foster an environment that encourages personal and professional growth. Promoting continuous collaboration and improvement to each member to reach their full potential while driving the overall team's overall success.",
+          "Responsible for managing and generating documentation for the client's project utilizing Atlassian and Jira. This involved creating a roadmap for future development and ensuring seamless project maintenance."
         ]
       },
       {
@@ -39,11 +49,16 @@
         "start": "Oct 2017",
         "end": "Jun 2020",
         "responsibilities": [
-          "Implemented user interface and experience designs for prominent brands and integrating design concepts with cutting-edge front-end technologies, enhancing user experiences and customer engagement.",
-          "Optimized server-side rendering, improving search engine rankings and website visibility, achieving a 15% increase in organic traffic and user acquisition and 15% client-side performance improvements.",
-          "Created flawless UI components and collaborated with UX designers to enhance user satisfaction and retention, earning positive user feedback.",
-          "Collaborated with the back-end team to design and optimize RESTful APIs, enhancing application performance and data handling, enabling faster data retrieval and seamless user interactions.",
-          "Learned to troubleshot and resolved frontend-related issues promptly, ensuring smooth multi-device and cross-browser compatibility. "
+          "Responsible for designing the user interface and experience (UI/UX) for e-commerce applications of renowned brands such as Gap, Mamas and Papas, Nisnass, and Ounass. Taking advantage of the Sketch features like team collaboration, component management, artboards, plugins, and extensions.",
+          "Transforming design into a working application, utilizing modern development technologies such as NodeJs, ReactJs, VueJs, and AngularJs. Leveraging server-side rendering (SSR) to improve search engine rankings (SEO) and website visibility, achieving a 16% increase in organic traffic and user acquisition.",
+          "Working closely with Magento, back-end, and full-stack engineers to plan and discuss API implementation and improvements. Providing recommendations on request parameters and response structure for the application.",
+          "Introduce and integrate Contentful to all organization e-commerce applications. Harnessing the headless content management system (CMS) for content modeling, used by the marketing team for customizing the application landing pages, based on digital merchandising requirements.",
+          "Proposed and implemented a progressive web application (PWA) to improve performance and take advantage of the caching capabilities of the technology, improving page loading time and user satisfaction by 24%.",
+          "Learn to use BrowserStack to conduct thorough testing and troubleshooting to address browser-specific issues and edge cases, resulting in an 80% improvement in interface and experience consistency across all browsers and devices, and reducing QA-reported issues by 40%.",
+          "Assisting in constructing and maintaining development documentation for efficient collaboration, reducing the learning curves for new developers, and guiding future enhancements, feature additions, and scalability improvements.",
+          "Collaborating with cross-functional team to discuss the project's continued improvements in development processes and workflows, ensure that the applications comply with accessibility standards (WCAG), and deliver strategic solutions to align with the business objectives.",
+          "Design compelling digital marketing materials for the marketing team, including visually appealing graphics for social media, user-friendly designs for newsletters, and engaging assets for online advertisements. Collaborating closely with digital marketers to ensure alignment with campaign objectives and brand guidelines.",
+          "Learned security best practices to protect against common vulnerabilities by conducting security audits and writing secure code to prevent attacks like Cross-Site Scripting (XSS), Cross-Site Request Forgery (CSRF), and SQL injection. This ensures the application remains robust, secure, and trustworthy for users."
         ]
       },
       {
@@ -54,11 +69,36 @@
         "end": "Sep 2017",
         "position": "Product Designer and Developer",
         "responsibilities": [
-          "Built highly effective and responsive landing pages for desktop and mobile, achieving a 20% boost in conversion rates and user engagement.",
-          "Produced compelling graphic and media materials using Adobe applications, enhancing the visual appeal and aesthetics of web pages.",
-          "Led the front-end development of projects, using action scripting, XML, CSS, JavaScript, and jQuery, ensuring seamless functionality and user experience.",
-          "Outlined the structural content of websites, optimizing user navigation and information flow, while managing image editing and graphics creation.",
-          "Understand and implemented accessibility practices, ensuring compliance with WCAG guidelines, and providing an inclusive and user-friendly experience."
+          "Accountable for designing eye-catching landing pages using Sketch, creating graphics and media materials with Photoshop or Illustrator, and applying persuasive design elements, achieving a 24% uplift in conversion rate and a reasonable effective cost per action (eCPA).",
+          "Worked with back-end engineers to create a system for converting approved landing page designs into HTML and CSS. The system was built using modern technologies like NodeJs, ExpressJs, GulpJs, and MongoDB. The application has built-in analytics and enables the marketing team to easily promote landing pages to their campaigns.",
+          "Ensuring all landing pages are fully responsive, providing a seamless experience across various devices and screen sizes. Utilizing frameworks like Bootstrap, Bulma, Foundation, and Tailwind to maintain visual and functional consistency.",
+          "Supporting the digital marketing team by providing materials and assets required for their campaign. This includes assets for engaging content for newsletters, eye-catching visuals for social media posts, and effective graphics for online advertisements.",
+          "Ensuring organization service websites comply with Web Content Accessibility Guidelines (WCAG) by implementing accessibility best practices. This not only enhances usability for all users but also improves search engine optimization (SEO) scores, leading to enhanced visibility and a broader audience reach.",
+          "Responsible for designing the organization's service identity by utilizing Adobe Illustrator to sketch, conceptualize, and create distinctive and visually appealing representations. Ensuring that every design aligns with the brand's essence, values, and overall visual strategy.",
+          "Continuously sharing knowledge, giving and receiving feedback from the team, and holding regular discussions to determine automation opportunities that can improve team productivity and enhance efficiency.",
+          "Analyzing and improving the landing page funnel to boost conversion rates by using data-driven insights and A/B testing to enhance the user experience and ensure a seamless and engaging journey from initial entry to successful conversion.",
+          "Enhancing organization applications by integrating third-party APIs such as Google Analytics for tracking user behavior, MailChimp for managing email marketing campaigns, and social media APIs for embedding social content and enabling social sharing.",
+          "Actively researching and staying updated on the latest trends, technologies, and best practices in design and development. Incorporating new tools, frameworks, and techniques to enhance the performance, usability, and aesthetics of landing pages."
+        ]
+      },
+      {
+        "image": "/images/experiences/firstmobilewallet.jpg",
+        "company": "First Mobile Wallet FZ LLC",
+        "location": "Dubai, United Arab Emirates",
+        "start": "Oct 2012",
+        "end": "May 2013",
+        "position": "Product Designer and Developer",
+        "responsibilities": [
+          "Working with product managers and engineers to design and develop the company's product website and services by using Sketch and Adobe Photoshop to construct ideas, wireframes, and prototypes a design, and employing web technologies like HTML5, CSS3, JavaScript, and jQuery for development.",
+          "Responsible for leading the development of comprehensive design systems, which involves creating design components and establishing detailed design guidelines for the entire design team to follow.",
+          "Creating detailed project documentation tailored for front-end engineers making use of Atlassian Confluence, which provides an excellent platform for sharing and collaborating on project documentation.",
+          "Collaborating with back-end engineers to seamlessly integrate the organization service with back-end systems, ensuring secure data flow and interoperability across the application. This involves developing robust APIs and communication protocols to facilitate efficient data exchange.",
+          "Learned and implemented responsive design principles to ensure optimal user experiences across various devices and screen sizes. This includes using flexible layouts and media queries to adapt the layout and content presentation dynamically based on the device viewport.",
+          "Performing thorough testing and troubleshooting across different browsers and devices to address user interface and experience (UI/UX) issues. This involves performing cross-browser testing, debugging JavaScript and HTML code, and ensuring consistent interface, experience, and functionality across platforms.",
+          "Learned how to optimize the application through various techniques such as code optimization, image compression, and server-side caching. These are identifying and resolving performance bottlenecks, reducing page load times, and improving overall site speed.",
+          "Studying application metrics and user feedback to identify areas for improvement and enhancements to the user experience. This includes conducting A/B testing and making data-driven decisions to optimize website performance.",
+          "Staying updated on emerging design and development technologies, tools, and best practices to maintain a competitive edge and drive innovation in creativity and engineering.",
+          "Working with an amazing team of four, conducting regular discussions for opportunities that can enhance team productivity, and ensuring that our team is alignment with the organizational goals."
         ]
       }
     ]

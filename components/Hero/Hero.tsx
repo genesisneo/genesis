@@ -10,7 +10,13 @@ interface IHero {
 
 const Hero = ({ subtitle, title, description, buttonText, buttonLink }: IHero) => (
   <section className="Hero">
-    <div className="Hero__ornaments" />
+    <div className="Hero__ornaments">
+      <video autoPlay playsInline muted loop>
+        <source src="/genesis.webm" type="video/webm" />
+        <source src="/genesis.mp4" type="video/mp4" />
+        <source src="/genesis.ogg" type="video/ogg" />
+      </video>
+    </div>
     <div className="Hero__content">
       <h4 className="Hero__content-subtitle">
         <ElementInView text={subtitle} />

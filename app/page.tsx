@@ -40,7 +40,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
   return {
     description:
-      "I am an accomplished Senior Front-End Engineer based in Winnipeg, Manitoba, Canada, with over eight years of dynamic experience in web design and development spanning various industries.",
+      "I am a Senior UI/UX Designer and Engineer based in Winnipeg, Manitoba, Canada, with a decade of of dynamic experience in web design and development in diverse industries.",
     openGraph: {
       title: name,
       siteName: name,
@@ -48,7 +48,7 @@ export async function generateMetadata(): Promise<Metadata> {
       type: "website",
       locale: "en_US",
       description:
-        "I am an accomplished Senior Front-End Engineer based in Winnipeg, Manitoba, Canada, with over eight years of dynamic experience in web design and development spanning various industries.",
+        "I am a Senior UI/UX Designer and Engineer based in Winnipeg, Manitoba, Canada, with a decade of of dynamic experience in web design and development in diverse industries.",
       images: [
         {
           alt: name,
@@ -72,7 +72,7 @@ export default async function Page() {
   return (
     <>
       <Hero
-        subtitle="Product Designer and Developer"
+        subtitle="Designer and Developer"
         title={`Building an <u>Entrancing Presence</u> for your Business.`}
         description={`Reach out to get the conversation started <br class="d-none d-md-block" /> about your digital presence needs.`}
         buttonText="Contact me"
@@ -82,7 +82,7 @@ export default async function Page() {
       <Overview
         subtitle="Who I am"
         title="Get to know me"
-        description={`I am an accomplished Senior Front-End Engineer based in Winnipeg, Manitoba, Canada, with over eight years of dynamic experience in web design and development spanning various industries. With a strong record of success, I excel in addressing companies’ technological requirements through ingenious solutions that set me apart.`}
+        description={`I am a Senior UI/UX Designer and Engineer based in Winnipeg, Manitoba, Canada, with a decade of dynamic experience in web design and development across diverse industries. I have a strong record of success and excel in addressing companies' design and technological requirements through innovative solutions.`}
         anchorText="More about me"
         anchorLink="/profile"
       />

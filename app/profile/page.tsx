@@ -39,14 +39,16 @@ export async function generateMetadata(): Promise<Metadata> {
 
   return {
     title: "Profile",
-    description: "I am a Senior Front-End Engineer with a decade of experiences in creating user-centric web applications.",
+    description:
+      "I am a Senior UI/UX Designer and Engineer with a decade of experiences in creating user-centric web applications.",
     openGraph: {
       title: `Profile | ${name}`,
       siteName: name,
       url: `${domain}/profile`,
       type: "website",
       locale: "en_US",
-      description: "I am a Senior Front-End Engineer with a decade of experiences in creating user-centric web applications.",
+      description:
+        "I am a Senior UI/UX Designer and Engineer with a decade of experiences in creating user-centric web applications.",
       images: [
         {
           alt: `Profile | ${name}`,
@@ -68,12 +70,14 @@ export default async function Page() {
       <Hero
         subtitle="Who I Am"
         title={`Get to <u>know</u> me better.`}
-        description="I am a Senior Front-End Engineer with a decade of experiences in creating user-centric web
-        applications. Proficient in modern web technologies like Node, Express, React, Vue, TypeScript,
-        and Electron. I specialize in optimizing performance and enhancing conversions through
-        meticulous A/B testing. As a skilled team leader, I foster innovation, promote cross-functional
-        collaboration, and consistently deliver high-quality web experiences. My passion lies in pushing
-        the boundaries of web development to create innovative, user-focused solutions."
+        description="I am a Senior UI/UX Designer and Engineer with a decade of experiences in creating user-centric web
+        applications. Proficient in modern design applications like Sketch, Adobe XD, and Figma for conceptualization,
+        prototyping, wireframing, user interface, and user experience (UI/UX) design. Have vast experience with modern
+        web technologies such as HTML5, CSS3, JavaScript, NodeJs, ReactJs, VueJs, AngularJs, NextJs, NuxtJs, ElectronJs,
+        and TypeScript. I specialize in conducting user research to gather insights into user behaviors, leveraging
+        meticulous A/B testing to improve conversion rates, project performance enhancements, and optimization. My
+        passion is pushing the boundaries of design and development to create innovative, user-focused solutions with
+        readable, maintainable, and scalable code."
       />
 
       <Overview subtitle="Experiences" title="List of awesome wokplaces" />
