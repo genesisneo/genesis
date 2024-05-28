@@ -111,15 +111,16 @@ self.addEventListener('fetch', (event) => {
           (cache) => (
             cache || fetch(event.request)
               .then(
-                (response) => (
-                  caches.open(cacheName)
-                    .then(
-                      (cache) => {
-                        cache.put(event.request.url, response.clone());
-                        return response;
-                      }
-                    )
-                )
+                (response) => {
+                  if (response.status === 200) {
+                    return caches.open(cacheName).then((cache) => {
+                      cache.put(event.request.url, response.clone());
+                      return response;
+                    });
+                  } else {
+                    return response;
+                  }
+                }
               )
           )
         )
