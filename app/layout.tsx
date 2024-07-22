@@ -96,6 +96,20 @@ export default function RootLayout({ children }: React.PropsWithChildren) {
           Reference: https://nextjs.org/docs/app/building-your-application/optimizing/third-party-libraries#google-tag-manager
         */}
         {isProduction && <GoogleTagManager gtmId="GTM-WW9KLJ4N" />}
+
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              const pageTransition = async (event) => {
+                if (event.viewTransition) {
+                  event.viewTransition.types.add("transition");
+                }
+              };
+              window.addEventListener("pageswap", pageTransition);
+              window.addEventListener("pagereveal", pageTransition);
+            `,
+          }}
+        />
       </head>
       <body>
         <Providers>

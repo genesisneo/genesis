@@ -2,6 +2,7 @@ $screen-mobile: 36rem;
 $screen-tablet: 48rem;
 $screen-laptop: 75rem;
 $screen-desktop: 102.5rem;
+$timing: 0.25s;
 
 *,
 *::before,
@@ -16,6 +17,43 @@ $screen-desktop: 102.5rem;
   -ms-touch-callout: none;
   -o-touch-callout: none;
   user-select: none;
+}
+
+@view-transition {
+  navigation: auto;
+}
+
+html {
+  &:active-view-transition-type(transition) {
+    &::view-transition-group(*) {
+      animation-duration: $timing;
+      animation-timing-function: ease-in-out;
+    }
+
+    &::view-transition-old(root) {
+      animation-delay: 0s;
+      animation-name: transition-out;
+    }
+
+    &::view-transition-new(root) {
+      animation-delay: $timing;
+      animation-name: transition-in;
+    }
+  }
+}
+
+@keyframes transition-in {
+  from {
+    opacity: 0;
+    transform: perspective(100rem) translate3d(0, 5rem, 0) rotate3d(0, 1, 0, -90deg);
+  }
+}
+
+@keyframes transition-out {
+  to {
+    opacity: 0;
+    transform: perspective(100rem) translate3d(0, 5rem, 0) rotate3d(0, 1, 0, 90deg);
+  }
 }
 
 html,
