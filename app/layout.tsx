@@ -68,10 +68,6 @@ export default function RootLayout({ children }: React.PropsWithChildren) {
   return (
     <html lang="en">
       <head>
-        {/* Meta */}
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1" />
-
         {/* Android & iOS */}
         <meta name="theme-color" content="#0b0b0c" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -122,23 +118,38 @@ export default function RootLayout({ children }: React.PropsWithChildren) {
               type="application/javascript"
               dangerouslySetInnerHTML={{
                 __html: `
-                  if ('serviceWorker' in navigator && !navigator.serviceWorker.controller) {
-                    window.addEventListener('load', async function() {
+                  function updateServiceWorker(worker) {
+                    worker.postMessage({ action: 'skipWaiting' });
+                    worker.addEventListener('statechange', () => {
+                      if (worker.state === 'activated') {
+                        console.info('New ServiceWorker activated!');
+                        window.location.reload();
+                      }
+                    });
+                  }
+
+                  if ('serviceWorker' in navigator) {
+                    window.addEventListener('load', async () => {
                       try {
-                        const serviceWorkerRegistered = await navigator
-                          .serviceWorker
-                          .register(
-                            '/service-worker.js?version=${versionHash}',
-                            {
-                              scope: '/',
-                              useCache: false
-                            }
-                          );
-                        if (serviceWorkerRegistered) {
+                        const registration = await navigator.serviceWorker.register('/service-worker.js?version=${versionHash}2', { scope: '/' });
+                        if (registration) {
                           console.info('ServiceWorker registration successful!');
+                          if (registration.waiting) {
+                            updateServiceWorker(registration.waiting);
+                          }
+                          registration.addEventListener('updatefound', () => {
+                            const newWorker = registration.installing;
+                            newWorker.addEventListener('statechange', () => {
+                              if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                                updateServiceWorker(newWorker);
+                              } else {
+                                console.info('ServiceWorker activated for the first time!');
+                              }
+                            });
+                          });
                         }
-                      } catch(error) {
-                        console.info('ServiceWorker registration failed!');
+                      } catch (error) {
+                        console.info('ServiceWorker registration failed!', error);
                       }
                     });
                   }

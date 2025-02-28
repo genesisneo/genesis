@@ -1,12 +1,14 @@
 import { createAction, createSlice, type PayloadAction } from "@reduxjs/toolkit";
 import { IProfile, IProject, IProjects, IGlobal } from "./types";
 
-const versionHashEnv = process.env.VERCEL_GITHUB_COMMIT_SHA || "75EZM9";
+const versionHashEnv = process.env.NODE_ENV === "production" && process.env.VERCEL_GITHUB_COMMIT_SHA
+  ? process.env.VERCEL_GITHUB_COMMIT_SHA
+  : "75EZM9";
 const initialState: IGlobal = {
   name: "Genesis Mallorca Obtera",
   description: "Product Designer and Developer",
   domain: "https://genesis.obtera.com",
-  versionHash: versionHashEnv.length > 5 ? versionHashEnv.substring(0, 5) : versionHashEnv,
+  versionHash: versionHashEnv.length > 6 ? versionHashEnv.substring(0, 6) : versionHashEnv,
   loading: false,
   profile: {},
   project: {},

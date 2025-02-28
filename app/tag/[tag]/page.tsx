@@ -34,7 +34,8 @@ async function getData() {
   reduxStore.dispatch(setLoading(false));
 }
 
-export async function generateMetadata({ params: { tag } }: { params: { tag: string } }): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ tag: string }> }): Promise<Metadata> {
+  const { tag } = await params;
   const { name, domain }: IGlobal = reduxStore.getState().global;
 
   return {
@@ -59,7 +60,8 @@ export async function generateMetadata({ params: { tag } }: { params: { tag: str
   };
 }
 
-export default async function Page({ params: { tag } }: { params: { tag: string } }) {
+export default async function Page({ params }: { params: Promise<{ tag: string }> }) {
+  const { tag } = await params;
   await getData();
   const projects: IProjects = reduxStore.getState().global.projects;
 

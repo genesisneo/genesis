@@ -37,7 +37,8 @@ async function getData(slug: string) {
   reduxStore.dispatch(setLoading(false));
 }
 
-export async function generateMetadata({ params: { slug } }: { params: { slug: string } }): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
   await getData(slug);
   const project: IProject | {} = reduxStore.getState().global.project;
   const { name, domain }: IGlobal = reduxStore.getState().global;
@@ -68,7 +69,8 @@ export async function generateMetadata({ params: { slug } }: { params: { slug: s
   };
 }
 
-export default async function Page({ params: { slug } }: { params: { slug: string } }) {
+export default async function Page({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
   await getData(slug);
   const project: IProject | {} = reduxStore.getState().global.project;
   const projects: IProjects = reduxStore.getState().global.projects;

@@ -42,25 +42,69 @@
       "name": "Home",
       "short_name": "Home",
       "url": "/",
-      "description": "Product Designer and Developer"
+      "description": "Product Designer and Developer",
+      "icons": [
+        {
+        "src": "/images/app/96x96.png",
+        "type": "image/png",
+        "sizes": "96x96"
+        }
+      ]
     },
     {
       "name": "Profile",
       "short_name": "Profile",
       "url": "/profile",
-      "description": "Get to know me better."
+      "description": "Get to know me better.",
+      "icons": [
+        {
+        "src": "/images/app/96x96.png",
+        "type": "image/png",
+        "sizes": "96x96"
+        }
+      ]
     },
     {
       "name": "Projects",
       "short_name": "Projects",
       "url": "/projects",
-      "description": "All the projects I take great pride in working on."
+      "description": "All the projects I take great pride in working on.",
+      "icons": [
+        {
+        "src": "/images/app/96x96.png",
+        "type": "image/png",
+        "sizes": "96x96"
+        }
+      ]
     },
     {
       "name": "Contacts",
       "short_name": "Contacts",
       "url": "/#contact",
-      "description": "A ways to keep in touch with me."
+      "description": "A ways to keep in touch with me.",
+      "icons": [
+        {
+        "src": "/images/app/96x96.png",
+        "type": "image/png",
+        "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/app/screenshots-320x640.png",
+      "type": "image/png",
+      "sizes": "320x640",
+      "form_factor": "narrow",
+      "label": "Genesis Mallorca Obtera"
+    },
+    {
+      "src": "/images/app/screenshots-640x480.png",
+      "type": "image/png",
+      "sizes": "640x480",
+      "form_factor": "wide",
+      "label": "Genesis Mallorca Obtera"
     }
   ]
 }

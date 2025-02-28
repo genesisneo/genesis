@@ -42,6 +42,8 @@ const precacheFiles = [
   `/images/app/144x144.png?v=${version}`,
   `/images/app/192x192.png?v=${version}`,
   `/images/app/512x512.png?v=${version}`,
+  `/images/app/screenshots-320x640.png?v=${version}`,
+  `/images/app/screenshots-640x480.png?v=${version}`,
   `/images/app/windows-70x70.png?v=${version}`,
   `/images/app/windows-150x150.png?v=${version}`,
   `/images/app/windows-310x150.png?v=${version}`,
@@ -112,14 +114,13 @@ self.addEventListener('fetch', (event) => {
             cache || fetch(event.request)
               .then(
                 (response) => {
-                  if (response.status === 200) {
-                    return caches.open(cacheName).then((cache) => {
-                      cache.put(event.request.url, response.clone());
-                      return response;
+                  if (response && response.status === 200) {
+                    const responseClone = response.clone();
+                    caches.open(cacheName).then((cache) => {
+                      cache.put(event.request.url, responseClone);
                     });
-                  } else {
-                    return response;
                   }
+                  return response;
                 }
               )
           )
@@ -133,7 +134,13 @@ self.addEventListener('fetch', (event) => {
             return caches.match(offlineFallbackPage);
           }
         )
-      );
+    );
   }
   return;
+});
+
+self.addEventListener('message', (event) => {
+  if (event.data && event.data.action === 'skipWaiting') {
+    self.skipWaiting();
+  }
 });

@@ -1,6 +1,6 @@
 {
   "name": "genesis",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "private": true,
   "scripts": {
     "init:install": "npm i",
@@ -16,34 +16,34 @@
     "check:all": "npm run check:format && npm run check:lint && npm run check:types && npm run build"
   },
   "dependencies": {
-    "@next/third-parties": "^14.2.3",
-    "@reduxjs/toolkit": "^1.9.5",
-    "next": "^14.2.3",
-    "react": "^18.2.0",
-    "react-countup": "^6.5.0",
-    "react-dom": "^18.2.0",
-    "react-intersection-observer": "^9.5.3",
-    "react-redux": "^8.1.2",
-    "sass": "^1.43.4",
-    "swiper": "^11.0.5"
+    "@next/third-parties": "^15.1.6",
+    "@reduxjs/toolkit": "^2.5.1",
+    "next": "^15.1.6",
+    "react": "^19.0.0",
+    "react-countup": "^6.5.3",
+    "react-dom": "^19.0.0",
+    "react-intersection-observer": "^9.15.1",
+    "react-redux": "^9.2.0",
+    "sass": "^1.83.4",
+    "swiper": "^11.2.1"
   },
   "devDependencies": {
-    "@types/node": "^20.5.0",
-    "@types/react": "18.2.20",
-    "@types/react-dom": "^18.2.7",
-    "@types/redux-logger": "^3.0.9",
-    "@typescript-eslint/eslint-plugin": "^6.4.0",
-    "@typescript-eslint/parser": "^6.4.0",
-    "eslint": "^8.47.0",
-    "eslint-config-next": "^13.4.16",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-react": "^7.26.1",
-    "husky": "^8.0.3",
-    "prettier": "^3.0.1",
+    "@types/node": "^22.12.0",
+    "@types/react": "19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "@types/redux-logger": "^3.0.13",
+    "@typescript-eslint/eslint-plugin": "^8.22.0",
+    "@typescript-eslint/parser": "^8.22.0",
+    "eslint": "^9.19.0",
+    "eslint-config-next": "^15.1.6",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-react": "^7.37.4",
+    "husky": "^9.1.7",
+    "prettier": "^3.4.2",
     "redux-logger": "^3.0.6",
-    "stylelint": "^16.5.0",
+    "stylelint": "^16.14.1",
     "stylelint-config-prettier": "^9.0.5",
-    "stylelint-config-standard-scss": "^13.1.0",
-    "typescript": "^5.1.6"
+    "stylelint-config-standard-scss": "^14.0.0",
+    "typescript": "^5.7.3"
   }
 }
