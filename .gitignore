@@ -113,9 +113,5 @@ dist
 .env.test.local
 .env.production.local
 
-# lock files
-package-lock.json
-yarn.lock
-
 # typescript
 tsconfig.tsbuildinfo
