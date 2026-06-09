@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import { GoogleTagManager } from "@next/third-parties/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Providers } from "@/redux/providers";
 import { reduxStore } from "@/redux/store";
 import { IGlobal } from "@/redux/slices/global/types";
@@ -112,6 +113,7 @@ export default function RootLayout({ children }: React.PropsWithChildren) {
         <Providers>
           <ApplicationLayout>{children}</ApplicationLayout>
         </Providers>
+        <SpeedInsights />
         {isProduction && (
           <>
             {/* Service Worker */}
