@@ -1,7 +1,7 @@
 import { IProject } from "@/redux/slices/global/types";
 import ElementInView from "../ElementInView/ElementInView";
 
-const Project = ({ project: { year, title, technology, tags, description } }: { project: IProject }) => (
+const Project = ({ project: { year, title, technology, tags, description, responsibility } }: { project: IProject }) => (
   <div className="Project">
     <div className="Project__details">
       <div className="Project__details-information">
@@ -34,9 +34,20 @@ const Project = ({ project: { year, title, technology, tags, description } }: { 
             ))}
         </p>
       </div>
-      <p className="Project__details-description">
-        <ElementInView text={description} />
-      </p>
+      <div className="Project__details-description-responsibility">
+        <h4 className="Project__details-information-subtitle">
+          <ElementInView text="Description" />
+        </h4>
+        <p className="Project__details-description">
+          <ElementInView text={description} />
+        </p>
+        <h4 className="Project__details-information-subtitle">
+          <ElementInView text="Responsibility" />
+        </h4>
+        <p className="Project__details-responsibility">
+          <ElementInView text={responsibility} />
+        </p>
+      </div>
     </div>
   </div>
 );

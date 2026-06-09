@@ -48,6 +48,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   }
 
   return {
+    metadataBase: new URL(domain),
     title: project.title,
     description: project.description,
     openGraph: {

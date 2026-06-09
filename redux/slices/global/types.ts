@@ -22,6 +22,7 @@ export interface IProject {
   images: string[];
   technology: string[];
   tags: string[];
+  responsibility: string;
 }
 
 export interface IProjects extends Array<IProject> {}

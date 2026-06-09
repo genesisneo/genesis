@@ -38,6 +38,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const { name, domain }: IGlobal = reduxStore.getState().global;
 
   return {
+    metadataBase: new URL(domain),
     title: "Projects",
     description:
       "The projects showcased below represent my extensive experience as a Senior UI/UX Designer and Engineer. I’m exceptionally proud of my contributions to these endeavors.",

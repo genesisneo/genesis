@@ -7,9 +7,10 @@ import ApplicationLayout from "@/components/ApplicationLayout/ApplicationLayout"
 import "@/styles/styles.scss";
 
 export async function generateMetadata(): Promise<Metadata> {
-  const { name }: IGlobal = reduxStore.getState().global;
+  const { name, domain }: IGlobal = reduxStore.getState().global;
 
   return {
+    metadataBase: new URL(domain),
     title: {
       default: name,
       template: `%s | ${name}`,

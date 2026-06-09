@@ -39,6 +39,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const { name, domain }: IGlobal = reduxStore.getState().global;
 
   return {
+    metadataBase: new URL(domain),
     description:
       "I am a Senior UI/UX Designer and Engineer based in Winnipeg, Manitoba, Canada, with a decade of of dynamic experience in web design and development in diverse industries.",
     openGraph: {

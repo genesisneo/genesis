@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Keyboard, Navigation, Pagination } from "swiper/modules";
 import { reduxStore } from "@/redux/store";
 import { IGlobal } from "@/redux/slices/global/types";
-import "swiper/css/bundle";
+import 'swiper/swiper-bundle.css';
 
 interface IGallery {
   title: string;

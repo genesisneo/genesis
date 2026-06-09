@@ -39,6 +39,7 @@ export async function generateMetadata({ params }: { params: Promise<{ tag: stri
   const { name, domain }: IGlobal = reduxStore.getState().global;
 
   return {
+    metadataBase: new URL(domain),
     title: `Tag - ${tag[0].toUpperCase() + tag.slice(1)}`,
     description: `All ${tag} projects I completed. Each project reflects not only my technical skills but also my ability to collaborate effectively within dynamic teams.`,
     openGraph: {
